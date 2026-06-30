@@ -96,9 +96,6 @@ export const TestView: React.FC<TestViewProps> = ({
     }
   };
 
-  // Check if current part is fully answered
-  const isPartComplete = partQuestions.every(q => answers[q.id] !== undefined && answers[q.id].trim() !== '');
-
   // Grading Details
   const getGradeDetails = () => {
     if (score === 100) {
@@ -166,10 +163,15 @@ export const TestView: React.FC<TestViewProps> = ({
               <span className="text-xs font-black uppercase text-amber-400 tracking-widest">Assessment Center</span>
               <h1 className="text-2xl font-black text-white mt-1">{test.title}</h1>
               
-              {/* Part indicators */}
+              {/* Part indicators - Clickable buttons for test mode navigation */}
               <div className="grid grid-cols-5 gap-2 mt-6">
                 {[1, 2, 3, 4, 5].map((part) => (
-                  <div key={part} className="space-y-2">
+                  <button
+                    key={part}
+                    type="button"
+                    onClick={() => setActivePart(part)}
+                    className="space-y-2 text-center w-full focus:outline-none hover:opacity-85 transition-opacity"
+                  >
                     <div className={`h-2 rounded-full transition-all duration-300 ${
                       part < activePart 
                         ? 'bg-emerald-500' 
@@ -178,7 +180,7 @@ export const TestView: React.FC<TestViewProps> = ({
                         : 'bg-slate-800'
                     }`} />
                     <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block text-center">Part {part}</span>
-                  </div>
+                  </button>
                 ))}
               </div>
             </div>
@@ -245,7 +247,6 @@ export const TestView: React.FC<TestViewProps> = ({
                 );
               })}
             </div>
-
             {/* Navigation buttons */}
             <div className="flex items-center justify-between pt-6">
               <button
@@ -265,12 +266,8 @@ export const TestView: React.FC<TestViewProps> = ({
                 <button
                   type="button"
                   onClick={handleNextPart}
-                  disabled={!isPartComplete}
-                  className={`px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2 transition-all ${
-                    isPartComplete
-                      ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md'
-                      : 'bg-slate-900 border border-slate-800 text-slate-500 cursor-not-allowed'
-                  }`}
+                  disabled={false}
+                  className="px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2 transition-all bg-indigo-600 hover:bg-indigo-500 text-white shadow-md"
                 >
                   Next Part
                   <ChevronRight className="w-4 h-4" />
@@ -279,12 +276,8 @@ export const TestView: React.FC<TestViewProps> = ({
                 <button
                   type="button"
                   onClick={evaluateTest}
-                  disabled={!isPartComplete}
-                  className={`px-8 py-3.5 rounded-xl font-black text-sm uppercase tracking-wider transition-all duration-300 ${
-                    isPartComplete
-                      ? 'bg-gradient-to-r from-amber-400 via-orange-400 to-pink-500 text-white hover:scale-105 shadow-[0_0_15px_rgba(245,158,11,0.4)]'
-                      : 'bg-slate-900 border border-slate-800 text-slate-500 cursor-not-allowed'
-                  }`}
+                  disabled={false}
+                  className="px-8 py-3.5 rounded-xl font-black text-sm uppercase tracking-wider transition-all duration-300 bg-gradient-to-r from-amber-400 via-orange-400 to-pink-500 text-white hover:scale-105 shadow-[0_0_15px_rgba(245,158,11,0.4)]"
                 >
                   Submit Test & Score
                 </button>

@@ -98,11 +98,10 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
     }
   };
 
-  // Progression checks:
-  const isStep1Done = true; // Reviewing word meanings is read-only
-  const isStep2Done = speakCount >= 5; // Must speak 5 times
-  const isStep3Done = checkedState.every(Boolean); // All 3 translation questions must be checked
-  const canFinish = isStep1Done && isStep2Done && isStep3Done;
+  // Progression checks: Unlocked for testing mode
+  const isStep2Done = speakCount >= 5;
+  const isStep3Done = checkedState.every(Boolean);
+  const canFinish = true;
 
   // Star calculation: 1 star for each question answered correctly on submit
   const earnedStars = correctState.filter(Boolean).length;
