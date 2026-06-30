@@ -191,7 +191,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 key={rowIndex} 
                 className="flex w-full relative"
               >
-                {rowItems.map((lessonId, colIndex) => {
+                {rowItems.map((lessonId) => {
                   const isCompleted = completedLessons.includes(lessonId);
                   const isAssessmentStar = lessonId % 10 === 0;
                   const isCurrent = lessonId === currentActiveLessonId;
@@ -201,32 +201,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
                   const lessonObj = lessons.find(l => l.id === lessonId);
                   const label = lessonObj ? lessonObj.englishWord : `#${lessonId}`;
 
-                  const isEvenRow = rowIndex % 2 === 0;
-                  
-                  // Connector logic
-                  let connectorElement = null;
-                  
-                  if (colIndex < 4) {
-                    // Horizontal line goes left-to-right (Col i to Col i+1)
-                    connectorElement = (
-                      <div className="absolute h-[2px] bg-slate-800 pointer-events-none z-0 left-1/2 w-full top-1/2 -translate-y-1/2" />
-                    );
-                  } else if (rowIndex < 5) {
-                    // Last node of row connects vertically down to next row
-                    // If even row, vertical line goes down from Col 4
-                    // If odd row, vertical line goes down from Col 0
-                    const showVertical = (isEvenRow && colIndex === 4) || (!isEvenRow && colIndex === 0);
-                    if (showVertical) {
-                      connectorElement = (
-                        <div className="absolute w-[2px] bg-slate-800 pointer-events-none z-0 top-1/2 left-1/2 -translate-x-1/2 h-[88px] sm:h-[112px] lg:h-[144px]" />
-                      );
-                    }
-                  }
-
                   return (
                     <div key={lessonId} className="w-[20%] flex flex-col items-center relative group">
-                      {/* Connection line */}
-                      {connectorElement}
 
                       <motion.button
                         whileHover={{ scale: 1.12 }}
