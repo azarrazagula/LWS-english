@@ -4,6 +4,22 @@ import { intermediateLessons } from '../components/intermediate/lessons';
 import { advancedLessons } from '../components/advanced/lessons';
 import { expertLessons } from '../components/expert/lessons';
 
+/**
+ * LWS-English: Global Lessons Database & Assessments Compiler
+ * File Path: src/data/lessons.ts
+ * 
+ * Purpose / Work of this file:
+ * 1. Global Lessons Aggregator:
+ *    Combines all 120 lessons from individual level folders (Beginner, Intermediate, 
+ *    Advanced, Expert) into a single, flat 'lessons' array to support global indexing.
+ * 
+ * 2. Milestone Test Compiler:
+ *    - Loads static beginner milestone assessments (Test 10, 20, 30) from the beginner folder.
+ *    - Dynamically generates the remaining 9 milestone assessments (Test 40 to 120) for 
+ *      Intermediate, Advanced, and Expert categories based on lesson words and translations.
+ *    - Exports the consolidated 'assessments' array used by TestView.tsx.
+ */
+
 // Aggregate all section lessons
 export const lessons: Lesson[] = [
   ...beginnerLessons,
