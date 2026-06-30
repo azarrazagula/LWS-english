@@ -1,22 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { RefreshCw } from "lucide-react";
 import { Level, Lesson, Test } from "./types";
 import { lessons, assessments } from "./data/lessons";
 import { LuminousBg } from "./components/LuminousBg";
-import { Dashboard } from "./components/Dashboard";
-import { BeginnerView } from "./components/beginner/BeginnerView";
-import { IntermediateView } from "./components/intermediate/IntermediateView";
-import { AdvancedView } from "./components/advanced/AdvancedView";
-import { ExpertView } from "./components/expert/ExpertView";
-import { TestView } from "./components/TestView";
+import { Header } from "./components/header/Header";
+import { AppRouter } from "./components/router/AppRouter";
 
 /**
  * LWS-English: Main Application Entry Point
- * Purpose: Manages the navigation screens (dashboard, lesson, test),
- * selected level category ('beginner' | 'intermediate' | 'advanced' | 'expert'),
- * persists completed lessons count, star counts, and assessment marks in localStorage,
- * and renders the active screen layouts.
+ * Purpose: Manages global states (completed lessons, test scores, stars, selected level),
+ * persists user progress in localStorage, and mounts layout components (Header, Background, AppRouter).
  */
 
 export const App: React.FC = () => {
@@ -124,7 +116,7 @@ export const App: React.FC = () => {
       )
     ) {
       setCompletedLessons([]);
-      setTestScores([]);
+      setTestScores({});
       setLessonStars({});
       setSelectedLevel("beginner");
       localStorage.removeItem("lws_completed_lessons");
@@ -141,119 +133,24 @@ export const App: React.FC = () => {
       <LuminousBg />
 
       {/* Header Panel */}
-      <header className="relative z-10 border-b border-white/5 bg-slate-950/40 backdrop-blur-md">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-black text-xl text-white shadow-lg">
-              L
-            </div>
-            <div>
-              <span className="text-lg font-black tracking-wider text-white">
-                LWS ENGLISH
-              </span>
-              <span className="text-[10px] uppercase text-indigo-400 font-bold block leading-none tracking-widest font-content mt-0.5">
-                Learn with Smile 😊
-              </span>
-            </div>
-          </div>
+      <Header onResetProgress={handleResetProgress} />
 
-          <div className="flex items-center gap-4">
-            {/* 100% CSR Branding Badge */}
-            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-[10px] font-extrabold shadow-[0_0_10px_rgba(59,130,246,0.15)] uppercase tracking-wider">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-              100% Client side
-            </div>
-
-            {/* Test Mode Branding Badge */}
-            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-[10px] font-extrabold shadow-[0_0_10px_rgba(245,158,11,0.15)] uppercase tracking-wider">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
-              Test Mode 🧪
-            </div>
-
-            <button
-              onClick={handleResetProgress}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-rose-400 hover:bg-rose-500/10 border border-white/5 transition-all uppercase tracking-wider"
-              title="Reset Progress">
-              <RefreshCw className="w-3.5 h-3.5" />
-              Reset Progress
-            </button>
-          </div>
-        </div>
-      </header>
-
-      {/* Main Screen Router */}
-      <main className="relative z-10">
-        <AnimatePresence mode="wait">
-          {currentScreen === "dashboard" && (
-            <motion.div
-              key="dashboard-screen"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}>
-              <Dashboard
-                completedLessons={completedLessons}
-                testScores={testScores}
-                lessonStars={lessonStars}
-                selectedLevel={selectedLevel}
-                onSelectLevel={handleSelectLevel}
-                onStartLesson={handleStartLesson}
-                onStartTest={handleStartTest}
-              />
-            </motion.div>
-          )}
-
-          {currentScreen === "lesson" && activeLesson && (
-            <motion.div
-              key="lesson-screen"
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.98 }}>
-              {activeLesson.level === "beginner" && (
-                <BeginnerView
-                  lesson={activeLesson}
-                  onComplete={handleCompleteLesson}
-                  onBack={() => setCurrentScreen("dashboard")}
-                />
-              )}
-              {activeLesson.level === "intermediate" && (
-                <IntermediateView
-                  lesson={activeLesson}
-                  onComplete={handleCompleteLesson}
-                  onBack={() => setCurrentScreen("dashboard")}
-                />
-              )}
-              {activeLesson.level === "advanced" && (
-                <AdvancedView
-                  lesson={activeLesson}
-                  onComplete={handleCompleteLesson}
-                  onBack={() => setCurrentScreen("dashboard")}
-                />
-              )}
-              {activeLesson.level === "expert" && (
-                <ExpertView
-                  lesson={activeLesson}
-                  onComplete={handleCompleteLesson}
-                  onBack={() => setCurrentScreen("dashboard")}
-                />
-              )}
-            </motion.div>
-          )}
-
-          {currentScreen === "test" && activeTest && (
-            <motion.div
-              key="test-screen"
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.98 }}>
-              <TestView
-                test={activeTest}
-                onComplete={handleCompleteTest}
-                onBack={() => setCurrentScreen("dashboard")}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </main>
+      {/* Screen Router */}
+      <AppRouter
+        currentScreen={currentScreen}
+        activeLesson={activeLesson}
+        activeTest={activeTest}
+        completedLessons={completedLessons}
+        testScores={testScores}
+        lessonStars={lessonStars}
+        selectedLevel={selectedLevel}
+        onSelectLevel={handleSelectLevel}
+        onStartLesson={handleStartLesson}
+        onStartTest={handleStartTest}
+        onCompleteLesson={handleCompleteLesson}
+        onCompleteTest={handleCompleteTest}
+        onBackToDashboard={() => setCurrentScreen("dashboard")}
+      />
     </div>
   );
 };
