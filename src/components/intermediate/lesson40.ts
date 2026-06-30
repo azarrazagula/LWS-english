@@ -1,0 +1,47 @@
+import { Lesson } from '../../types';
+
+export const lesson40: Omit<Lesson, 'level'> = {
+  "id": 40,
+  "englishWord": "Who",
+  "tamilMeaning": "யார்",
+  "englishExplanation": "Intermediate பாடம் 40: 'Who' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "sentences": [
+    {
+      "english": "I speak with my colleagues about who.",
+      "tamil": "நான் என் சக ஊழியர்களுடன் யார் பற்றி பேசுகிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "speak",
+          "meaning": "பேசுகிறேன்"
+        }
+      ]
+    }
+  ],
+  "speakingPractice": [
+    "How to use Who?",
+    "I understand Who now.",
+    "Let's practice intermediate Who."
+  ],
+  "translationPractice": [
+    {
+      "question": "நான் யார் கேட்கிறேன்",
+      "type": "tamil-to-english",
+      "answer": "I ask for who"
+    },
+    {
+      "question": "அவன் யார் சொல்கிறான்",
+      "type": "tamil-to-english",
+      "answer": "He says who"
+    },
+    {
+      "question": "தயவுசெய்து யார் கொடுங்கள்",
+      "type": "tamil-to-english",
+      "answer": "Please give who"
+    }
+  ],
+  "rule": "Rule: Intermediate conversation standard for 'Who'."
+};

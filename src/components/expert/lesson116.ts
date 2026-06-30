@@ -1,0 +1,47 @@
+import { Lesson } from '../../types';
+
+export const lesson116: Omit<Lesson, 'level'> = {
+  "id": 116,
+  "englishWord": "Technical Interview",
+  "tamilMeaning": "தொழில்நுட்ப நேர்காணல்",
+  "englishExplanation": "Expert பாடம் 116: வேலை நேர்காணலில் 'Technical Interview' என்ற தலைப்பில் நேர்த்தியாக பேச பழகுவோம்.",
+  "sentences": [
+    {
+      "english": "I can present my ideas on technical interview effectively.",
+      "tamil": "என்னால் தொழில்நுட்ப நேர்காணல் குறித்த என் கருத்துக்களை திறம்பட முன்வைக்க முடியும்.",
+      "breakdown": [
+        {
+          "word": "I can",
+          "meaning": "என்னால் முடியும்"
+        },
+        {
+          "word": "present",
+          "meaning": "முன்வைக்க"
+        }
+      ]
+    }
+  ],
+  "speakingPractice": [
+    "Discussing Technical Interview is important.",
+    "I can handle Technical Interview professionally.",
+    "Interview practice is fun."
+  ],
+  "translationPractice": [
+    {
+      "question": "நான் என் தொழில்நுட்ப நேர்காணல் விவரிக்கிறேன்",
+      "type": "tamil-to-english",
+      "answer": "I explain my technical interview"
+    },
+    {
+      "question": "எனக்கு தொழில்நுட்ப நேர்காணல் பிடிக்கும்",
+      "type": "tamil-to-english",
+      "answer": "I like technical interview"
+    },
+    {
+      "question": "இது என் தொழில்நுட்ப நேர்காணல் கருத்து",
+      "type": "tamil-to-english",
+      "answer": "This is my technical interview opinion"
+    }
+  ],
+  "rule": "Rule: High-level corporate fluency standard for job interviews on topic 'Technical Interview'."
+};
