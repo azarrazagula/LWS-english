@@ -4,6 +4,13 @@ import { Play, Check, Star, Award, BookOpen, MessageSquare, Zap } from 'lucide-r
 import { Level } from '../types';
 import { lessons } from '../data/lessons';
 
+/**
+ * LWS-English: Landing Dashboard Component
+ * Purpose: Displays the overall learning stats (progress percentage, completed count), 
+ * interactive level select navigation, and the core 5-column serpentine learning pathway map.
+ * Renders lesson progression nodes and milestone test stars with active/unlocked states.
+ */
+
 interface DashboardProps {
   completedLessons: number[];
   testScores: Record<number, number>;
@@ -23,7 +30,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onStartLesson,
   onStartTest,
 }) => {
-  // Define level offsets
+  // 1. Level Offsets: Beginners start at 0, Intermediates at 30, Advanced at 60, Experts at 90.
   const levelOffsets = {
     beginner: 0,
     intermediate: 30,
@@ -34,13 +41,13 @@ export const Dashboard: React.FC<DashboardProps> = ({
   const levelOffset = levelOffsets[selectedLevel];
   const totalLessonsInLevel = 30;
 
-  // Statistics calculations
+  // 2. Statistics: calculate count and percentage of completed lessons in the current level
   const levelCompletedCount = completedLessons.filter(
     id => id > levelOffset && id <= levelOffset + totalLessonsInLevel
   ).length;
   const levelProgressPercent = Math.round((levelCompletedCount / totalLessonsInLevel) * 100);
 
-  // Get current active lesson ID in the level
+  // 3. Current active lesson: finds the first uncompleted lesson in the level (to show dynamic active ring)
   let currentActiveLessonId = levelOffset + 1;
   for (let i = 1; i <= totalLessonsInLevel; i++) {
     const id = levelOffset + i;
@@ -50,7 +57,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
     }
   }
 
-  // Encouragement messages based on level and progress
+  // 4. Dynamic Encouragements: custom messages tailored to student's current learning status
   const getEncouragement = () => {
     if (completedLessons.length === 0) {
       return {
@@ -89,11 +96,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
   const encourage = getEncouragement();
 
-  // Winding serpentine path grid layout (6 rows of 5 nodes = 30 nodes)
+  // 5. Pathway Grid Math: Compiles 6 rows of 5 nodes = 30 nodes. 
+  // Reverses odd-indexed rows visually to create a winding horizontal board-game flow.
   const rows = Array.from({ length: 6 }, (_, rowIndex) => {
     const start = levelOffset + rowIndex * 5;
     const items = Array.from({ length: 5 }, (_, i) => start + i + 1);
-    // Reverse odd rows to create serpentine wind
     return rowIndex % 2 === 1 ? items.reverse() : items;
   });
 

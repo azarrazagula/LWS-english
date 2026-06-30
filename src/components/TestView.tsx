@@ -4,6 +4,16 @@ import { ArrowLeft, Award, ChevronRight, RefreshCw, Star } from 'lucide-react';
 import { Test } from '../types';
 import confetti from 'canvas-confetti';
 
+/**
+ * LWS-English: Test Assessment View Component
+ * Purpose: Handles dynamic 50-question assessments at the end of every 10 lessons.
+ * Computes scores (2 marks per question) and evaluates performance into 3 grades:
+ * - EXCELLENT / VERY GOOD (Score: 100) -> 3 stars, triggers confetti spray
+ * - GOOD (Score: 80+) -> 2 stars
+ * - AVERAGE / PASS (Score: 70+) -> 1 star
+ * - NEEDS PRACTICE (Score < 70) -> 0 stars, allows retry
+ */
+
 interface TestViewProps {
   test: Test;
   onComplete: (testId: number, score: number) => void;

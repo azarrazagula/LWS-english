@@ -3,6 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Volume2, CheckCircle2, Smile, AlertCircle } from 'lucide-react';
 import { Lesson } from '../../types';
 
+/**
+ * LWS-English: Intermediate Level Lesson View Component
+ * Purpose: Renders intermediate level lessons (L31 to L60). Displays intermediate word meanings,
+ * sentence breakdown cards, speaking practice, and a 3-sentence translation system 
+ * where users earn stars for correct translations.
+ */
+
 interface LessonViewProps {
   lesson: Lesson;
   onComplete: (lessonId: number, stars: number) => void;
@@ -14,15 +21,24 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
   onComplete,
   onBack,
 }) => {
+  // state: tracks how many times the user read the phrase out loud (target is 5)
   const [speakCount, setSpeakCount] = useState<number>(0);
   
-  // States for 3-sentence translation system
+  // state: tracks the index (0, 1, or 2) of the current active sentence in Practice Center
   const [currentQIndex, setCurrentQIndex] = useState<number>(0);
+  // state: stores the user's text inputs for all 3 translation questions
   const [userInputs, setUserInputs] = useState<string[]>(['', '', '']);
+  // state: flags whether each of the 3 questions has been checked
   const [checkedState, setCheckedState] = useState<boolean[]>([false, false, false]);
+  // state: tracks if each of the 3 checked answers is correct (determines stars earned)
   const [correctState, setCorrectState] = useState<boolean[]>([false, false, false]);
+  // state: controls whether the correct answer hint is displayed
   const [showHint, setShowHint] = useState<boolean>(false);
 
+  /**
+   * Action: Normalizes and checks the user's input against the correct target translation.
+   * Strips out punctuation and whitespace to allow flexible, user-friendly checking.
+   */
   const checkTranslation = () => {
     const qIndex = currentQIndex;
     const cleanUser = userInputs[qIndex].trim().toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "").replace(/\s+/g, " ");
@@ -30,12 +46,14 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
 
     const isMatch = cleanUser === correctTarget;
     
+    // Updates correctness state
     setCorrectState(prev => {
       const next = [...prev];
       next[qIndex] = isMatch;
       return next;
     });
 
+    // Marks this specific question index as checked
     setCheckedState(prev => {
       const next = [...prev];
       next[qIndex] = true;
@@ -43,6 +61,7 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
     });
   };
 
+  // Handles updating the text input for the current active question
   const handleInputChange = (val: string) => {
     setUserInputs(prev => {
       const next = [...prev];
@@ -56,6 +75,7 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
     });
   };
 
+  // Navigates to the next question in the Practice Center
   const handleNextQuestion = () => {
     if (currentQIndex < 2) {
       setCurrentQIndex(prev => prev + 1);
@@ -63,6 +83,7 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
     }
   };
 
+  // Navigates to the previous question in the Practice Center
   const handlePrevQuestion = () => {
     if (currentQIndex > 0) {
       setCurrentQIndex(prev => prev - 1);
@@ -70,22 +91,25 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
     }
   };
 
+  // Increments read count when user taps the read out loud bubbles
   const handleNextSpeak = () => {
     if (speakCount < 5) {
       setSpeakCount(prev => prev + 1);
     }
   };
 
-  const isStep1Done = true;
-  const isStep2Done = speakCount >= 5;
-  const isStep3Done = checkedState.every(Boolean);
+  // Progression checks:
+  const isStep1Done = true; // Reviewing word meanings is read-only
+  const isStep2Done = speakCount >= 5; // Must speak 5 times
+  const isStep3Done = checkedState.every(Boolean); // All 3 translation questions must be checked
   const canFinish = isStep1Done && isStep2Done && isStep3Done;
 
+  // Star calculation: 1 star for each question answered correctly on submit
   const earnedStars = correctState.filter(Boolean).length;
 
   return (
     <div className="relative z-10 max-w-4xl mx-auto px-4 py-8">
-      {/* Back navigation */}
+      {/* Back button to return to dashboard */}
       <button 
         onClick={onBack}
         className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors mb-6 text-sm font-semibold uppercase tracking-wider"
@@ -109,8 +133,10 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
         </div>
       </motion.div>
 
-      {/* STEP 1: Main Learn Card */}
+      {/* Step Components Container */}
       <div className="space-y-8">
+        
+        {/* STEP 1: Main Word Meanings and Sentence Breakdown */}
         <motion.section 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -138,6 +164,7 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
             </div>
           </div>
 
+          {/* Breakdown cards for easy syllable learning */}
           <div className="mt-8 space-y-6">
             <h3 className="text-sm font-semibold text-slate-300">How to use in a sentence:</h3>
             {lesson.sentences.map((sent, sIdx) => (
@@ -420,7 +447,7 @@ export const IntermediateView: React.FC<LessonViewProps> = ({
           </div>
         </motion.section>
 
-        {/* Next Lesson / Completion Banner */}
+        {/* Complete & Finish Session button */}
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

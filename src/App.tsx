@@ -1,24 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { RefreshCw } from 'lucide-react';
-import { Level, Lesson, Test } from './types';
-import { lessons, assessments } from './data/lessons';
-import { LuminousBg } from './components/LuminousBg';
-import { Dashboard } from './components/Dashboard';
-import { BeginnerView } from './components/beginner/BeginnerView';
-import { IntermediateView } from './components/intermediate/IntermediateView';
-import { AdvancedView } from './components/advanced/AdvancedView';
-import { ExpertView } from './components/expert/ExpertView';
-import { TestView } from './components/TestView';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { RefreshCw } from "lucide-react";
+import { Level, Lesson, Test } from "./types";
+import { lessons, assessments } from "./data/lessons";
+import { LuminousBg } from "./components/LuminousBg";
+import { Dashboard } from "./components/Dashboard";
+import { BeginnerView } from "./components/beginner/BeginnerView";
+import { IntermediateView } from "./components/intermediate/IntermediateView";
+import { AdvancedView } from "./components/advanced/AdvancedView";
+import { ExpertView } from "./components/expert/ExpertView";
+import { TestView } from "./components/TestView";
+
+/**
+ * LWS-English: Main Application Entry Point
+ * Purpose: Manages the navigation screens (dashboard, lesson, test),
+ * selected level category ('beginner' | 'intermediate' | 'advanced' | 'expert'),
+ * persists completed lessons count, star counts, and assessment marks in localStorage,
+ * and renders the active screen layouts.
+ */
 
 export const App: React.FC = () => {
   // Navigation & progression state
-  const [currentScreen, setCurrentScreen] = useState<'dashboard' | 'lesson' | 'test'>('dashboard');
-  const [selectedLevel, setSelectedLevel] = useState<Level>('beginner');
+  const [currentScreen, setCurrentScreen] = useState<
+    "dashboard" | "lesson" | "test"
+  >("dashboard");
+  const [selectedLevel, setSelectedLevel] = useState<Level>("beginner");
   const [completedLessons, setCompletedLessons] = useState<number[]>([]);
   const [testScores, setTestScores] = useState<Record<number, number>>({});
   const [lessonStars, setLessonStars] = useState<Record<number, number>>({});
-  
+
   // Active lesson/test objects
   const [activeLesson, setActiveLesson] = useState<Lesson | null>(null);
   const [activeTest, setActiveTest] = useState<Test | null>(null);
@@ -26,10 +36,10 @@ export const App: React.FC = () => {
   // Load progress on initial render
   useEffect(() => {
     try {
-      const savedCompleted = localStorage.getItem('lws_completed_lessons');
-      const savedScores = localStorage.getItem('lws_test_scores');
-      const savedStars = localStorage.getItem('lws_lesson_stars');
-      const savedLevel = localStorage.getItem('lws_selected_level');
+      const savedCompleted = localStorage.getItem("lws_completed_lessons");
+      const savedScores = localStorage.getItem("lws_test_scores");
+      const savedStars = localStorage.getItem("lws_lesson_stars");
+      const savedLevel = localStorage.getItem("lws_selected_level");
 
       if (savedCompleted) setCompletedLessons(JSON.parse(savedCompleted));
       if (savedScores) setTestScores(JSON.parse(savedScores));
@@ -43,23 +53,23 @@ export const App: React.FC = () => {
   // Handlers for starting and completing sections
   const handleSelectLevel = (level: Level) => {
     setSelectedLevel(level);
-    localStorage.setItem('lws_selected_level', level);
+    localStorage.setItem("lws_selected_level", level);
   };
 
   const handleStartLesson = (lessonId: number) => {
-    const lesson = lessons.find(l => l.id === lessonId);
+    const lesson = lessons.find((l) => l.id === lessonId);
     if (lesson) {
       setActiveLesson(lesson);
-      setCurrentScreen('lesson');
+      setCurrentScreen("lesson");
       window.scrollTo(0, 0);
     }
   };
 
   const handleStartTest = (testId: number) => {
-    const test = assessments.find(t => t.id === testId);
+    const test = assessments.find((t) => t.id === testId);
     if (test) {
       setActiveTest(test);
-      setCurrentScreen('test');
+      setCurrentScreen("test");
       window.scrollTo(0, 0);
     }
   };
@@ -70,22 +80,25 @@ export const App: React.FC = () => {
       updatedLessons.push(lessonId);
     }
     setCompletedLessons(updatedLessons);
-    localStorage.setItem('lws_completed_lessons', JSON.stringify(updatedLessons));
+    localStorage.setItem(
+      "lws_completed_lessons",
+      JSON.stringify(updatedLessons),
+    );
 
     const updatedStars = { ...lessonStars, [lessonId]: stars };
     setLessonStars(updatedStars);
-    localStorage.setItem('lws_lesson_stars', JSON.stringify(updatedStars));
-    
+    localStorage.setItem("lws_lesson_stars", JSON.stringify(updatedStars));
+
     // Unset active and go back
     setActiveLesson(null);
-    setCurrentScreen('dashboard');
+    setCurrentScreen("dashboard");
     window.scrollTo(0, 0);
   };
 
   const handleCompleteTest = (testId: number, score: number) => {
     const updatedScores = { ...testScores, [testId]: score };
     setTestScores(updatedScores);
-    localStorage.setItem('lws_test_scores', JSON.stringify(updatedScores));
+    localStorage.setItem("lws_test_scores", JSON.stringify(updatedScores));
 
     // Mark test itself as completed so progress advances
     const updatedCompleted = [...completedLessons];
@@ -93,25 +106,32 @@ export const App: React.FC = () => {
       updatedCompleted.push(testId);
     }
     setCompletedLessons(updatedCompleted);
-    localStorage.setItem('lws_completed_lessons', JSON.stringify(updatedCompleted));
+    localStorage.setItem(
+      "lws_completed_lessons",
+      JSON.stringify(updatedCompleted),
+    );
 
     setActiveTest(null);
-    setCurrentScreen('dashboard');
+    setCurrentScreen("dashboard");
     window.scrollTo(0, 0);
   };
 
   // Reset progress option
   const handleResetProgress = () => {
-    if (window.confirm("Are you sure you want to reset all your lessons progress and test scores?")) {
+    if (
+      window.confirm(
+        "Are you sure you want to reset all your lessons progress and test scores?",
+      )
+    ) {
       setCompletedLessons([]);
       setTestScores([]);
       setLessonStars({});
-      setSelectedLevel('beginner');
-      localStorage.removeItem('lws_completed_lessons');
-      localStorage.removeItem('lws_test_scores');
-      localStorage.removeItem('lws_lesson_stars');
-      localStorage.removeItem('lws_selected_level');
-      setCurrentScreen('dashboard');
+      setSelectedLevel("beginner");
+      localStorage.removeItem("lws_completed_lessons");
+      localStorage.removeItem("lws_test_scores");
+      localStorage.removeItem("lws_lesson_stars");
+      localStorage.removeItem("lws_selected_level");
+      setCurrentScreen("dashboard");
     }
   };
 
@@ -128,8 +148,12 @@ export const App: React.FC = () => {
               L
             </div>
             <div>
-              <span className="text-lg font-black tracking-wider text-white">LWS ENGLISH</span>
-              <span className="text-[10px] uppercase text-indigo-400 font-bold block leading-none tracking-widest font-content mt-0.5">Learn with Smile 😊</span>
+              <span className="text-lg font-black tracking-wider text-white">
+                LWS ENGLISH
+              </span>
+              <span className="text-[10px] uppercase text-indigo-400 font-bold block leading-none tracking-widest font-content mt-0.5">
+                Learn with Smile 😊
+              </span>
             </div>
           </div>
 
@@ -137,14 +161,13 @@ export const App: React.FC = () => {
             {/* 100% CSR Branding Badge */}
             <div className="flex items-center gap-1.5 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-[10px] font-extrabold shadow-[0_0_10px_rgba(59,130,246,0.15)] uppercase tracking-wider">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-              100% CSR App
+              100% Client side
             </div>
 
             <button
               onClick={handleResetProgress}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-rose-400 hover:bg-rose-500/10 border border-white/5 transition-all uppercase tracking-wider"
-              title="Reset Progress"
-            >
+              title="Reset Progress">
               <RefreshCw className="w-3.5 h-3.5" />
               Reset Progress
             </button>
@@ -155,13 +178,12 @@ export const App: React.FC = () => {
       {/* Main Screen Router */}
       <main className="relative z-10">
         <AnimatePresence mode="wait">
-          {currentScreen === 'dashboard' && (
+          {currentScreen === "dashboard" && (
             <motion.div
               key="dashboard-screen"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-            >
+              exit={{ opacity: 0 }}>
               <Dashboard
                 completedLessons={completedLessons}
                 testScores={testScores}
@@ -174,55 +196,53 @@ export const App: React.FC = () => {
             </motion.div>
           )}
 
-          {currentScreen === 'lesson' && activeLesson && (
+          {currentScreen === "lesson" && activeLesson && (
             <motion.div
               key="lesson-screen"
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.98 }}
-            >
-              {activeLesson.level === 'beginner' && (
+              exit={{ opacity: 0, scale: 0.98 }}>
+              {activeLesson.level === "beginner" && (
                 <BeginnerView
                   lesson={activeLesson}
                   onComplete={handleCompleteLesson}
-                  onBack={() => setCurrentScreen('dashboard')}
+                  onBack={() => setCurrentScreen("dashboard")}
                 />
               )}
-              {activeLesson.level === 'intermediate' && (
+              {activeLesson.level === "intermediate" && (
                 <IntermediateView
                   lesson={activeLesson}
                   onComplete={handleCompleteLesson}
-                  onBack={() => setCurrentScreen('dashboard')}
+                  onBack={() => setCurrentScreen("dashboard")}
                 />
               )}
-              {activeLesson.level === 'advanced' && (
+              {activeLesson.level === "advanced" && (
                 <AdvancedView
                   lesson={activeLesson}
                   onComplete={handleCompleteLesson}
-                  onBack={() => setCurrentScreen('dashboard')}
+                  onBack={() => setCurrentScreen("dashboard")}
                 />
               )}
-              {activeLesson.level === 'expert' && (
+              {activeLesson.level === "expert" && (
                 <ExpertView
                   lesson={activeLesson}
                   onComplete={handleCompleteLesson}
-                  onBack={() => setCurrentScreen('dashboard')}
+                  onBack={() => setCurrentScreen("dashboard")}
                 />
               )}
             </motion.div>
           )}
 
-          {currentScreen === 'test' && activeTest && (
+          {currentScreen === "test" && activeTest && (
             <motion.div
               key="test-screen"
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.98 }}
-            >
+              exit={{ opacity: 0, scale: 0.98 }}>
               <TestView
                 test={activeTest}
                 onComplete={handleCompleteTest}
-                onBack={() => setCurrentScreen('dashboard')}
+                onBack={() => setCurrentScreen("dashboard")}
               />
             </motion.div>
           )}
