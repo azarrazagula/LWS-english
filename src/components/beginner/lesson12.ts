@@ -7,41 +7,71 @@ export const lesson12: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 12: 'Were' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use were in a sentence.",
-      "tamil": "நான் இருந்தோம் என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "They were busy.",
+      "tamil": "அவர்கள் பிஸியாக இருந்தார்கள்.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "Were",
+          "meaning": "இருந்தோம்"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say Were.",
-    "I know Were now.",
-    "Practice word Were daily."
+    "They were busy.",
+    "Were they there?",
+    "They were good friends.",
+    "Were you busy yesterday?",
+    "We were there too."
   ],
   "translationPractice": [
     {
-      "question": "நான் இருந்தோம் பயன்படுத்துகிறேன்",
+      "question": "அவர்கள் பிஸியாக இருந்தார்கள்.",
       "type": "tamil-to-english",
-      "answer": "I use were"
+      "answer": "They were busy"
     },
     {
-      "question": "அவன் இருந்தோம் பார்க்கிறான்",
+      "question": "அவர்கள் அங்கே இருந்தார்களா?",
       "type": "tamil-to-english",
-      "answer": "He sees were"
+      "answer": "Were they there"
     },
     {
-      "question": "அவள் இருந்தோம் கொடுக்கிறாள்",
+      "question": "அவர்கள் நல்ல நண்பர்களாக இருந்தார்கள்.",
       "type": "tamil-to-english",
-      "answer": "She gives were"
+      "answer": "They were good friends"
+    },
+    {
+      "question": "நீங்கள் நேற்று பிஸியாக இருந்தீர்களா?",
+      "type": "tamil-to-english",
+      "answer": "Were you busy yesterday"
+    },
+    {
+      "question": "நாங்களும் அங்கே இருந்தோம்.",
+      "type": "tamil-to-english",
+      "answer": "We were there too"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Were'."
+  "rule": "Rule: Standard grammar focus for beginner word 'Were'.",
+  "vocabularies": [
+    {
+      "word": "Were",
+      "meaning": "இருந்தோம்"
+    },
+    {
+      "word": "they",
+      "meaning": "அவர்கள்"
+    },
+    {
+      "word": "busy",
+      "meaning": "பிஸியாக"
+    },
+    {
+      "word": "friends",
+      "meaning": "நண்பர்கள்"
+    },
+    {
+      "word": "there",
+      "meaning": "அங்கே"
+    }
+  ]
 };

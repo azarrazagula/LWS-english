@@ -7,41 +7,71 @@ export const lesson28: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 28: 'Take' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use take in a sentence.",
-      "tamil": "நான் எடு என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "Take it easy.",
+      "tamil": "அதை எளிதாக எடுத்துக்கொள்.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "Take",
+          "meaning": "எடு"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say Take.",
-    "I know Take now.",
-    "Practice word Take daily."
+    "Take it easy.",
+    "Take a short break.",
+    "Take care of yourself.",
+    "Take this book.",
+    "Take care now."
   ],
   "translationPractice": [
     {
-      "question": "நான் எடு பயன்படுத்துகிறேன்",
+      "question": "அதை எளிதாக எடுத்துக்கொள்.",
       "type": "tamil-to-english",
-      "answer": "I use take"
+      "answer": "Take it easy"
     },
     {
-      "question": "அவன் எடு பார்க்கிறான்",
+      "question": "ஒரு சிறிய இடைவேளை எடு.",
       "type": "tamil-to-english",
-      "answer": "He sees take"
+      "answer": "Take a short break"
     },
     {
-      "question": "அவள் எடு கொடுக்கிறாள்",
+      "question": "உடம்பை பார்த்துக்கொள்.",
       "type": "tamil-to-english",
-      "answer": "She gives take"
+      "answer": "Take care of yourself"
+    },
+    {
+      "question": "இந்த புத்தகத்தை எடுத்துக்கொள்.",
+      "type": "tamil-to-english",
+      "answer": "Take this book"
+    },
+    {
+      "question": "இப்போது கவனமாக இரு.",
+      "type": "tamil-to-english",
+      "answer": "Take care now"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Take'."
+  "rule": "Rule: Standard grammar focus for beginner word 'Take'.",
+  "vocabularies": [
+    {
+      "word": "Take",
+      "meaning": "எடு"
+    },
+    {
+      "word": "it",
+      "meaning": "அது"
+    },
+    {
+      "word": "easy",
+      "meaning": "எளிதாக"
+    },
+    {
+      "word": "break",
+      "meaning": "இடைவேளை"
+    },
+    {
+      "word": "care",
+      "meaning": "கவனம்"
+    }
+  ]
 };

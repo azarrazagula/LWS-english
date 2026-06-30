@@ -91,6 +91,15 @@ export const AdvancedView: React.FC<LessonViewProps> = ({
     }
   };
 
+  // Resets all practice questions and inputs to allow retrying
+  const handleResetPractice = () => {
+    setUserInputs(['', '', '']);
+    setCheckedState([false, false, false]);
+    setCorrectState([false, false, false]);
+    setCurrentQIndex(0);
+    setShowHint(false);
+  };
+
   // Increments read count when user taps the read out loud bubbles
   const handleNextSpeak = () => {
     if (speakCount < 5) {
@@ -400,9 +409,14 @@ export const AdvancedView: React.FC<LessonViewProps> = ({
                     Next
                   </button>
                 ) : (
-                  <div className="px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-emerald-600 text-white cursor-default">
-                    Finished!
-                  </div>
+                  <button
+                    type="button"
+                    onClick={handleResetPractice}
+                    className="px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-emerald-600 hover:bg-emerald-500 text-white shadow-md cursor-pointer transition-all active:scale-95 flex items-center gap-1"
+                    title="Click to reset and practice again!"
+                  >
+                    Finished! (Retry 🔄)
+                  </button>
                 )}
               </div>
             </div>

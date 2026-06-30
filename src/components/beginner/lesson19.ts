@@ -7,41 +7,71 @@ export const lesson19: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 19: 'To' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use to in a sentence.",
-      "tamil": "நான் நோக்கி என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "Go to school.",
+      "tamil": "பள்ளிக்கு போ.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "To",
+          "meaning": "நோக்கி"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say To.",
-    "I know To now.",
-    "Practice word To daily."
+    "Go to school.",
+    "I walk to work.",
+    "They go to market.",
+    "Go to the office now.",
+    "She walks to school."
   ],
   "translationPractice": [
     {
-      "question": "நான் நோக்கி பயன்படுத்துகிறேன்",
+      "question": "பள்ளிக்கு போ.",
       "type": "tamil-to-english",
-      "answer": "I use to"
+      "answer": "Go to school"
     },
     {
-      "question": "அவன் நோக்கி பார்க்கிறான்",
+      "question": "நான் வேலைக்கு நடந்து செல்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "He sees to"
+      "answer": "I walk to work"
     },
     {
-      "question": "அவள் நோக்கி கொடுக்கிறாள்",
+      "question": "அவர்கள் சந்தைக்குச் செல்கிறார்கள்.",
       "type": "tamil-to-english",
-      "answer": "She gives to"
+      "answer": "They go to market"
+    },
+    {
+      "question": "இப்போது அலுவலகத்திற்கு போ.",
+      "type": "tamil-to-english",
+      "answer": "Go to the office now"
+    },
+    {
+      "question": "அவள் பள்ளிக்கு நடந்து செல்கிறாள்.",
+      "type": "tamil-to-english",
+      "answer": "She walks to school"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'To'."
+  "rule": "Rule: Standard grammar focus for beginner word 'To'.",
+  "vocabularies": [
+    {
+      "word": "To",
+      "meaning": "நோக்கி"
+    },
+    {
+      "word": "go",
+      "meaning": "போ"
+    },
+    {
+      "word": "school",
+      "meaning": "பள்ளி"
+    },
+    {
+      "word": "market",
+      "meaning": "சந்தை"
+    },
+    {
+      "word": "office",
+      "meaning": "அலுவலகம்"
+    }
+  ]
 };

@@ -7,41 +7,71 @@ export const lesson27: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 27: 'Say' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use say in a sentence.",
-      "tamil": "நான் சொல் என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "Say hello now.",
+      "tamil": "இப்போது ஹலோ சொல்.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "Say",
+          "meaning": "சொல்"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say Say.",
-    "I know Say now.",
-    "Practice word Say daily."
+    "Say hello now.",
+    "Please say something.",
+    "Say yes or no.",
+    "Do not say no.",
+    "What did you say?"
   ],
   "translationPractice": [
     {
-      "question": "நான் சொல் பயன்படுத்துகிறேன்",
+      "question": "இப்போது ஹலோ சொல்.",
       "type": "tamil-to-english",
-      "answer": "I use say"
+      "answer": "Say hello now"
     },
     {
-      "question": "அவன் சொல் பார்க்கிறான்",
+      "question": "தயவுசெய்து ஏதேனும் சொல்.",
       "type": "tamil-to-english",
-      "answer": "He sees say"
+      "answer": "Please say something"
     },
     {
-      "question": "அவள் சொல் கொடுக்கிறாள்",
+      "question": "ஆம் அல்லது இல்லை என்று சொல்.",
       "type": "tamil-to-english",
-      "answer": "She gives say"
+      "answer": "Say yes or no"
+    },
+    {
+      "question": "இல்லை என்று சொல்லாதே.",
+      "type": "tamil-to-english",
+      "answer": "Do not say no"
+    },
+    {
+      "question": "நீ என்ன சொன்னாய்?",
+      "type": "tamil-to-english",
+      "answer": "What did you say"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Say'."
+  "rule": "Rule: Standard grammar focus for beginner word 'Say'.",
+  "vocabularies": [
+    {
+      "word": "Say",
+      "meaning": "சொல்"
+    },
+    {
+      "word": "hello",
+      "meaning": "வணக்கம்"
+    },
+    {
+      "word": "something",
+      "meaning": "ஏதாவது"
+    },
+    {
+      "word": "yes",
+      "meaning": "ஆம்"
+    },
+    {
+      "word": "no",
+      "meaning": "இல்லை"
+    }
+  ]
 };

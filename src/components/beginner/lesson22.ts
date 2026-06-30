@@ -7,41 +7,71 @@ export const lesson22: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 22: 'Come' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use come in a sentence.",
-      "tamil": "நான் வா என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "Come here today.",
+      "tamil": "இன்று இங்கே வா.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "Come",
+          "meaning": "வா"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say Come.",
-    "I know Come now.",
-    "Practice word Come daily."
+    "Come here today.",
+    "Will you come tomorrow?",
+    "Come back soon.",
+    "Please come here.",
+    "She will come back."
   ],
   "translationPractice": [
     {
-      "question": "நான் வா பயன்படுத்துகிறேன்",
+      "question": "இன்று இங்கே வா.",
       "type": "tamil-to-english",
-      "answer": "I use come"
+      "answer": "Come here today"
     },
     {
-      "question": "அவன் வா பார்க்கிறான்",
+      "question": "நீ நாளை வருவாயா?",
       "type": "tamil-to-english",
-      "answer": "He sees come"
+      "answer": "Will you come tomorrow"
     },
     {
-      "question": "அவள் வா கொடுக்கிறாள்",
+      "question": "சீக்கிரம் திரும்பி வா.",
       "type": "tamil-to-english",
-      "answer": "She gives come"
+      "answer": "Come back soon"
+    },
+    {
+      "question": "தயவுசெய்து இங்கே வா.",
+      "type": "tamil-to-english",
+      "answer": "Please come here"
+    },
+    {
+      "question": "அவள் திரும்பி வருவாள்.",
+      "type": "tamil-to-english",
+      "answer": "She will come back"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Come'."
+  "rule": "Rule: Standard grammar focus for beginner word 'Come'.",
+  "vocabularies": [
+    {
+      "word": "Come",
+      "meaning": "வா"
+    },
+    {
+      "word": "here",
+      "meaning": "இங்கே"
+    },
+    {
+      "word": "today",
+      "meaning": "இன்று"
+    },
+    {
+      "word": "tomorrow",
+      "meaning": "நாளை"
+    },
+    {
+      "word": "back",
+      "meaning": "திரும்பி"
+    }
+  ]
 };

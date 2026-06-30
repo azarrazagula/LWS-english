@@ -7,41 +7,71 @@ export const lesson16: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 16: 'In' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use in in a sentence.",
-      "tamil": "நான் உள்ளே என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "It is in the box.",
+      "tamil": "அது பெட்டிக்குள் இருக்கிறது.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "In",
+          "meaning": "உள்ளே"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say In.",
-    "I know In now.",
-    "Practice word In daily."
+    "It is in the box.",
+    "I am in the office.",
+    "He is in the room.",
+    "Is it in the box?",
+    "She is in the office."
   ],
   "translationPractice": [
     {
-      "question": "நான் உள்ளே பயன்படுத்துகிறேன்",
+      "question": "அது பெட்டிக்குள் இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "I use in"
+      "answer": "It is in the box"
     },
     {
-      "question": "அவன் உள்ளே பார்க்கிறான்",
+      "question": "நான் அலுவலகத்தில் இருக்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "He sees in"
+      "answer": "I am in the office"
     },
     {
-      "question": "அவள் உள்ளே கொடுக்கிறாள்",
+      "question": "அவன் அறைக்குள் இருக்கிறான்.",
       "type": "tamil-to-english",
-      "answer": "She gives in"
+      "answer": "He is in the room"
+    },
+    {
+      "question": "அது பெட்டிக்குள் இருக்கிறதா?",
+      "type": "tamil-to-english",
+      "answer": "Is it in the box"
+    },
+    {
+      "question": "அவள் அலுவலகத்தில் இருக்கிறாள்.",
+      "type": "tamil-to-english",
+      "answer": "She is in the office"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'In'."
+  "rule": "Rule: Standard grammar focus for beginner word 'In'.",
+  "vocabularies": [
+    {
+      "word": "In",
+      "meaning": "உள்ளே"
+    },
+    {
+      "word": "the",
+      "meaning": "குறிப்பிட்ட"
+    },
+    {
+      "word": "box",
+      "meaning": "பெட்டி"
+    },
+    {
+      "word": "office",
+      "meaning": "அலுவலகம்"
+    },
+    {
+      "word": "room",
+      "meaning": "அறை"
+    }
+  ]
 };

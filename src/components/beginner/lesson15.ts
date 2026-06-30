@@ -7,41 +7,71 @@ export const lesson15: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 15: 'The' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use the in a sentence.",
-      "tamil": "நான் குறிப்பிட்ட என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "The sun is hot.",
+      "tamil": "சூரியன் சூடாக இருக்கிறது.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "The",
+          "meaning": "குறிப்பிட்ட"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say The.",
-    "I know The now.",
-    "Practice word The daily."
+    "The sun is hot.",
+    "Look at the sky.",
+    "The moon is bright.",
+    "I see a star.",
+    "The sky is blue."
   ],
   "translationPractice": [
     {
-      "question": "நான் குறிப்பிட்ட பயன்படுத்துகிறேன்",
+      "question": "சூரியன் சூடாக இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "I use the"
+      "answer": "The sun is hot"
     },
     {
-      "question": "அவன் குறிப்பிட்ட பார்க்கிறான்",
+      "question": "வானத்தைப் பார்.",
       "type": "tamil-to-english",
-      "answer": "He sees the"
+      "answer": "Look at the sky"
     },
     {
-      "question": "அவள் குறிப்பிட்ட கொடுக்கிறாள்",
+      "question": "நிலா பிரகாசமாக இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "She gives the"
+      "answer": "The moon is bright"
+    },
+    {
+      "question": "நான் ஒரு நட்சத்திரத்தைப் பார்க்கிறேன்.",
+      "type": "tamil-to-english",
+      "answer": "I see a star"
+    },
+    {
+      "question": "வானம் நீல நிறத்தில் இருக்கிறது.",
+      "type": "tamil-to-english",
+      "answer": "The sky is blue"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'The'."
+  "rule": "Rule: Standard grammar focus for beginner word 'The'.",
+  "vocabularies": [
+    {
+      "word": "The",
+      "meaning": "குறிப்பிட்ட"
+    },
+    {
+      "word": "sun",
+      "meaning": "சூரியன்"
+    },
+    {
+      "word": "sky",
+      "meaning": "வானம்"
+    },
+    {
+      "word": "moon",
+      "meaning": "நிலா"
+    },
+    {
+      "word": "star",
+      "meaning": "நட்சத்திரம்"
+    }
+  ]
 };

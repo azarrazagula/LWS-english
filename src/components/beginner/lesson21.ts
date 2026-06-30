@@ -7,41 +7,71 @@ export const lesson21: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 21: 'Go' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use go in a sentence.",
-      "tamil": "நான் போ என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "Go there now.",
+      "tamil": "இப்போது அங்கே போ.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "Go",
+          "meaning": "போ"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say Go.",
-    "I know Go now.",
-    "Practice word Go daily."
+    "Go there now.",
+    "Please go home.",
+    "We go to school.",
+    "Do you go there?",
+    "Go home now."
   ],
   "translationPractice": [
     {
-      "question": "நான் போ பயன்படுத்துகிறேன்",
+      "question": "இப்போது அங்கே போ.",
       "type": "tamil-to-english",
-      "answer": "I use go"
+      "answer": "Go there now"
     },
     {
-      "question": "அவன் போ பார்க்கிறான்",
+      "question": "தயவுசெய்து வீட்டுக்கு போ.",
       "type": "tamil-to-english",
-      "answer": "He sees go"
+      "answer": "Please go home"
     },
     {
-      "question": "அவள் போ கொடுக்கிறாள்",
+      "question": "நாங்கள் பள்ளிக்குச் செல்கிறோம்.",
       "type": "tamil-to-english",
-      "answer": "She gives go"
+      "answer": "We go to school"
+    },
+    {
+      "question": "நீ அங்கே போகிறாயா?",
+      "type": "tamil-to-english",
+      "answer": "Do you go there"
+    },
+    {
+      "question": "இப்போது வீட்டுக்கு போ.",
+      "type": "tamil-to-english",
+      "answer": "Go home now"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Go'."
+  "rule": "Rule: Standard grammar focus for beginner word 'Go'.",
+  "vocabularies": [
+    {
+      "word": "Go",
+      "meaning": "போ"
+    },
+    {
+      "word": "there",
+      "meaning": "அங்கே"
+    },
+    {
+      "word": "now",
+      "meaning": "இப்போது"
+    },
+    {
+      "word": "home",
+      "meaning": "வீடு"
+    },
+    {
+      "word": "school",
+      "meaning": "பள்ளி"
+    }
+  ]
 };

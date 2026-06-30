@@ -7,41 +7,71 @@ export const lesson23: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 23: 'Do' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use do in a sentence.",
-      "tamil": "நான் செய் என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "Do it now.",
+      "tamil": "அதை இப்போது செய்.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "Do",
+          "meaning": "செய்"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say Do.",
-    "I know Do now.",
-    "Practice word Do daily."
+    "Do it now.",
+    "I do my work.",
+    "Please do help me.",
+    "Do you do this work?",
+    "Do it daily."
   ],
   "translationPractice": [
     {
-      "question": "நான் செய் பயன்படுத்துகிறேன்",
+      "question": "அதை இப்போது செய்.",
       "type": "tamil-to-english",
-      "answer": "I use do"
+      "answer": "Do it now"
     },
     {
-      "question": "அவன் செய் பார்க்கிறான்",
+      "question": "நான் என் வேலையைச் செய்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "He sees do"
+      "answer": "I do my work"
     },
     {
-      "question": "அவள் செய் கொடுக்கிறாள்",
+      "question": "தயவுசெய்து எனக்கு உதவி செய்.",
       "type": "tamil-to-english",
-      "answer": "She gives do"
+      "answer": "Please do help me"
+    },
+    {
+      "question": "நீ இந்த வேலையைச் செய்கிறாயா?",
+      "type": "tamil-to-english",
+      "answer": "Do you do this work"
+    },
+    {
+      "question": "அதை தினமும் செய்.",
+      "type": "tamil-to-english",
+      "answer": "Do it daily"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Do'."
+  "rule": "Rule: Standard grammar focus for beginner word 'Do'.",
+  "vocabularies": [
+    {
+      "word": "Do",
+      "meaning": "செய்"
+    },
+    {
+      "word": "it",
+      "meaning": "அது"
+    },
+    {
+      "word": "now",
+      "meaning": "இப்போது"
+    },
+    {
+      "word": "work",
+      "meaning": "வேலை"
+    },
+    {
+      "word": "help",
+      "meaning": "உதவி"
+    }
+  ]
 };

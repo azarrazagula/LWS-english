@@ -5,6 +5,28 @@ export const lesson8: Omit<Lesson, 'level'> = {
   "englishWord": "Is",
   "tamilMeaning": "இருக்கிறான் / இருக்கிறாள் / இருக்கிறது",
   "englishExplanation": "ஒருமை பெயர்களுடன் (He, She, It) நிகழ்காலத்தில் 'Is' பயன்படுத்த வேண்டும்.",
+  "vocabularies": [
+    {
+      "word": "is",
+      "meaning": "இருக்கிறது / இருக்கிறான்"
+    },
+    {
+      "word": "happy",
+      "meaning": "மகிழ்ச்சியாக"
+    },
+    {
+      "word": "late",
+      "meaning": "தாமதமாக"
+    },
+    {
+      "word": "cold",
+      "meaning": "குளிர்ச்சியாக"
+    },
+    {
+      "word": "nice",
+      "meaning": "நல்லது"
+    }
+  ],
   "sentences": [
     {
       "english": "He is happy.",
@@ -28,23 +50,35 @@ export const lesson8: Omit<Lesson, 'level'> = {
   "speakingPractice": [
     "He is happy.",
     "She is late.",
-    "It is cold."
+    "It is cold.",
+    "It is nice.",
+    "Is it cold today?"
   ],
   "translationPractice": [
     {
-      "question": "அவன் மகிழ்ச்சியாக இருக்கிறான்",
+      "question": "அவன் மகிழ்ச்சியாக இருக்கிறான்.",
       "type": "tamil-to-english",
       "answer": "He is happy"
     },
     {
-      "question": "அவள் தாமதமாக வருகிறாள்",
+      "question": "அவள் தாமதமாக வந்திருக்கிறாள்.",
       "type": "tamil-to-english",
       "answer": "She is late"
     },
     {
-      "question": "அது குளிர்ச்சியாக இருக்கிறது",
+      "question": "அது குளிர்ச்சியாக இருக்கிறது.",
       "type": "tamil-to-english",
       "answer": "It is cold"
+    },
+    {
+      "question": "அது நன்றாக இருக்கிறது.",
+      "type": "tamil-to-english",
+      "answer": "It is nice"
+    },
+    {
+      "question": "இன்று குளிர்ச்சியாக இருக்கிறதா?",
+      "type": "tamil-to-english",
+      "answer": "Is it cold today"
     }
   ],
   "rule": "Rule: 'Is' is used with singular pronouns (He, She, It) in present tense."

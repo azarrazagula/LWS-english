@@ -27,6 +27,7 @@ export interface Lesson {
   speakingPractice: string[];
   translationPractice: TranslationPracticeItem[]; // updated: must contain 3 items
   rule: string;
+  vocabularies?: { word: string; meaning: string; }[];
 }
 
 export interface Progress {

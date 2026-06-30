@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Volume2, CheckCircle2, Smile, AlertCircle } from 'lucide-react';
 import { Lesson } from '../../types';
@@ -6,7 +6,7 @@ import { Lesson } from '../../types';
 /**
  * LWS-English: Beginner Level Lesson View Component
  * Purpose: Renders beginner lessons (L1 to L30). Displays basic word meanings, 
- * word breakdown cards, speaking practice, and a 3-sentence translation system 
+ * word breakdown cards, speaking practice, and a translation system 
  * where users earn stars for correct translations.
  */
 
@@ -24,16 +24,26 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
   // state: tracks how many times the user read the phrase out loud (target is 5)
   const [speakCount, setSpeakCount] = useState<number>(0);
   
-  // state: tracks the index (0, 1, or 2) of the current active sentence in Practice Center
+  // state: tracks the index of the current active sentence in Practice Center
   const [currentQIndex, setCurrentQIndex] = useState<number>(0);
-  // state: stores the user's text inputs for all 3 translation questions
-  const [userInputs, setUserInputs] = useState<string[]>(['', '', '']);
-  // state: flags whether each of the 3 questions has been checked
-  const [checkedState, setCheckedState] = useState<boolean[]>([false, false, false]);
-  // state: tracks if each of the 3 checked answers is correct (determines stars earned)
-  const [correctState, setCorrectState] = useState<boolean[]>([false, false, false]);
+  // state: stores the user's text inputs for all translation questions
+  const [userInputs, setUserInputs] = useState<string[]>(() => Array(lesson.translationPractice.length).fill(''));
+  // state: flags whether each of the questions has been checked
+  const [checkedState, setCheckedState] = useState<boolean[]>(() => Array(lesson.translationPractice.length).fill(false));
+  // state: tracks if each of the checked answers is correct (determines stars earned)
+  const [correctState, setCorrectState] = useState<boolean[]>(() => Array(lesson.translationPractice.length).fill(false));
   // state: controls whether the correct answer hint is displayed
   const [showHint, setShowHint] = useState<boolean>(false);
+
+  // Reset all states dynamically when lesson changes
+  useEffect(() => {
+    setSpeakCount(0);
+    setCurrentQIndex(0);
+    setUserInputs(Array(lesson.translationPractice.length).fill(''));
+    setCheckedState(Array(lesson.translationPractice.length).fill(false));
+    setCorrectState(Array(lesson.translationPractice.length).fill(false));
+    setShowHint(false);
+  }, [lesson.id, lesson.translationPractice.length]);
 
   /**
    * Action: Normalizes and checks the user's input against the correct target translation.
@@ -91,6 +101,15 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
     }
   };
 
+  // Resets all practice questions and inputs to allow retrying
+  const handleResetPractice = () => {
+    setUserInputs(Array(lesson.translationPractice.length).fill(''));
+    setCheckedState(Array(lesson.translationPractice.length).fill(false));
+    setCorrectState(Array(lesson.translationPractice.length).fill(false));
+    setCurrentQIndex(0);
+    setShowHint(false);
+  };
+
   // Increments read count when user taps the read out loud bubbles
   const handleNextSpeak = () => {
     if (speakCount < 5) {
@@ -104,7 +123,15 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
   const canFinish = true;
 
   // Star calculation: 1 star for each question answered correctly on submit
-  const earnedStars = correctState.filter(Boolean).length;
+  const correctCount = correctState.filter(Boolean).length;
+  let earnedStars = 0;
+  if (correctCount === lesson.translationPractice.length) {
+    earnedStars = 3;
+  } else if (correctCount >= Math.ceil(lesson.translationPractice.length / 2)) {
+    earnedStars = 2;
+  } else if (correctCount > 0) {
+    earnedStars = 1;
+  }
 
   return (
     <div className="relative z-10 max-w-4xl mx-auto px-4 py-8">
@@ -149,19 +176,35 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
             Word Meaning & Breakdowns
           </h2>
 
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-white/5">
-            <div className="text-center md:text-left">
-              <span className="text-xs text-slate-500 uppercase tracking-widest">English Word</span>
-              <div className="text-5xl md:text-6xl font-black text-white mt-1">{lesson.englishWord}</div>
+          {lesson.vocabularies && lesson.vocabularies.length > 0 ? (
+            /* Premium 5-Column Vocabulary Words Grid */
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 pb-6 border-b border-white/5">
+              {lesson.vocabularies.map((v, vIdx) => (
+                <div 
+                  key={vIdx} 
+                  className="glass-panel p-4 rounded-2xl border border-white/5 bg-slate-950/20 text-center hover:border-indigo-500/30 transition-all duration-300 hover:scale-102 flex flex-col justify-center min-h-[92px]"
+                >
+                  <span className="text-[9px] text-slate-500 uppercase tracking-widest block mb-1">Word {vIdx + 1}</span>
+                  <div className="text-lg font-black text-white">{v.word}</div>
+                  <div className="text-xs text-amber-400 font-bold mt-1 font-content leading-tight">{v.meaning}</div>
+                </div>
+              ))}
             </div>
-            
-            <div className="text-2xl text-slate-600 font-bold hidden md:block">➔</div>
-            
-            <div className="text-center md:text-right">
-              <span className="text-xs text-slate-500 uppercase tracking-widest">Tamil Meaning</span>
-              <div className="text-3xl md:text-4xl font-extrabold text-amber-400 mt-1">{lesson.tamilMeaning}</div>
+          ) : (
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-white/5">
+              <div className="text-center md:text-left">
+                <span className="text-xs text-slate-500 uppercase tracking-widest">English Word</span>
+                <div className="text-5xl md:text-6xl font-black text-white mt-1">{lesson.englishWord}</div>
+              </div>
+              
+              <div className="text-2xl text-slate-600 font-bold hidden md:block">➔</div>
+              
+              <div className="text-center md:text-right">
+                <span className="text-xs text-slate-500 uppercase tracking-widest">Tamil Meaning</span>
+                <div className="text-3xl md:text-4xl font-extrabold text-amber-400 mt-1">{lesson.tamilMeaning}</div>
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Breakdown cards for easy syllable learning */}
           <div className="mt-8 space-y-6">
@@ -290,7 +333,7 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
           </div>
         </motion.section>
 
-        {/* STEP 4: Translate Practice (3 Sentences) */}
+        {/* STEP 4: Translate Practice */}
         <motion.section 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -306,7 +349,7 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
             </h2>
             <div className="flex items-center gap-2">
               <span className="text-xs font-semibold text-slate-400 bg-slate-900 border border-white/5 px-3 py-1 rounded-full">
-                Sentence {currentQIndex + 1} of 3
+                Sentence {currentQIndex + 1} of {lesson.translationPractice.length}
               </span>
             </div>
           </div>
@@ -326,7 +369,7 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
             <input
               type="text"
               disabled={checkedState[currentQIndex]}
-              value={userInputs[currentQIndex]}
+              value={userInputs[currentQIndex] || ''}
               onChange={(e) => handleInputChange(e.target.value)}
               placeholder="Type your English translation here..."
               className="w-full bg-slate-950/60 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-semibold text-sm"
@@ -385,13 +428,13 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
                 {!checkedState[currentQIndex] ? (
                   <button
                     type="button"
-                    disabled={userInputs[currentQIndex].trim() === ''}
+                    disabled={!userInputs[currentQIndex] || userInputs[currentQIndex].trim() === ''}
                     onClick={checkTranslation}
                     className="px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-indigo-600 hover:bg-indigo-500 text-white shadow-md"
                   >
                     Check
                   </button>
-                ) : currentQIndex < 2 ? (
+                ) : currentQIndex < lesson.translationPractice.length - 1 ? (
                   <button
                     type="button"
                     onClick={handleNextQuestion}
@@ -400,9 +443,14 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
                     Next
                   </button>
                 ) : (
-                  <div className="px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-emerald-600 text-white cursor-default">
-                    Finished!
-                  </div>
+                  <button
+                    type="button"
+                    onClick={handleResetPractice}
+                    className="px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-emerald-600 hover:bg-emerald-500 text-white shadow-md cursor-pointer transition-all active:scale-95 flex items-center gap-1"
+                    title="Click to reset and practice again!"
+                  >
+                    Finished! (Retry 🔄)
+                  </button>
                 )}
               </div>
             </div>

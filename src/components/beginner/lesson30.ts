@@ -7,41 +7,71 @@ export const lesson30: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 30: 'Eat' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use eat in a sentence.",
-      "tamil": "நான் சாப்பிடு என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "Eat an apple.",
+      "tamil": "ஒரு ஆப்பிள் சாப்பிடு.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "Eat",
+          "meaning": "சாப்பிடு"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say Eat.",
-    "I know Eat now.",
-    "Practice word Eat daily."
+    "Eat an apple.",
+    "Eat good food.",
+    "Eat fresh fruits daily.",
+    "Do you eat daily?",
+    "Eat an apple daily."
   ],
   "translationPractice": [
     {
-      "question": "நான் சாப்பிடு பயன்படுத்துகிறேன்",
+      "question": "ஒரு ஆப்பிள் சாப்பிடு.",
       "type": "tamil-to-english",
-      "answer": "I use eat"
+      "answer": "Eat an apple"
     },
     {
-      "question": "அவன் சாப்பிடு பார்க்கிறான்",
+      "question": "நல்ல உணவு சாப்பிடு.",
       "type": "tamil-to-english",
-      "answer": "He sees eat"
+      "answer": "Eat good food"
     },
     {
-      "question": "அவள் சாப்பிடு கொடுக்கிறாள்",
+      "question": "தினமும் புதிய பழங்களைச் சாப்பிடு.",
       "type": "tamil-to-english",
-      "answer": "She gives eat"
+      "answer": "Eat fresh fruits daily"
+    },
+    {
+      "question": "நீ தினமும் சாப்பிடுகிறாயா?",
+      "type": "tamil-to-english",
+      "answer": "Do you eat daily"
+    },
+    {
+      "question": "தினமும் ஒரு ஆப்பிள் சாப்பிடு.",
+      "type": "tamil-to-english",
+      "answer": "Eat an apple daily"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Eat'."
+  "rule": "Rule: Standard grammar focus for beginner word 'Eat'.",
+  "vocabularies": [
+    {
+      "word": "Eat",
+      "meaning": "சாப்பிடு"
+    },
+    {
+      "word": "apple",
+      "meaning": "ஆப்பிள்"
+    },
+    {
+      "word": "food",
+      "meaning": "உணவு"
+    },
+    {
+      "word": "fruits",
+      "meaning": "பழங்கள்"
+    },
+    {
+      "word": "daily",
+      "meaning": "தினமும்"
+    }
+  ]
 };

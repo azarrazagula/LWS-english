@@ -7,41 +7,71 @@ export const lesson17: Omit<Lesson, 'level'> = {
   "englishExplanation": "Beginner பாடம் 17: 'On' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
   "sentences": [
     {
-      "english": "I will use on in a sentence.",
-      "tamil": "நான் மேலே என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்துவேன்.",
+      "english": "Put it on the table.",
+      "tamil": "அதை மேசையின் மீது வை.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "use",
-          "meaning": "பயன்படுத்து"
+          "word": "On",
+          "meaning": "மேலே"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Let's say On.",
-    "I know On now.",
-    "Practice word On daily."
+    "Put it on the table.",
+    "Stand on the floor.",
+    "It is on the desk.",
+    "Is it on the table?",
+    "Do not sit on the floor."
   ],
   "translationPractice": [
     {
-      "question": "நான் மேலே பயன்படுத்துகிறேன்",
+      "question": "அதை மேசையின் மீது வை.",
       "type": "tamil-to-english",
-      "answer": "I use on"
+      "answer": "Put it on the table"
     },
     {
-      "question": "அவன் மேலே பார்க்கிறான்",
+      "question": "தரையில் நில்.",
       "type": "tamil-to-english",
-      "answer": "He sees on"
+      "answer": "Stand on the floor"
     },
     {
-      "question": "அவள் மேலே கொடுக்கிறாள்",
+      "question": "அது மேசை மீது இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "She gives on"
+      "answer": "It is on the desk"
+    },
+    {
+      "question": "அது மேசையின் மீது இருக்கிறதா?",
+      "type": "tamil-to-english",
+      "answer": "Is it on the table"
+    },
+    {
+      "question": "தரையில் உட்காராதே.",
+      "type": "tamil-to-english",
+      "answer": "Do not sit on the floor"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'On'."
+  "rule": "Rule: Standard grammar focus for beginner word 'On'.",
+  "vocabularies": [
+    {
+      "word": "On",
+      "meaning": "மேலே"
+    },
+    {
+      "word": "the",
+      "meaning": "குறிப்பிட்ட"
+    },
+    {
+      "word": "table",
+      "meaning": "மேசை"
+    },
+    {
+      "word": "floor",
+      "meaning": "தரை"
+    },
+    {
+      "word": "desk",
+      "meaning": "மேசை"
+    }
+  ]
 };
