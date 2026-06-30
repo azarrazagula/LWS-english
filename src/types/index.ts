@@ -25,13 +25,14 @@ export interface Lesson {
   englishExplanation: string; // word by word translation in tamil text
   sentences: SentenceItem[];
   speakingPractice: string[];
-  translationPractice: TranslationPracticeItem[];
+  translationPractice: TranslationPracticeItem[]; // updated: must contain 3 items
   rule: string;
 }
 
 export interface Progress {
   completedLessons: number[]; // ids of completed lessons
   testScores: Record<number, number>; // test index (e.g. 10, 20) -> score (0-100)
+  lessonStars: Record<number, number>; // lessonId -> stars earned (0 to 3)
   selectedLevel: Level;
 }
 

@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Play, Check, Lock, Star, Award, BookOpen, MessageSquare, Zap } from 'lucide-react';
+import { Play, Check, Star, Award, BookOpen, MessageSquare, Zap } from 'lucide-react';
 import { Level } from '../types';
 import { lessons } from '../data/lessons';
 
 interface DashboardProps {
   completedLessons: number[];
   testScores: Record<number, number>;
+  lessonStars: Record<number, number>;
   selectedLevel: Level;
   onSelectLevel: (level: Level) => void;
   onStartLesson: (lessonId: number) => void;
@@ -16,6 +17,7 @@ interface DashboardProps {
 export const Dashboard: React.FC<DashboardProps> = ({
   completedLessons,
   testScores,
+  lessonStars,
   selectedLevel,
   onSelectLevel,
   onStartLesson,
@@ -135,7 +137,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
       </motion.div>
 
-      {/* Level Navigation Tabs */}
+      {/* Level Navigation Tabs - All Unlocked for Testing */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
         {(['beginner', 'intermediate', 'advanced', 'expert'] as Level[]).map((lvl, index) => {
           const isActive = selectedLevel === lvl;
@@ -143,36 +145,25 @@ export const Dashboard: React.FC<DashboardProps> = ({
           const icons = [BookOpen, MessageSquare, Award, Star];
           const IconComp = icons[index];
 
-          // Check if previous level is unlocked (at least 20 lessons completed of previous level)
-          const isUnlocked = index === 0 || completedLessons.filter(
-            id => id > (index - 1) * 30 && id <= index * 30
-          ).length >= 25; // Unlock next level if 25/30 of previous are done
-
           return (
             <button
               key={lvl}
-              disabled={!isUnlocked}
               onClick={() => onSelectLevel(lvl)}
               className={`relative flex items-center justify-center gap-3 px-5 py-4 rounded-xl font-bold transition-all duration-300 border ${
                 isActive 
                   ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.4)]'
-                  : isUnlocked
-                  ? 'glass-panel text-slate-300 border-white/5 hover:bg-white/5'
-                  : 'bg-slate-900/40 text-slate-600 border-white/5 cursor-not-allowed'
+                  : 'glass-panel text-slate-300 border-white/5 hover:bg-white/5'
               }`}
             >
-              <IconComp className={`w-5 h-5 ${isActive ? 'text-white' : isUnlocked ? 'text-indigo-400' : 'text-slate-700'}`} />
+              <IconComp className={`w-5 h-5 ${isActive ? 'text-white' : 'text-indigo-400'}`} />
               <span className="text-sm tracking-wide">{label}</span>
-              {!isUnlocked && (
-                <Lock className="w-4 h-4 text-slate-700 absolute right-3" />
-              )}
             </button>
           );
         })}
       </div>
 
       {/* The Serpentine Graduation Pathway Map */}
-      <div className="glass-panel rounded-3xl p-8 border border-white/5 relative overflow-hidden bg-slate-950/20">
+      <div className="glass-panel rounded-3xl p-4 md:p-8 border border-white/5 relative overflow-hidden bg-slate-950/20">
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-950/5 via-transparent to-pink-950/5 pointer-events-none" />
 
         <div className="text-center mb-10">
@@ -181,102 +172,205 @@ export const Dashboard: React.FC<DashboardProps> = ({
             Learning Pathway Map
           </h2>
           <p className="text-xs font-content text-slate-400 mt-1">
-            Click the active nodes or Assessment Stars to complete your journey.
+            Click the active nodes or Assessment Stars to complete your journey. (All unlocked for testing)
           </p>
         </div>
 
-        {/* serpetine path rows */}
-        <div className="flex flex-col gap-10 md:gap-14 max-w-lg md:max-w-3xl mx-auto relative">
-          {rows.map((rowItems, rowIndex) => (
-            <div 
-              key={rowIndex} 
-              className={`flex justify-around items-center gap-2 md:gap-6 ${
-                rowIndex % 2 === 1 ? 'flex-row-reverse' : ''
-              }`}
-            >
-              {rowItems.map(lessonId => {
-                const isCompleted = completedLessons.includes(lessonId);
-                const isAssessmentStar = lessonId % 10 === 0;
-                const isCurrent = lessonId === currentActiveLessonId;
-                const isLocked = lessonId > currentActiveLessonId;
-                const hasScore = testScores[lessonId] !== undefined;
+        {/* Pathway Map - Serpentine on Desktop/Tablet, Centered Vertical Alternating Track on Mobile */}
+        <div className="max-w-4xl mx-auto relative">
+          
+          {/* MOBILE PATHWAY: 1-Column Winding Snake Layout (< 768px) */}
+          <div className="flex flex-col items-center gap-12 md:hidden py-4 relative">
+            {/* Center Vertical Winding connection line */}
+            <div className="absolute top-10 bottom-10 w-[3px] bg-indigo-500/10 border-l border-dashed border-indigo-500/30 left-1/2 transform -translate-x-1/2 z-0" />
+            
+            {Array.from({ length: 30 }).map((_, idx) => {
+              const lessonId = levelOffset + idx + 1;
+              const isCompleted = completedLessons.includes(lessonId);
+              const isAssessmentStar = lessonId % 10 === 0;
+              const isCurrent = lessonId === currentActiveLessonId;
+              const hasScore = testScores[lessonId] !== undefined;
+              const starsEarned = lessonStars[lessonId] || 0;
 
-                // Load lesson details
-                const lessonObj = lessons.find(l => l.id === lessonId);
-                const label = lessonObj ? lessonObj.englishWord : `#${lessonId}`;
+              const lessonObj = lessons.find(l => l.id === lessonId);
+              const label = lessonObj ? lessonObj.englishWord : `#${lessonId}`;
 
-                return (
-                  <div key={lessonId} className="flex flex-col items-center relative group">
-                    {/* Node Connection Line decoration (mobile offset connector) */}
-                    <div className="absolute top-1/2 left-full w-full h-[2px] bg-slate-800 pointer-events-none z-0 group-last:hidden hidden md:block" />
+              // Alternate horizontal offsets for snake winding feel
+              const windingOffsets = ["translate-x-[-12px]", "translate-x-[0px]", "translate-x-[12px]", "translate-x-[0px]"];
+              const offsetClass = windingOffsets[idx % 4];
 
-                    <motion.button
-                      whileHover={!isLocked ? { scale: 1.15 } : {}}
-                      whileTap={!isLocked ? { scale: 0.95 } : {}}
-                      disabled={isLocked}
-                      onClick={() => {
-                        if (isAssessmentStar) {
-                          onStartTest(lessonId);
-                        } else {
-                          onStartLesson(lessonId);
-                        }
-                      }}
-                      className={`relative w-14 h-14 md:w-20 md:h-20 rounded-full flex flex-col items-center justify-center z-10 transition-all duration-300 ${
-                        isAssessmentStar
-                          ? isCompleted || hasScore
-                            ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 shadow-[0_0_20px_rgba(245,158,11,0.5)] border-2 border-yellow-300'
-                            : isCurrent
-                            ? 'bg-amber-600 text-white animate-pulse border-2 border-amber-300 shadow-[0_0_15px_rgba(245,158,11,0.4)]'
-                            : 'bg-slate-900 border border-slate-700 text-slate-500 cursor-not-allowed'
-                          : isCompleted
-                          ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-[0_0_15px_rgba(16,185,129,0.3)]'
-                          : isCurrent
-                          ? 'bg-indigo-600 text-white border-2 border-indigo-300 shadow-[0_0_15px_rgba(99,102,241,0.5)] ring-4 ring-indigo-500/20'
-                          : 'bg-slate-900 border border-slate-800 text-slate-500 cursor-not-allowed'
-                      }`}
-                    >
-                      {/* Pulse Ring for active node */}
-                      {isCurrent && (
-                        <span className="absolute inset-0 rounded-full animate-ping border border-indigo-400 opacity-60" />
-                      )}
-
-                      {/* Icon based on status */}
-                      {isAssessmentStar ? (
-                        <Star className={`w-6 h-6 md:w-8 md:h-8 ${isCompleted || hasScore ? 'fill-current' : ''}`} />
-                      ) : isCompleted ? (
-                        <Check className="w-5 h-5 md:w-7 md:h-7 stroke-[3px]" />
-                      ) : isLocked ? (
-                        <Lock className="w-4 h-4 md:w-6 md:h-6 opacity-40" />
-                      ) : (
-                        <Play className="w-5 h-5 md:w-6 md:h-6 fill-current stroke-none" />
-                      )}
-
-                      {/* Floating tag for lesson number */}
-                      <span className="absolute -top-6 text-[10px] md:text-xs text-slate-400 font-content font-bold whitespace-nowrap bg-slate-950/70 border border-white/5 px-2 py-0.5 rounded-full">
-                        {isAssessmentStar ? 'Test' : `L${lessonId}`}
-                      </span>
-
-                      {/* Star Score text overlay */}
-                      {isAssessmentStar && hasScore && (
-                        <span className="absolute -bottom-6 text-[10px] text-amber-400 font-black whitespace-nowrap bg-slate-950/80 px-2 py-0.5 rounded-full border border-amber-400/20">
-                          {testScores[lessonId]}/100
-                        </span>
-                      )}
-                    </motion.button>
-
-                    {/* Word Tag beneath non-assessment nodes */}
-                    {!isAssessmentStar && (
-                      <span className={`text-[10px] md:text-sm mt-3 font-semibold text-center whitespace-nowrap transition-colors max-w-[80px] overflow-hidden text-ellipsis ${
-                        isLocked ? 'text-slate-600' : isCurrent ? 'text-indigo-300 font-bold' : 'text-slate-300'
-                      }`}>
-                        {label}
-                      </span>
+              return (
+                <div key={lessonId} className={`flex flex-col items-center relative z-10 ${offsetClass}`}>
+                  <motion.button
+                    whileHover={{ scale: 1.12 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => {
+                      if (isAssessmentStar) onStartTest(lessonId);
+                      else onStartLesson(lessonId);
+                    }}
+                    className={`relative w-16 h-16 rounded-full flex flex-col items-center justify-center transition-all duration-300 ${
+                      isAssessmentStar
+                        ? isCompleted || hasScore
+                          ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 shadow-[0_0_15px_rgba(245,158,11,0.5)] border-2 border-yellow-300'
+                          : 'bg-amber-600/30 border border-amber-500/50 text-amber-300 hover:bg-amber-500/30'
+                        : isCompleted
+                        ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-[0_0_12px_rgba(16,185,129,0.3)]'
+                        : isCurrent
+                        ? 'bg-indigo-600 text-white border-2 border-indigo-300 shadow-[0_0_15px_rgba(99,102,241,0.5)]'
+                        : 'bg-indigo-950/40 border border-indigo-500/20 text-indigo-300 hover:bg-indigo-900/30'
+                    }`}
+                  >
+                    {isCurrent && <span className="absolute inset-0 rounded-full animate-ping border border-indigo-400 opacity-60 pointer-events-none" />}
+                    {isAssessmentStar ? (
+                      <Star className={`w-6 h-6 ${isCompleted || hasScore ? 'fill-current' : ''}`} />
+                    ) : isCompleted ? (
+                      <Check className="w-6 h-6 stroke-[3px]" />
+                    ) : (
+                      <Play className="w-5 h-5 fill-current stroke-none" />
                     )}
-                  </div>
-                );
-              })}
-            </div>
-          ))}
+
+                    <span className="absolute -top-6 text-[9px] text-slate-400 font-bold whitespace-nowrap bg-slate-950/80 px-2 py-0.5 rounded-full border border-white/5">
+                      {isAssessmentStar ? 'Test' : `L${lessonId}`}
+                    </span>
+                  </motion.button>
+
+                  {/* Word title and earned stars */}
+                  {!isAssessmentStar ? (
+                    <div className="mt-2 text-center">
+                      <div className="text-xs font-semibold text-slate-200">{label}</div>
+                      {/* Star Reward display below L-tags */}
+                      <div className="flex justify-center gap-0.5 mt-1">
+                        {[1, 2, 3].map((starIdx) => (
+                          <Star 
+                            key={starIdx} 
+                            className={`w-3 h-3 ${starIdx <= starsEarned ? 'text-amber-400 fill-amber-400' : 'text-slate-800'}`} 
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    hasScore && (
+                      <div className="text-[10px] text-amber-400 font-black mt-2 bg-slate-950/80 px-2 py-0.5 rounded-full border border-amber-400/20">
+                        {testScores[lessonId]}/100
+                      </div>
+                    )
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* DESKTOP/TABLET PATHWAY: Winding Grid with clean connections (>= 768px) */}
+          <div className="hidden md:flex flex-col gap-16 py-6 max-w-3xl mx-auto">
+            {rows.map((rowItems, rowIndex) => (
+              <div 
+                key={rowIndex} 
+                className="flex justify-around items-center relative"
+              >
+                {rowItems.map((lessonId, colIndex) => {
+                  const isCompleted = completedLessons.includes(lessonId);
+                  const isAssessmentStar = lessonId % 10 === 0;
+                  const isCurrent = lessonId === currentActiveLessonId;
+                  const hasScore = testScores[lessonId] !== undefined;
+                  const starsEarned = lessonStars[lessonId] || 0;
+
+                  const lessonObj = lessons.find(l => l.id === lessonId);
+                  const label = lessonObj ? lessonObj.englishWord : `#${lessonId}`;
+
+                  // serpetine direction math
+                  const isEvenRow = rowIndex % 2 === 0;
+                  
+                  // Connector classes logic
+                  let connectorElement = null;
+                  const lineStyle = "absolute h-[2px] bg-slate-800 pointer-events-none z-0";
+                  
+                  if (colIndex < 4) {
+                    // Horizontal link line
+                    // If row is even (L->R), line points right. If row is odd (R->L), line points left.
+                    const leftPos = isEvenRow ? 'left-1/2 w-full' : 'right-1/2 w-full';
+                    connectorElement = (
+                      <div className={`${lineStyle} ${leftPos} top-1/2 -translate-y-1/2`} />
+                    );
+                  } else if (rowIndex < 5) {
+                    // Last node of row connects vertically to the first node of next row
+                    connectorElement = (
+                      <div className="absolute w-[2px] bg-slate-800 pointer-events-none z-0 top-1/2 left-1/2 -translate-x-1/2 h-[72px]" />
+                    );
+                  }
+
+                  return (
+                    <div key={lessonId} className="flex flex-col items-center relative group">
+                      {/* Connection line */}
+                      {connectorElement}
+
+                      <motion.button
+                        whileHover={{ scale: 1.12 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => {
+                          if (isAssessmentStar) onStartTest(lessonId);
+                          else onStartLesson(lessonId);
+                        }}
+                        className={`relative w-20 h-20 rounded-full flex flex-col items-center justify-center z-10 transition-all duration-300 ${
+                          isAssessmentStar
+                            ? isCompleted || hasScore
+                              ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 shadow-[0_0_20px_rgba(245,158,11,0.5)] border-2 border-yellow-300'
+                              : 'bg-amber-600/30 border border-amber-500/50 text-amber-300 hover:bg-amber-500/30'
+                            : isCompleted
+                            ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-[0_0_15px_rgba(16,185,129,0.3)]'
+                            : isCurrent
+                            ? 'bg-indigo-600 text-white border-2 border-indigo-300 shadow-[0_0_15px_rgba(99,102,241,0.5)]'
+                            : 'bg-indigo-950/40 border border-indigo-500/20 text-indigo-300 hover:bg-indigo-900/30'
+                        }`}
+                      >
+                        {isCurrent && <span className="absolute inset-0 rounded-full animate-ping border border-indigo-400 opacity-60 pointer-events-none" />}
+                        {isAssessmentStar ? (
+                          <Star className={`w-8 h-8 ${isCompleted || hasScore ? 'fill-current' : ''}`} />
+                        ) : isCompleted ? (
+                          <Check className="w-7 h-7 stroke-[3px]" />
+                        ) : (
+                          <Play className="w-6 h-6 fill-current stroke-none" />
+                        )}
+
+                        <span className="absolute -top-6 text-[10px] text-slate-400 font-bold whitespace-nowrap bg-slate-950/80 px-2 py-0.5 rounded-full border border-white/5">
+                          {isAssessmentStar ? 'Test' : `L${lessonId}`}
+                        </span>
+                      </motion.button>
+
+                      {/* Word text and stars under node */}
+                      {!isAssessmentStar ? (
+                        <div className="mt-3 text-center">
+                          <span className="text-sm font-semibold text-slate-200 block max-w-[80px] overflow-hidden text-ellipsis whitespace-nowrap">
+                            {label}
+                          </span>
+                          
+                          {/* 3-Star rewards display */}
+                          <div className="flex justify-center gap-0.5 mt-1.5">
+                            {[1, 2, 3].map((starIdx) => (
+                              <Star 
+                                key={starIdx} 
+                                className={`w-3.5 h-3.5 ${
+                                  starIdx <= starsEarned 
+                                    ? 'text-amber-400 fill-amber-400' 
+                                    : 'text-slate-800'
+                                }`} 
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        hasScore && (
+                          <span className="absolute -bottom-6 text-[10px] text-amber-400 font-black whitespace-nowrap bg-slate-950/80 px-2 py-0.5 rounded-full border border-amber-400/20">
+                            {testScores[lessonId]}/100
+                          </span>
+                        )
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+
         </div>
       </div>
     </div>
