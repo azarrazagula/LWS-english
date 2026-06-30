@@ -1,3 +1,4 @@
+import { Test } from '../../types';
 import { Lesson } from '../../types';
 import { lesson1 } from './lesson1';
 import { lesson2 } from './lesson2';
@@ -61,4 +62,14 @@ export const beginnerLessons: Lesson[] = [
   { ...lesson28, level: 'beginner' },
   { ...lesson29, level: 'beginner' },
   { ...lesson30, level: 'beginner' },
+];
+
+import { test10 } from './test10';
+import { test20 } from './test20';
+import { test30 } from './test30';
+
+export const beginnerAssessments: Test[] = [
+  test10,
+  test20,
+  test30
 ];

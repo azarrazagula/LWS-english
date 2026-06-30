@@ -1,5 +1,5 @@
-import { Lesson, Level } from '../types';
-import { beginnerLessons } from '../components/beginner/lessons';
+import { Lesson, Level, Test } from '../types';
+import { beginnerLessons, beginnerAssessments } from '../components/beginner/lessons';
 import { intermediateLessons } from '../components/intermediate/lessons';
 import { advancedLessons } from '../components/advanced/lessons';
 import { expertLessons } from '../components/expert/lessons';
@@ -12,9 +12,9 @@ export const lessons: Lesson[] = [
   ...expertLessons
 ];
 
-// Structured Assessments for each 10-lesson milestone (12 Tests total)
-export const assessments = Array.from({ length: 12 }, (_, idx) => {
-  const testId = (idx + 1) * 10;
+// Structured Assessments for levels (Intermediate, Advanced, Expert dynamically compiled)
+const dynamicAssessments: Test[] = Array.from({ length: 9 }, (_, idx) => {
+  const testId = (idx + 4) * 10;
   const levelIndex = Math.floor((testId - 1) / 30);
   const levels: Level[] = ['beginner', 'intermediate', 'advanced', 'expert'];
   const level = levels[levelIndex];
@@ -86,3 +86,9 @@ export const assessments = Array.from({ length: 12 }, (_, idx) => {
     ]
   };
 });
+
+// Combine static beginner assessments with other dynamic assessments
+export const assessments: Test[] = [
+  ...beginnerAssessments,
+  ...dynamicAssessments
+];
