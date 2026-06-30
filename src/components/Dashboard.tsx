@@ -176,96 +176,13 @@ export const Dashboard: React.FC<DashboardProps> = ({
           </p>
         </div>
 
-        {/* Pathway Map - Serpentine on Desktop/Tablet, Centered Vertical Alternating Track on Mobile */}
-        <div className="max-w-4xl mx-auto relative">
-          
-          {/* MOBILE PATHWAY: 1-Column Winding Snake Layout (< 768px) */}
-          <div className="flex flex-col items-center gap-12 md:hidden py-4 relative">
-            {/* Center Vertical Winding connection line */}
-            <div className="absolute top-10 bottom-10 w-[3px] bg-indigo-500/10 border-l border-dashed border-indigo-500/30 left-1/2 transform -translate-x-1/2 z-0" />
-            
-            {Array.from({ length: 30 }).map((_, idx) => {
-              const lessonId = levelOffset + idx + 1;
-              const isCompleted = completedLessons.includes(lessonId);
-              const isAssessmentStar = lessonId % 10 === 0;
-              const isCurrent = lessonId === currentActiveLessonId;
-              const hasScore = testScores[lessonId] !== undefined;
-              const starsEarned = lessonStars[lessonId] || 0;
-
-              const lessonObj = lessons.find(l => l.id === lessonId);
-              const label = lessonObj ? lessonObj.englishWord : `#${lessonId}`;
-
-              // Alternate horizontal offsets for snake winding feel
-              const windingOffsets = ["translate-x-[-12px]", "translate-x-[0px]", "translate-x-[12px]", "translate-x-[0px]"];
-              const offsetClass = windingOffsets[idx % 4];
-
-              return (
-                <div key={lessonId} className={`flex flex-col items-center relative z-10 ${offsetClass}`}>
-                  <motion.button
-                    whileHover={{ scale: 1.12 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => {
-                      if (isAssessmentStar) onStartTest(lessonId);
-                      else onStartLesson(lessonId);
-                    }}
-                    className={`relative w-16 h-16 rounded-full flex flex-col items-center justify-center transition-all duration-300 ${
-                      isAssessmentStar
-                        ? isCompleted || hasScore
-                          ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 shadow-[0_0_15px_rgba(245,158,11,0.5)] border-2 border-yellow-300'
-                          : 'bg-amber-600/30 border border-amber-500/50 text-amber-300 hover:bg-amber-500/30'
-                        : isCompleted
-                        ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-[0_0_12px_rgba(16,185,129,0.3)]'
-                        : isCurrent
-                        ? 'bg-indigo-600 text-white border-2 border-indigo-300 shadow-[0_0_15px_rgba(99,102,241,0.5)]'
-                        : 'bg-indigo-950/40 border border-indigo-500/20 text-indigo-300 hover:bg-indigo-900/30'
-                    }`}
-                  >
-                    {isCurrent && <span className="absolute inset-0 rounded-full animate-ping border border-indigo-400 opacity-60 pointer-events-none" />}
-                    {isAssessmentStar ? (
-                      <Star className={`w-6 h-6 ${isCompleted || hasScore ? 'fill-current' : ''}`} />
-                    ) : isCompleted ? (
-                      <Check className="w-6 h-6 stroke-[3px]" />
-                    ) : (
-                      <Play className="w-5 h-5 fill-current stroke-none" />
-                    )}
-
-                    <span className="absolute -top-6 text-[9px] text-slate-400 font-bold whitespace-nowrap bg-slate-950/80 px-2 py-0.5 rounded-full border border-white/5">
-                      {isAssessmentStar ? 'Test' : `L${lessonId}`}
-                    </span>
-                  </motion.button>
-
-                  {/* Word title and earned stars */}
-                  {!isAssessmentStar ? (
-                    <div className="mt-2 text-center">
-                      <div className="text-xs font-semibold text-slate-200">{label}</div>
-                      {/* Star Reward display below L-tags */}
-                      <div className="flex justify-center gap-0.5 mt-1">
-                        {[1, 2, 3].map((starIdx) => (
-                          <Star 
-                            key={starIdx} 
-                            className={`w-3 h-3 ${starIdx <= starsEarned ? 'text-amber-400 fill-amber-400' : 'text-slate-800'}`} 
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    hasScore && (
-                      <div className="text-[10px] text-amber-400 font-black mt-2 bg-slate-950/80 px-2 py-0.5 rounded-full border border-amber-400/20">
-                        {testScores[lessonId]}/100
-                      </div>
-                    )
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* DESKTOP/TABLET PATHWAY: Winding Grid with clean connections (>= 768px) */}
-          <div className="hidden md:flex flex-col gap-16 py-6 max-w-3xl mx-auto">
+        {/* Responsive Serpentine Winding Grid (5 Columns) for all viewports */}
+        <div className="max-w-4xl mx-auto relative py-6">
+          <div className="flex flex-col gap-y-10 sm:gap-y-12 lg:gap-y-16 max-w-4xl mx-auto relative">
             {rows.map((rowItems, rowIndex) => (
               <div 
                 key={rowIndex} 
-                className="flex justify-around items-center relative"
+                className="flex w-full relative"
               >
                 {rowItems.map((lessonId, colIndex) => {
                   const isCompleted = completedLessons.includes(lessonId);
@@ -277,29 +194,30 @@ export const Dashboard: React.FC<DashboardProps> = ({
                   const lessonObj = lessons.find(l => l.id === lessonId);
                   const label = lessonObj ? lessonObj.englishWord : `#${lessonId}`;
 
-                  // serpetine direction math
                   const isEvenRow = rowIndex % 2 === 0;
                   
-                  // Connector classes logic
+                  // Connector logic
                   let connectorElement = null;
-                  const lineStyle = "absolute h-[2px] bg-slate-800 pointer-events-none z-0";
                   
                   if (colIndex < 4) {
-                    // Horizontal link line
-                    // If row is even (L->R), line points right. If row is odd (R->L), line points left.
-                    const leftPos = isEvenRow ? 'left-1/2 w-full' : 'right-1/2 w-full';
+                    // Horizontal line goes left-to-right (Col i to Col i+1)
                     connectorElement = (
-                      <div className={`${lineStyle} ${leftPos} top-1/2 -translate-y-1/2`} />
+                      <div className="absolute h-[2px] bg-slate-800 pointer-events-none z-0 left-1/2 w-full top-1/2 -translate-y-1/2" />
                     );
                   } else if (rowIndex < 5) {
-                    // Last node of row connects vertically to the first node of next row
-                    connectorElement = (
-                      <div className="absolute w-[2px] bg-slate-800 pointer-events-none z-0 top-1/2 left-1/2 -translate-x-1/2 h-[72px]" />
-                    );
+                    // Last node of row connects vertically down to next row
+                    // If even row, vertical line goes down from Col 4
+                    // If odd row, vertical line goes down from Col 0
+                    const showVertical = (isEvenRow && colIndex === 4) || (!isEvenRow && colIndex === 0);
+                    if (showVertical) {
+                      connectorElement = (
+                        <div className="absolute w-[2px] bg-slate-800 pointer-events-none z-0 top-1/2 left-1/2 -translate-x-1/2 h-[88px] sm:h-[112px] lg:h-[144px]" />
+                      );
+                    }
                   }
 
                   return (
-                    <div key={lessonId} className="flex flex-col items-center relative group">
+                    <div key={lessonId} className="w-[20%] flex flex-col items-center relative group">
                       {/* Connection line */}
                       {connectorElement}
 
@@ -310,7 +228,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                           if (isAssessmentStar) onStartTest(lessonId);
                           else onStartLesson(lessonId);
                         }}
-                        className={`relative w-20 h-20 rounded-full flex flex-col items-center justify-center z-10 transition-all duration-300 ${
+                        className={`relative w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full flex flex-col items-center justify-center z-10 transition-all duration-300 ${
                           isAssessmentStar
                             ? isCompleted || hasScore
                               ? 'bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 shadow-[0_0_20px_rgba(245,158,11,0.5)] border-2 border-yellow-300'
@@ -324,31 +242,31 @@ export const Dashboard: React.FC<DashboardProps> = ({
                       >
                         {isCurrent && <span className="absolute inset-0 rounded-full animate-ping border border-indigo-400 opacity-60 pointer-events-none" />}
                         {isAssessmentStar ? (
-                          <Star className={`w-8 h-8 ${isCompleted || hasScore ? 'fill-current' : ''}`} />
+                          <Star className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8" />
                         ) : isCompleted ? (
-                          <Check className="w-7 h-7 stroke-[3px]" />
+                          <Check className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 stroke-[3px]" />
                         ) : (
-                          <Play className="w-6 h-6 fill-current stroke-none" />
+                          <Play className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 fill-current stroke-none" />
                         )}
 
-                        <span className="absolute -top-6 text-[10px] text-slate-400 font-bold whitespace-nowrap bg-slate-950/80 px-2 py-0.5 rounded-full border border-white/5">
+                        <span className="absolute -top-6 text-[8px] sm:text-[9px] lg:text-[10px] text-slate-400 font-bold whitespace-nowrap bg-slate-950/80 px-1.5 sm:px-2 py-0.5 rounded-full border border-white/5">
                           {isAssessmentStar ? 'Test' : `L${lessonId}`}
                         </span>
                       </motion.button>
 
                       {/* Word text and stars under node */}
                       {!isAssessmentStar ? (
-                        <div className="mt-3 text-center">
-                          <span className="text-sm font-semibold text-slate-200 block max-w-[80px] overflow-hidden text-ellipsis whitespace-nowrap">
+                        <div className="mt-2 text-center w-full px-1">
+                          <span className="text-[10px] sm:text-xs lg:text-sm font-semibold text-slate-200 block max-w-full overflow-hidden text-ellipsis whitespace-nowrap">
                             {label}
                           </span>
                           
                           {/* 3-Star rewards display */}
-                          <div className="flex justify-center gap-0.5 mt-1.5">
+                          <div className="flex justify-center gap-0.5 mt-1">
                             {[1, 2, 3].map((starIdx) => (
                               <Star 
                                 key={starIdx} 
-                                className={`w-3.5 h-3.5 ${
+                                className={`w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-3.5 lg:h-3.5 ${
                                   starIdx <= starsEarned 
                                     ? 'text-amber-400 fill-amber-400' 
                                     : 'text-slate-800'
@@ -359,7 +277,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                         </div>
                       ) : (
                         hasScore && (
-                          <span className="absolute -bottom-6 text-[10px] text-amber-400 font-black whitespace-nowrap bg-slate-950/80 px-2 py-0.5 rounded-full border border-amber-400/20">
+                          <span className="absolute -bottom-6 text-[8px] sm:text-[9px] lg:text-[10px] text-amber-400 font-black whitespace-nowrap bg-slate-950/80 px-2 py-0.5 rounded-full border border-amber-400/20">
                             {testScores[lessonId]}/100
                           </span>
                         )
@@ -370,7 +288,6 @@ export const Dashboard: React.FC<DashboardProps> = ({
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </div>
