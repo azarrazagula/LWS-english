@@ -5,6 +5,28 @@ export const lesson24: Omit<Lesson, 'level'> = {
   "englishWord": "Get",
   "tamilMeaning": "பெறு",
   "englishExplanation": "Beginner பாடம் 24: 'Get' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "vocabularies": [
+    {
+      "word": "Get",
+      "meaning": "பெறு"
+    },
+    {
+      "word": "ready",
+      "meaning": "தயார்"
+    },
+    {
+      "word": "up",
+      "meaning": "மேலே"
+    },
+    {
+      "word": "early",
+      "meaning": "சீக்கிரம்"
+    },
+    {
+      "word": "help",
+      "meaning": "உதவி"
+    }
+  ],
   "sentences": [
     {
       "english": "Get ready now.",
@@ -13,6 +35,90 @@ export const lesson24: Omit<Lesson, 'level'> = {
         {
           "word": "Get",
           "meaning": "பெறு"
+        },
+        {
+          "word": "ready",
+          "meaning": "தயார்"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "Get ready now.",
+      "tamil": "இப்போது தயாராகு.",
+      "breakdown": [
+        {
+          "word": "Get",
+          "meaning": "பெறு"
+        },
+        {
+          "word": "ready",
+          "meaning": "தயார்"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "Get up early.",
+      "tamil": "சீக்கிரம் எழுந்து இரு.",
+      "breakdown": [
+        {
+          "word": "Get",
+          "meaning": "பெறு"
+        },
+        {
+          "word": "up",
+          "meaning": "மேலே"
+        },
+        {
+          "word": "early",
+          "meaning": "சீக்கிரம்"
+        }
+      ]
+    },
+    {
+      "english": "Get up early.",
+      "tamil": "சீக்கிரம் எழுந்து இரு.",
+      "breakdown": [
+        {
+          "word": "Get",
+          "meaning": "பெறு"
+        },
+        {
+          "word": "up",
+          "meaning": "மேலே"
+        },
+        {
+          "word": "early",
+          "meaning": "சீக்கிரம்"
+        }
+      ]
+    },
+    {
+      "english": "I get some help.",
+      "tamil": "எனக்கு சில உதவி கிடைக்கிறது.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "get",
+          "meaning": "பெறு"
+        },
+        {
+          "word": "some",
+          "meaning": "—"
+        },
+        {
+          "word": "help",
+          "meaning": "உதவி"
         }
       ]
     }
@@ -51,27 +157,5 @@ export const lesson24: Omit<Lesson, 'level'> = {
       "answer": "Get up at six"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Get'.",
-  "vocabularies": [
-    {
-      "word": "Get",
-      "meaning": "பெறு"
-    },
-    {
-      "word": "ready",
-      "meaning": "தயார்"
-    },
-    {
-      "word": "up",
-      "meaning": "மேலே"
-    },
-    {
-      "word": "early",
-      "meaning": "சீக்கிரம்"
-    },
-    {
-      "word": "help",
-      "meaning": "உதவி"
-    }
-  ]
+  "rule": "Rule: Standard grammar focus for beginner word 'Get'."
 };

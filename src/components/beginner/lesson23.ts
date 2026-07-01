@@ -5,6 +5,28 @@ export const lesson23: Omit<Lesson, 'level'> = {
   "englishWord": "Do",
   "tamilMeaning": "செய்",
   "englishExplanation": "Beginner பாடம் 23: 'Do' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "vocabularies": [
+    {
+      "word": "Do",
+      "meaning": "செய்"
+    },
+    {
+      "word": "it",
+      "meaning": "அது"
+    },
+    {
+      "word": "now",
+      "meaning": "இப்போது"
+    },
+    {
+      "word": "work",
+      "meaning": "வேலை"
+    },
+    {
+      "word": "help",
+      "meaning": "உதவி"
+    }
+  ],
   "sentences": [
     {
       "english": "Do it now.",
@@ -13,6 +35,94 @@ export const lesson23: Omit<Lesson, 'level'> = {
         {
           "word": "Do",
           "meaning": "செய்"
+        },
+        {
+          "word": "it",
+          "meaning": "அது"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "Do it now.",
+      "tamil": "அதை இப்போது செய்.",
+      "breakdown": [
+        {
+          "word": "Do",
+          "meaning": "செய்"
+        },
+        {
+          "word": "it",
+          "meaning": "அது"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "Do it now.",
+      "tamil": "அதை இப்போது செய்.",
+      "breakdown": [
+        {
+          "word": "Do",
+          "meaning": "செய்"
+        },
+        {
+          "word": "it",
+          "meaning": "அது"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "I do my work.",
+      "tamil": "நான் என் வேலையைச் செய்கிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "do",
+          "meaning": "செய்"
+        },
+        {
+          "word": "my",
+          "meaning": "என்னுடைய"
+        },
+        {
+          "word": "work",
+          "meaning": "வேலை"
+        }
+      ]
+    },
+    {
+      "english": "Please do help me.",
+      "tamil": "தயவுசெய்து எனக்கு உதவி செய்.",
+      "breakdown": [
+        {
+          "word": "Please",
+          "meaning": "—"
+        },
+        {
+          "word": "do",
+          "meaning": "செய்"
+        },
+        {
+          "word": "help",
+          "meaning": "உதவி"
+        },
+        {
+          "word": "me",
+          "meaning": "எனக்கு"
         }
       ]
     }
@@ -51,27 +161,5 @@ export const lesson23: Omit<Lesson, 'level'> = {
       "answer": "Do it daily"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Do'.",
-  "vocabularies": [
-    {
-      "word": "Do",
-      "meaning": "செய்"
-    },
-    {
-      "word": "it",
-      "meaning": "அது"
-    },
-    {
-      "word": "now",
-      "meaning": "இப்போது"
-    },
-    {
-      "word": "work",
-      "meaning": "வேலை"
-    },
-    {
-      "word": "help",
-      "meaning": "உதவி"
-    }
-  ]
+  "rule": "Rule: Standard grammar focus for beginner word 'Do'."
 };

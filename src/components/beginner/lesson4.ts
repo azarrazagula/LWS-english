@@ -29,20 +29,92 @@ export const lesson4: Omit<Lesson, 'level'> = {
   ],
   "sentences": [
     {
-      "english": "We are teachers.",
-      "tamil": "நாங்கள் ஆசிரியர்களாக இருக்கிறோம்.",
+      "english": "We are friends.",
+      "tamil": "நாங்கள் நண்பர்கள்.",
       "breakdown": [
         {
           "word": "We",
-          "meaning": "நாங்கள்"
+          "meaning": "நாங்கள் / நாம்"
         },
         {
           "word": "are",
-          "meaning": "இருக்கிறோம்"
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
         },
         {
-          "word": "teachers",
-          "meaning": "ஆசிரியர்கள்"
+          "word": "friends",
+          "meaning": "நண்பர்கள்"
+        }
+      ]
+    },
+    {
+      "english": "We are friends.",
+      "tamil": "நாங்கள் நண்பர்கள்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள் / நாம்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+        },
+        {
+          "word": "friends",
+          "meaning": "நண்பர்கள்"
+        }
+      ]
+    },
+    {
+      "english": "We are friends.",
+      "tamil": "நாங்கள் நண்பர்கள்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள் / நாம்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+        },
+        {
+          "word": "friends",
+          "meaning": "நண்பர்கள்"
+        }
+      ]
+    },
+    {
+      "english": "They are happy.",
+      "tamil": "அவர்கள் மகிழ்ச்சியாக இருக்கிறார்கள்.",
+      "breakdown": [
+        {
+          "word": "They",
+          "meaning": "அவர்கள் / அவைகள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+        },
+        {
+          "word": "happy",
+          "meaning": "மகிழ்ச்சியாக"
+        }
+      ]
+    },
+    {
+      "english": "You are late.",
+      "tamil": "நீங்கள் தாமதமாக வந்திருக்கிறீர்கள்.",
+      "breakdown": [
+        {
+          "word": "You",
+          "meaning": "நீ / நீங்கள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+        },
+        {
+          "word": "late",
+          "meaning": "தாமதம்"
         }
       ]
     }

@@ -51,6 +51,72 @@ export const lesson1: Omit<Lesson, 'level'> = {
       ]
     },
     {
+      "english": "I am a student.",
+      "tamil": "நான் ஒரு மாணவன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "am",
+          "meaning": "இருக்கிறேன்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "student",
+          "meaning": "மாணவன்"
+        }
+      ]
+    },
+    {
+      "english": "I am a student.",
+      "tamil": "நான் ஒரு மாணவன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "am",
+          "meaning": "இருக்கிறேன்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "student",
+          "meaning": "மாணவன்"
+        }
+      ]
+    },
+    {
+      "english": "I am a student.",
+      "tamil": "நான் ஒரு மாணவன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "am",
+          "meaning": "இருக்கிறேன்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "student",
+          "meaning": "மாணவன்"
+        }
+      ]
+    },
+    {
       "english": "I learn English.",
       "tamil": "நான் ஆங்கிலம் கற்கிறேன்.",
       "breakdown": [
@@ -60,11 +126,11 @@ export const lesson1: Omit<Lesson, 'level'> = {
         },
         {
           "word": "learn",
-          "meaning": "கற்கிறேன்"
+          "meaning": "கற்றுக்கொள்"
         },
         {
           "word": "English",
-          "meaning": "ஆங்கிலம்"
+          "meaning": "—"
         }
       ]
     }

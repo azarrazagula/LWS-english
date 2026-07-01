@@ -5,6 +5,28 @@ export const lesson28: Omit<Lesson, 'level'> = {
   "englishWord": "Take",
   "tamilMeaning": "எடு",
   "englishExplanation": "Beginner பாடம் 28: 'Take' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "vocabularies": [
+    {
+      "word": "Take",
+      "meaning": "எடு"
+    },
+    {
+      "word": "it",
+      "meaning": "அது"
+    },
+    {
+      "word": "easy",
+      "meaning": "எளிதாக"
+    },
+    {
+      "word": "break",
+      "meaning": "இடைவேளை"
+    },
+    {
+      "word": "care",
+      "meaning": "கவனம்"
+    }
+  ],
   "sentences": [
     {
       "english": "Take it easy.",
@@ -13,6 +35,94 @@ export const lesson28: Omit<Lesson, 'level'> = {
         {
           "word": "Take",
           "meaning": "எடு"
+        },
+        {
+          "word": "it",
+          "meaning": "அது"
+        },
+        {
+          "word": "easy",
+          "meaning": "எளிதாக"
+        }
+      ]
+    },
+    {
+      "english": "Take it easy.",
+      "tamil": "அதை எளிதாக எடுத்துக்கொள்.",
+      "breakdown": [
+        {
+          "word": "Take",
+          "meaning": "எடு"
+        },
+        {
+          "word": "it",
+          "meaning": "அது"
+        },
+        {
+          "word": "easy",
+          "meaning": "எளிதாக"
+        }
+      ]
+    },
+    {
+      "english": "Take it easy.",
+      "tamil": "அதை எளிதாக எடுத்துக்கொள்.",
+      "breakdown": [
+        {
+          "word": "Take",
+          "meaning": "எடு"
+        },
+        {
+          "word": "it",
+          "meaning": "அது"
+        },
+        {
+          "word": "easy",
+          "meaning": "எளிதாக"
+        }
+      ]
+    },
+    {
+      "english": "Take a short break.",
+      "tamil": "ஒரு சிறிய இடைவேளை எடு.",
+      "breakdown": [
+        {
+          "word": "Take",
+          "meaning": "எடு"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "short",
+          "meaning": "—"
+        },
+        {
+          "word": "break",
+          "meaning": "இடைவேளை"
+        }
+      ]
+    },
+    {
+      "english": "Take care of yourself.",
+      "tamil": "உடம்பை பார்த்துக்கொள்.",
+      "breakdown": [
+        {
+          "word": "Take",
+          "meaning": "எடு"
+        },
+        {
+          "word": "care",
+          "meaning": "கவனம்"
+        },
+        {
+          "word": "of",
+          "meaning": "—"
+        },
+        {
+          "word": "yourself",
+          "meaning": "—"
         }
       ]
     }
@@ -51,27 +161,5 @@ export const lesson28: Omit<Lesson, 'level'> = {
       "answer": "Take care now"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Take'.",
-  "vocabularies": [
-    {
-      "word": "Take",
-      "meaning": "எடு"
-    },
-    {
-      "word": "it",
-      "meaning": "அது"
-    },
-    {
-      "word": "easy",
-      "meaning": "எளிதாக"
-    },
-    {
-      "word": "break",
-      "meaning": "இடைவேளை"
-    },
-    {
-      "word": "care",
-      "meaning": "கவனம்"
-    }
-  ]
+  "rule": "Rule: Standard grammar focus for beginner word 'Take'."
 };

@@ -34,15 +34,95 @@ export const lesson3: Omit<Lesson, 'level'> = {
       "breakdown": [
         {
           "word": "You",
-          "meaning": "நீங்கள்"
+          "meaning": "நீ / நீங்கள்"
         },
         {
           "word": "are",
-          "meaning": "இருக்கிறீர்கள்"
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
         },
         {
           "word": "good",
-          "meaning": "நல்லவராக"
+          "meaning": "நல்லது / நல்லவர்"
+        }
+      ]
+    },
+    {
+      "english": "You are good.",
+      "tamil": "நீங்கள் நல்லவர்.",
+      "breakdown": [
+        {
+          "word": "You",
+          "meaning": "நீ / நீங்கள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+        },
+        {
+          "word": "good",
+          "meaning": "நல்லது / நல்லவர்"
+        }
+      ]
+    },
+    {
+      "english": "You are good.",
+      "tamil": "நீங்கள் நல்லவர்.",
+      "breakdown": [
+        {
+          "word": "You",
+          "meaning": "நீ / நீங்கள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+        },
+        {
+          "word": "good",
+          "meaning": "நல்லது / நல்லவர்"
+        }
+      ]
+    },
+    {
+      "english": "You are my friend.",
+      "tamil": "நீங்கள் என் நண்பன்.",
+      "breakdown": [
+        {
+          "word": "You",
+          "meaning": "நீ / நீங்கள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+        },
+        {
+          "word": "my",
+          "meaning": "என்னுடைய"
+        },
+        {
+          "word": "friend",
+          "meaning": "நண்பன்"
+        }
+      ]
+    },
+    {
+      "english": "You are a teacher.",
+      "tamil": "நீங்கள் ஒரு ஆசிரியர்.",
+      "breakdown": [
+        {
+          "word": "You",
+          "meaning": "நீ / நீங்கள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "teacher",
+          "meaning": "ஆசிரியர்"
         }
       ]
     }

@@ -5,6 +5,28 @@ export const lesson30: Omit<Lesson, 'level'> = {
   "englishWord": "Eat",
   "tamilMeaning": "சாப்பிடு",
   "englishExplanation": "Beginner பாடம் 30: 'Eat' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "vocabularies": [
+    {
+      "word": "Eat",
+      "meaning": "சாப்பிடு"
+    },
+    {
+      "word": "apple",
+      "meaning": "ஆப்பிள்"
+    },
+    {
+      "word": "food",
+      "meaning": "உணவு"
+    },
+    {
+      "word": "fruits",
+      "meaning": "பழங்கள்"
+    },
+    {
+      "word": "daily",
+      "meaning": "தினமும்"
+    }
+  ],
   "sentences": [
     {
       "english": "Eat an apple.",
@@ -13,6 +35,94 @@ export const lesson30: Omit<Lesson, 'level'> = {
         {
           "word": "Eat",
           "meaning": "சாப்பிடு"
+        },
+        {
+          "word": "an",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "apple",
+          "meaning": "ஆப்பிள்"
+        }
+      ]
+    },
+    {
+      "english": "Eat an apple.",
+      "tamil": "ஒரு ஆப்பிள் சாப்பிடு.",
+      "breakdown": [
+        {
+          "word": "Eat",
+          "meaning": "சாப்பிடு"
+        },
+        {
+          "word": "an",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "apple",
+          "meaning": "ஆப்பிள்"
+        }
+      ]
+    },
+    {
+      "english": "Eat good food.",
+      "tamil": "நல்ல உணவு சாப்பிடு.",
+      "breakdown": [
+        {
+          "word": "Eat",
+          "meaning": "சாப்பிடு"
+        },
+        {
+          "word": "good",
+          "meaning": "—"
+        },
+        {
+          "word": "food",
+          "meaning": "உணவு"
+        }
+      ]
+    },
+    {
+      "english": "Eat fresh fruits daily.",
+      "tamil": "தினமும் புதிய பழங்களைச் சாப்பிடு.",
+      "breakdown": [
+        {
+          "word": "Eat",
+          "meaning": "சாப்பிடு"
+        },
+        {
+          "word": "fresh",
+          "meaning": "—"
+        },
+        {
+          "word": "fruits",
+          "meaning": "பழங்கள்"
+        },
+        {
+          "word": "daily",
+          "meaning": "தினமும்"
+        }
+      ]
+    },
+    {
+      "english": "Eat fresh fruits daily.",
+      "tamil": "தினமும் புதிய பழங்களைச் சாப்பிடு.",
+      "breakdown": [
+        {
+          "word": "Eat",
+          "meaning": "சாப்பிடு"
+        },
+        {
+          "word": "fresh",
+          "meaning": "—"
+        },
+        {
+          "word": "fruits",
+          "meaning": "பழங்கள்"
+        },
+        {
+          "word": "daily",
+          "meaning": "தினமும்"
         }
       ]
     }
@@ -51,27 +161,5 @@ export const lesson30: Omit<Lesson, 'level'> = {
       "answer": "Eat an apple daily"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Eat'.",
-  "vocabularies": [
-    {
-      "word": "Eat",
-      "meaning": "சாப்பிடு"
-    },
-    {
-      "word": "apple",
-      "meaning": "ஆப்பிள்"
-    },
-    {
-      "word": "food",
-      "meaning": "உணவு"
-    },
-    {
-      "word": "fruits",
-      "meaning": "பழங்கள்"
-    },
-    {
-      "word": "daily",
-      "meaning": "தினமும்"
-    }
-  ]
+  "rule": "Rule: Standard grammar focus for beginner word 'Eat'."
 };

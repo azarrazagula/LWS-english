@@ -5,6 +5,28 @@ export const lesson22: Omit<Lesson, 'level'> = {
   "englishWord": "Come",
   "tamilMeaning": "வா",
   "englishExplanation": "Beginner பாடம் 22: 'Come' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "vocabularies": [
+    {
+      "word": "Come",
+      "meaning": "வா"
+    },
+    {
+      "word": "here",
+      "meaning": "இங்கே"
+    },
+    {
+      "word": "today",
+      "meaning": "இன்று"
+    },
+    {
+      "word": "tomorrow",
+      "meaning": "நாளை"
+    },
+    {
+      "word": "back",
+      "meaning": "திரும்பி"
+    }
+  ],
   "sentences": [
     {
       "english": "Come here today.",
@@ -13,6 +35,90 @@ export const lesson22: Omit<Lesson, 'level'> = {
         {
           "word": "Come",
           "meaning": "வா"
+        },
+        {
+          "word": "here",
+          "meaning": "இங்கே"
+        },
+        {
+          "word": "today",
+          "meaning": "இன்று"
+        }
+      ]
+    },
+    {
+      "english": "Come here today.",
+      "tamil": "இன்று இங்கே வா.",
+      "breakdown": [
+        {
+          "word": "Come",
+          "meaning": "வா"
+        },
+        {
+          "word": "here",
+          "meaning": "இங்கே"
+        },
+        {
+          "word": "today",
+          "meaning": "இன்று"
+        }
+      ]
+    },
+    {
+      "english": "Come here today.",
+      "tamil": "இன்று இங்கே வா.",
+      "breakdown": [
+        {
+          "word": "Come",
+          "meaning": "வா"
+        },
+        {
+          "word": "here",
+          "meaning": "இங்கே"
+        },
+        {
+          "word": "today",
+          "meaning": "இன்று"
+        }
+      ]
+    },
+    {
+      "english": "Will you come tomorrow?",
+      "tamil": "நீ நாளை வருவாயா?",
+      "breakdown": [
+        {
+          "word": "Will",
+          "meaning": "இருப்பேன் / செய்யப்போகிறேன்"
+        },
+        {
+          "word": "you",
+          "meaning": "நீ / நீங்கள்"
+        },
+        {
+          "word": "come",
+          "meaning": "வா"
+        },
+        {
+          "word": "tomorrow",
+          "meaning": "நாளை"
+        }
+      ]
+    },
+    {
+      "english": "Come back soon.",
+      "tamil": "சீக்கிரம் திரும்பி வா.",
+      "breakdown": [
+        {
+          "word": "Come",
+          "meaning": "வா"
+        },
+        {
+          "word": "back",
+          "meaning": "திரும்பி"
+        },
+        {
+          "word": "soon",
+          "meaning": "சீக்கிரம்"
         }
       ]
     }
@@ -51,27 +157,5 @@ export const lesson22: Omit<Lesson, 'level'> = {
       "answer": "She will come back"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Come'.",
-  "vocabularies": [
-    {
-      "word": "Come",
-      "meaning": "வா"
-    },
-    {
-      "word": "here",
-      "meaning": "இங்கே"
-    },
-    {
-      "word": "today",
-      "meaning": "இன்று"
-    },
-    {
-      "word": "tomorrow",
-      "meaning": "நாளை"
-    },
-    {
-      "word": "back",
-      "meaning": "திரும்பி"
-    }
-  ]
+  "rule": "Rule: Standard grammar focus for beginner word 'Come'."
 };

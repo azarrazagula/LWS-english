@@ -34,11 +34,11 @@ export const lesson6: Omit<Lesson, 'level'> = {
       "breakdown": [
         {
           "word": "She",
-          "meaning": "அவள்"
+          "meaning": "அவள் / இவர் (பெண்)"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறாள்"
+          "meaning": "இருக்கிறாள் / இருக்கிறது"
         },
         {
           "word": "a",
@@ -47,6 +47,90 @@ export const lesson6: Omit<Lesson, 'level'> = {
         {
           "word": "teacher",
           "meaning": "ஆசிரியர்"
+        }
+      ]
+    },
+    {
+      "english": "She is a teacher.",
+      "tamil": "அவள் ஒரு ஆசிரியர்.",
+      "breakdown": [
+        {
+          "word": "She",
+          "meaning": "அவள் / இவர் (பெண்)"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறாள் / இருக்கிறது"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "teacher",
+          "meaning": "ஆசிரியர்"
+        }
+      ]
+    },
+    {
+      "english": "She is a teacher.",
+      "tamil": "அவள் ஒரு ஆசிரியர்.",
+      "breakdown": [
+        {
+          "word": "She",
+          "meaning": "அவள் / இவர் (பெண்)"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறாள் / இருக்கிறது"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "teacher",
+          "meaning": "ஆசிரியர்"
+        }
+      ]
+    },
+    {
+      "english": "She is my sister.",
+      "tamil": "அவள் என் சகோதரி.",
+      "breakdown": [
+        {
+          "word": "She",
+          "meaning": "அவள் / இவர் (பெண்)"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறாள் / இருக்கிறது"
+        },
+        {
+          "word": "my",
+          "meaning": "என்னுடைய"
+        },
+        {
+          "word": "sister",
+          "meaning": "சகோதரி"
+        }
+      ]
+    },
+    {
+      "english": "She runs fast.",
+      "tamil": "அவள் வேகமாக ஓடுகிறாள்.",
+      "breakdown": [
+        {
+          "word": "She",
+          "meaning": "அவள் / இவர் (பெண்)"
+        },
+        {
+          "word": "runs",
+          "meaning": "ஓடுகிறாள்"
+        },
+        {
+          "word": "fast",
+          "meaning": "வேகமாக"
         }
       ]
     }

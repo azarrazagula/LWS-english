@@ -45,6 +45,86 @@ export const lesson2: Omit<Lesson, 'level'> = {
           "meaning": "மகிழ்ச்சியாக"
         }
       ]
+    },
+    {
+      "english": "I am happy.",
+      "tamil": "நான் மகிழ்ச்சியாக இருக்கிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "am",
+          "meaning": "இருக்கிறேன்"
+        },
+        {
+          "word": "happy",
+          "meaning": "மகிழ்ச்சியாக"
+        }
+      ]
+    },
+    {
+      "english": "I am happy today.",
+      "tamil": "நான் இன்று மகிழ்ச்சியாக இருக்கிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "am",
+          "meaning": "இருக்கிறேன்"
+        },
+        {
+          "word": "happy",
+          "meaning": "மகிழ்ச்சியாக"
+        },
+        {
+          "word": "today",
+          "meaning": "இன்று"
+        }
+      ]
+    },
+    {
+      "english": "I am here.",
+      "tamil": "நான் இங்கே இருக்கிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "am",
+          "meaning": "இருக்கிறேன்"
+        },
+        {
+          "word": "here",
+          "meaning": "இங்கே"
+        }
+      ]
+    },
+    {
+      "english": "I am a doctor.",
+      "tamil": "நான் ஒரு மருத்துவர்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "am",
+          "meaning": "இருக்கிறேன்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "doctor",
+          "meaning": "மருத்துவர்"
+        }
+      ]
     }
   ],
   "speakingPractice": [

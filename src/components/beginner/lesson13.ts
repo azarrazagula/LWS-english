@@ -5,6 +5,28 @@ export const lesson13: Omit<Lesson, 'level'> = {
   "englishWord": "Will",
   "tamilMeaning": "இருப்பேன்",
   "englishExplanation": "Beginner பாடம் 13: 'Will' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "vocabularies": [
+    {
+      "word": "Will",
+      "meaning": "இருப்பேன்"
+    },
+    {
+      "word": "you",
+      "meaning": "நீங்கள்"
+    },
+    {
+      "word": "go",
+      "meaning": "போ"
+    },
+    {
+      "word": "tomorrow",
+      "meaning": "நாளை"
+    },
+    {
+      "word": "come",
+      "meaning": "வா"
+    }
+  ],
   "sentences": [
     {
       "english": "Will you go?",
@@ -13,6 +35,94 @@ export const lesson13: Omit<Lesson, 'level'> = {
         {
           "word": "Will",
           "meaning": "இருப்பேன்"
+        },
+        {
+          "word": "you",
+          "meaning": "நீங்கள்"
+        },
+        {
+          "word": "go",
+          "meaning": "போ"
+        }
+      ]
+    },
+    {
+      "english": "Will you go?",
+      "tamil": "நீ போவாயா?",
+      "breakdown": [
+        {
+          "word": "Will",
+          "meaning": "இருப்பேன்"
+        },
+        {
+          "word": "you",
+          "meaning": "நீங்கள்"
+        },
+        {
+          "word": "go",
+          "meaning": "போ"
+        }
+      ]
+    },
+    {
+      "english": "Will you go?",
+      "tamil": "நீ போவாயா?",
+      "breakdown": [
+        {
+          "word": "Will",
+          "meaning": "இருப்பேன்"
+        },
+        {
+          "word": "you",
+          "meaning": "நீங்கள்"
+        },
+        {
+          "word": "go",
+          "meaning": "போ"
+        }
+      ]
+    },
+    {
+      "english": "I will come tomorrow.",
+      "tamil": "நான் நாளை வருவேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "will",
+          "meaning": "இருப்பேன்"
+        },
+        {
+          "word": "come",
+          "meaning": "வா"
+        },
+        {
+          "word": "tomorrow",
+          "meaning": "நாளை"
+        }
+      ]
+    },
+    {
+      "english": "I will come tomorrow.",
+      "tamil": "நான் நாளை வருவேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "will",
+          "meaning": "இருப்பேன்"
+        },
+        {
+          "word": "come",
+          "meaning": "வா"
+        },
+        {
+          "word": "tomorrow",
+          "meaning": "நாளை"
         }
       ]
     }
@@ -51,27 +161,5 @@ export const lesson13: Omit<Lesson, 'level'> = {
       "answer": "Will you come here"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Will'.",
-  "vocabularies": [
-    {
-      "word": "Will",
-      "meaning": "இருப்பேன்"
-    },
-    {
-      "word": "you",
-      "meaning": "நீங்கள்"
-    },
-    {
-      "word": "go",
-      "meaning": "போ"
-    },
-    {
-      "word": "tomorrow",
-      "meaning": "நாளை"
-    },
-    {
-      "word": "come",
-      "meaning": "வா"
-    }
-  ]
+  "rule": "Rule: Standard grammar focus for beginner word 'Will'."
 };

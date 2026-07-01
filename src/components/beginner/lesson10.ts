@@ -34,7 +34,7 @@ export const lesson10: Omit<Lesson, 'level'> = {
       "breakdown": [
         {
           "word": "They",
-          "meaning": "அவர்கள்"
+          "meaning": "அவர்கள் / அவைகள்"
         },
         {
           "word": "are",
@@ -42,7 +42,79 @@ export const lesson10: Omit<Lesson, 'level'> = {
         },
         {
           "word": "playing",
-          "meaning": "விளையாடிக்கொண்டு"
+          "meaning": "விளையாடுகிறார்கள்"
+        }
+      ]
+    },
+    {
+      "english": "They are playing.",
+      "tamil": "அவர்கள் விளையாடுகிறார்கள்.",
+      "breakdown": [
+        {
+          "word": "They",
+          "meaning": "அவர்கள் / அவைகள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறார்கள்"
+        },
+        {
+          "word": "playing",
+          "meaning": "விளையாடுகிறார்கள்"
+        }
+      ]
+    },
+    {
+      "english": "They are playing.",
+      "tamil": "அவர்கள் விளையாடுகிறார்கள்.",
+      "breakdown": [
+        {
+          "word": "They",
+          "meaning": "அவர்கள் / அவைகள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறார்கள்"
+        },
+        {
+          "word": "playing",
+          "meaning": "விளையாடுகிறார்கள்"
+        }
+      ]
+    },
+    {
+      "english": "They speak well.",
+      "tamil": "அவர்கள் நன்றாகப் பேசுகிறார்கள்.",
+      "breakdown": [
+        {
+          "word": "They",
+          "meaning": "அவர்கள் / அவைகள்"
+        },
+        {
+          "word": "speak",
+          "meaning": "பேசுகிறார்கள்"
+        },
+        {
+          "word": "well",
+          "meaning": "—"
+        }
+      ]
+    },
+    {
+      "english": "They are busy.",
+      "tamil": "அவர்கள் பிஸியாக இருக்கிறார்கள்.",
+      "breakdown": [
+        {
+          "word": "They",
+          "meaning": "அவர்கள் / அவைகள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறார்கள்"
+        },
+        {
+          "word": "busy",
+          "meaning": "பிஸியாக"
         }
       ]
     }

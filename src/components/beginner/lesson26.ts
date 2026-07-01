@@ -5,6 +5,28 @@ export const lesson26: Omit<Lesson, 'level'> = {
   "englishWord": "See",
   "tamilMeaning": "பார்",
   "englishExplanation": "Beginner பாடம் 26: 'See' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "vocabularies": [
+    {
+      "word": "See",
+      "meaning": "பார்"
+    },
+    {
+      "word": "you",
+      "meaning": "உன்னை"
+    },
+    {
+      "word": "later",
+      "meaning": "பின்னர்"
+    },
+    {
+      "word": "bird",
+      "meaning": "பறவை"
+    },
+    {
+      "word": "picture",
+      "meaning": "படம்"
+    }
+  ],
   "sentences": [
     {
       "english": "See you later.",
@@ -13,6 +35,94 @@ export const lesson26: Omit<Lesson, 'level'> = {
         {
           "word": "See",
           "meaning": "பார்"
+        },
+        {
+          "word": "you",
+          "meaning": "உன்னை"
+        },
+        {
+          "word": "later",
+          "meaning": "பின்னர்"
+        }
+      ]
+    },
+    {
+      "english": "See you later.",
+      "tamil": "பிறகு பார்ப்போம்.",
+      "breakdown": [
+        {
+          "word": "See",
+          "meaning": "பார்"
+        },
+        {
+          "word": "you",
+          "meaning": "உன்னை"
+        },
+        {
+          "word": "later",
+          "meaning": "பின்னர்"
+        }
+      ]
+    },
+    {
+      "english": "See you later.",
+      "tamil": "பிறகு பார்ப்போம்.",
+      "breakdown": [
+        {
+          "word": "See",
+          "meaning": "பார்"
+        },
+        {
+          "word": "you",
+          "meaning": "உன்னை"
+        },
+        {
+          "word": "later",
+          "meaning": "பின்னர்"
+        }
+      ]
+    },
+    {
+      "english": "I see a bird.",
+      "tamil": "நான் ஒரு பறவையைப் பார்க்கிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "see",
+          "meaning": "பார்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "bird",
+          "meaning": "பறவை"
+        }
+      ]
+    },
+    {
+      "english": "See this nice picture.",
+      "tamil": "இந்த அழகான படத்தைப் பார்.",
+      "breakdown": [
+        {
+          "word": "See",
+          "meaning": "பார்"
+        },
+        {
+          "word": "this",
+          "meaning": "இது / இந்த"
+        },
+        {
+          "word": "nice",
+          "meaning": "நல்லது"
+        },
+        {
+          "word": "picture",
+          "meaning": "படம்"
         }
       ]
     }
@@ -51,27 +161,5 @@ export const lesson26: Omit<Lesson, 'level'> = {
       "answer": "See you tomorrow"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'See'.",
-  "vocabularies": [
-    {
-      "word": "See",
-      "meaning": "பார்"
-    },
-    {
-      "word": "you",
-      "meaning": "உன்னை"
-    },
-    {
-      "word": "later",
-      "meaning": "பின்னர்"
-    },
-    {
-      "word": "bird",
-      "meaning": "பறவை"
-    },
-    {
-      "word": "picture",
-      "meaning": "படம்"
-    }
-  ]
+  "rule": "Rule: Standard grammar focus for beginner word 'See'."
 };

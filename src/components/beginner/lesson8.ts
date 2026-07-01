@@ -34,15 +34,87 @@ export const lesson8: Omit<Lesson, 'level'> = {
       "breakdown": [
         {
           "word": "He",
-          "meaning": "அவன்"
+          "meaning": "அவன் / இவர்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறான்"
+          "meaning": "இருக்கிறது / இருக்கிறான்"
         },
         {
           "word": "happy",
           "meaning": "மகிழ்ச்சியாக"
+        }
+      ]
+    },
+    {
+      "english": "He is happy.",
+      "tamil": "அவன் மகிழ்ச்சியாக இருக்கிறான்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவன் / இவர்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது / இருக்கிறான்"
+        },
+        {
+          "word": "happy",
+          "meaning": "மகிழ்ச்சியாக"
+        }
+      ]
+    },
+    {
+      "english": "She is late.",
+      "tamil": "அவள் தாமதமாக வந்திருக்கிறாள்.",
+      "breakdown": [
+        {
+          "word": "She",
+          "meaning": "அவள் / இவர்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது / இருக்கிறான்"
+        },
+        {
+          "word": "late",
+          "meaning": "தாமதமாக"
+        }
+      ]
+    },
+    {
+      "english": "It is cold.",
+      "tamil": "அது குளிர்ச்சியாக இருக்கிறது.",
+      "breakdown": [
+        {
+          "word": "It",
+          "meaning": "அது"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது / இருக்கிறான்"
+        },
+        {
+          "word": "cold",
+          "meaning": "குளிர்ச்சியாக"
+        }
+      ]
+    },
+    {
+      "english": "It is nice.",
+      "tamil": "அது நன்றாக இருக்கிறது.",
+      "breakdown": [
+        {
+          "word": "It",
+          "meaning": "அது"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது / இருக்கிறான்"
+        },
+        {
+          "word": "nice",
+          "meaning": "நல்லது"
         }
       ]
     }

@@ -49,6 +49,90 @@ export const lesson7: Omit<Lesson, 'level'> = {
           "meaning": "புத்தகம்"
         }
       ]
+    },
+    {
+      "english": "It is a book.",
+      "tamil": "அது ஒரு புத்தகம்.",
+      "breakdown": [
+        {
+          "word": "It",
+          "meaning": "அது"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "book",
+          "meaning": "புத்தகம்"
+        }
+      ]
+    },
+    {
+      "english": "It is a book.",
+      "tamil": "அது ஒரு புத்தகம்.",
+      "breakdown": [
+        {
+          "word": "It",
+          "meaning": "அது"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "book",
+          "meaning": "புத்தகம்"
+        }
+      ]
+    },
+    {
+      "english": "It is raining.",
+      "tamil": "மழை பெய்து கொண்டிருக்கிறது.",
+      "breakdown": [
+        {
+          "word": "It",
+          "meaning": "அது"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
+        },
+        {
+          "word": "raining",
+          "meaning": "மழை பெய்கிறது"
+        }
+      ]
+    },
+    {
+      "english": "It is very big.",
+      "tamil": "அது மிகவும் பெரியது.",
+      "breakdown": [
+        {
+          "word": "It",
+          "meaning": "அது"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
+        },
+        {
+          "word": "very",
+          "meaning": "—"
+        },
+        {
+          "word": "big",
+          "meaning": "பெரியது"
+        }
+      ]
     }
   ],
   "speakingPractice": [

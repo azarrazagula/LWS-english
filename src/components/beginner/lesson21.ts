@@ -5,6 +5,28 @@ export const lesson21: Omit<Lesson, 'level'> = {
   "englishWord": "Go",
   "tamilMeaning": "போ",
   "englishExplanation": "Beginner பாடம் 21: 'Go' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "vocabularies": [
+    {
+      "word": "Go",
+      "meaning": "போ"
+    },
+    {
+      "word": "there",
+      "meaning": "அங்கே"
+    },
+    {
+      "word": "now",
+      "meaning": "இப்போது"
+    },
+    {
+      "word": "home",
+      "meaning": "வீடு"
+    },
+    {
+      "word": "school",
+      "meaning": "பள்ளி"
+    }
+  ],
   "sentences": [
     {
       "english": "Go there now.",
@@ -13,6 +35,90 @@ export const lesson21: Omit<Lesson, 'level'> = {
         {
           "word": "Go",
           "meaning": "போ"
+        },
+        {
+          "word": "there",
+          "meaning": "அங்கே"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "Go there now.",
+      "tamil": "இப்போது அங்கே போ.",
+      "breakdown": [
+        {
+          "word": "Go",
+          "meaning": "போ"
+        },
+        {
+          "word": "there",
+          "meaning": "அங்கே"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "Go there now.",
+      "tamil": "இப்போது அங்கே போ.",
+      "breakdown": [
+        {
+          "word": "Go",
+          "meaning": "போ"
+        },
+        {
+          "word": "there",
+          "meaning": "அங்கே"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "Please go home.",
+      "tamil": "தயவுசெய்து வீட்டுக்கு போ.",
+      "breakdown": [
+        {
+          "word": "Please",
+          "meaning": "—"
+        },
+        {
+          "word": "go",
+          "meaning": "போ"
+        },
+        {
+          "word": "home",
+          "meaning": "வீடு"
+        }
+      ]
+    },
+    {
+      "english": "We go to school.",
+      "tamil": "நாங்கள் பள்ளிக்குச் செல்கிறோம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள் / நாம்"
+        },
+        {
+          "word": "go",
+          "meaning": "போ"
+        },
+        {
+          "word": "to",
+          "meaning": "நோக்கி"
+        },
+        {
+          "word": "school",
+          "meaning": "பள்ளி"
         }
       ]
     }
@@ -51,27 +157,5 @@ export const lesson21: Omit<Lesson, 'level'> = {
       "answer": "Go home now"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Go'.",
-  "vocabularies": [
-    {
-      "word": "Go",
-      "meaning": "போ"
-    },
-    {
-      "word": "there",
-      "meaning": "அங்கே"
-    },
-    {
-      "word": "now",
-      "meaning": "இப்போது"
-    },
-    {
-      "word": "home",
-      "meaning": "வீடு"
-    },
-    {
-      "word": "school",
-      "meaning": "பள்ளி"
-    }
-  ]
+  "rule": "Rule: Standard grammar focus for beginner word 'Go'."
 };

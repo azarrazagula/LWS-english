@@ -34,7 +34,7 @@ export const lesson9: Omit<Lesson, 'level'> = {
       "breakdown": [
         {
           "word": "We",
-          "meaning": "நாங்கள்"
+          "meaning": "நாங்கள் / நாம்"
         },
         {
           "word": "are",
@@ -43,6 +43,78 @@ export const lesson9: Omit<Lesson, 'level'> = {
         {
           "word": "friends",
           "meaning": "நண்பர்கள்"
+        }
+      ]
+    },
+    {
+      "english": "We are friends.",
+      "tamil": "நாங்கள் நண்பர்கள்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள் / நாம்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறோம்"
+        },
+        {
+          "word": "friends",
+          "meaning": "நண்பர்கள்"
+        }
+      ]
+    },
+    {
+      "english": "We are friends.",
+      "tamil": "நாங்கள் நண்பர்கள்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள் / நாம்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறோம்"
+        },
+        {
+          "word": "friends",
+          "meaning": "நண்பர்கள்"
+        }
+      ]
+    },
+    {
+      "english": "We go together.",
+      "tamil": "நாங்கள் ஒன்றாகச் செல்கிறோம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள் / நாம்"
+        },
+        {
+          "word": "go",
+          "meaning": "செல்கிறோம்"
+        },
+        {
+          "word": "together",
+          "meaning": "ஒன்றாக"
+        }
+      ]
+    },
+    {
+      "english": "We live here.",
+      "tamil": "நாங்கள் இங்கே வசிக்கிறோம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள் / நாம்"
+        },
+        {
+          "word": "live",
+          "meaning": "வசிக்கிறோம்"
+        },
+        {
+          "word": "here",
+          "meaning": "இங்கே"
         }
       ]
     }

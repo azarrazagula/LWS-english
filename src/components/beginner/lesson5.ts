@@ -34,11 +34,11 @@ export const lesson5: Omit<Lesson, 'level'> = {
       "breakdown": [
         {
           "word": "He",
-          "meaning": "அவன்"
+          "meaning": "அவன் / இவர்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறான்"
+          "meaning": "இருக்கிறான் / இருக்கிறது"
         },
         {
           "word": "a",
@@ -47,6 +47,90 @@ export const lesson5: Omit<Lesson, 'level'> = {
         {
           "word": "doctor",
           "meaning": "மருத்துவர்"
+        }
+      ]
+    },
+    {
+      "english": "He is a doctor.",
+      "tamil": "அவன் ஒரு மருத்துவர்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவன் / இவர்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறான் / இருக்கிறது"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "doctor",
+          "meaning": "மருத்துவர்"
+        }
+      ]
+    },
+    {
+      "english": "He is a doctor.",
+      "tamil": "அவன் ஒரு மருத்துவர்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவன் / இவர்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறான் / இருக்கிறது"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "doctor",
+          "meaning": "மருத்துவர்"
+        }
+      ]
+    },
+    {
+      "english": "He is my brother.",
+      "tamil": "அவன் என் சகோதரன்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவன் / இவர்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறான் / இருக்கிறது"
+        },
+        {
+          "word": "my",
+          "meaning": "என்னுடைய"
+        },
+        {
+          "word": "brother",
+          "meaning": "சகோதரன்"
+        }
+      ]
+    },
+    {
+      "english": "He works here.",
+      "tamil": "அவன் இங்கே வேலை செய்கிறான்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவன் / இவர்"
+        },
+        {
+          "word": "works",
+          "meaning": "வேலை செய்கிறான்"
+        },
+        {
+          "word": "here",
+          "meaning": "இங்கே"
         }
       ]
     }
