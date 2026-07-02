@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Level, Lesson, Test } from "./types";
 import { lessons, assessments } from "./data/lessons";
 import { LuminousBg } from "./components/LuminousBg";
 import { Header } from "./components/header/Header";
 import { AppRouter } from "./components/router/AppRouter";
+import { WelcomeScreen } from "./components/animation/WelcomeScreen";
 
 /**
  * LWS-English: Main Application Entry Point
@@ -12,6 +14,9 @@ import { AppRouter } from "./components/router/AppRouter";
  */
 
 export const App: React.FC = () => {
+  // Welcome intro screen state
+  const [showWelcome, setShowWelcome] = useState<boolean>(true);
+
   // Navigation & progression state
   const [currentScreen, setCurrentScreen] = useState<
     "dashboard" | "lesson" | "test"
@@ -124,34 +129,56 @@ export const App: React.FC = () => {
       localStorage.removeItem("lws_lesson_stars");
       localStorage.removeItem("lws_selected_level");
       setCurrentScreen("dashboard");
+      setShowWelcome(true);
     }
   };
 
   return (
-    <div className="relative min-h-screen text-slate-100 font-interface overflow-hidden pb-16">
-      {/* Dynamic Animated Luminous Background */}
-      <LuminousBg />
+    <AnimatePresence mode="wait">
+      {showWelcome ? (
+        <motion.div
+          key="welcome-screen"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0, scale: 1.08, filter: "blur(16px)" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="fixed inset-0 z-50 overflow-hidden bg-black"
+        >
+          <WelcomeScreen onEnter={() => setShowWelcome(false)} />
+        </motion.div>
+      ) : (
+        <motion.div
+          key="app-main"
+          initial={{ opacity: 0, scale: 0.98, y: 15 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="relative min-h-screen text-slate-100 font-interface overflow-hidden pb-16"
+        >
+          {/* Dynamic Animated Luminous Background */}
+          <LuminousBg />
 
-      {/* Header Panel */}
-      <Header onResetProgress={handleResetProgress} />
+          {/* Header Panel */}
+          <Header onResetProgress={handleResetProgress} />
 
-      {/* Screen Router */}
-      <AppRouter
-        currentScreen={currentScreen}
-        activeLesson={activeLesson}
-        activeTest={activeTest}
-        completedLessons={completedLessons}
-        testScores={testScores}
-        lessonStars={lessonStars}
-        selectedLevel={selectedLevel}
-        onSelectLevel={handleSelectLevel}
-        onStartLesson={handleStartLesson}
-        onStartTest={handleStartTest}
-        onCompleteLesson={handleCompleteLesson}
-        onCompleteTest={handleCompleteTest}
-        onBackToDashboard={() => setCurrentScreen("dashboard")}
-      />
-    </div>
+          {/* Screen Router */}
+          <AppRouter
+            currentScreen={currentScreen}
+            activeLesson={activeLesson}
+            activeTest={activeTest}
+            completedLessons={completedLessons}
+            testScores={testScores}
+            lessonStars={lessonStars}
+            selectedLevel={selectedLevel}
+            onSelectLevel={handleSelectLevel}
+            onStartLesson={handleStartLesson}
+            onStartTest={handleStartTest}
+            onCompleteLesson={handleCompleteLesson}
+            onCompleteTest={handleCompleteTest}
+            onBackToDashboard={() => setCurrentScreen("dashboard")}
+          />
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 export default App;

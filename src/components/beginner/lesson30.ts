@@ -4,37 +4,41 @@ export const lesson30: Omit<Lesson, 'level'> = {
   "id": 30,
   "englishWord": "Eat",
   "tamilMeaning": "சாப்பிடு",
-  "englishExplanation": "Beginner பாடம் 30: 'Eat' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "englishExplanation": "'Eat' என்பது உணவை வாயில் போட்டு மென்று விழுங்குவதைக் குறிக்கும் வினைச்சொல்.",
   "vocabularies": [
     {
-      "word": "Eat",
+      "word": "eat",
       "meaning": "சாப்பிடு"
-    },
-    {
-      "word": "apple",
-      "meaning": "ஆப்பிள்"
     },
     {
       "word": "food",
       "meaning": "உணவு"
     },
     {
-      "word": "fruits",
-      "meaning": "பழங்கள்"
+      "word": "healthy",
+      "meaning": "ஆரோக்கியமான"
     },
     {
-      "word": "daily",
-      "meaning": "தினமும்"
+      "word": "today",
+      "meaning": "இன்று"
+    },
+    {
+      "word": "fruit",
+      "meaning": "பழம்"
     }
   ],
   "sentences": [
     {
-      "english": "Eat an apple.",
-      "tamil": "ஒரு ஆப்பிள் சாப்பிடு.",
+      "english": "I eat an apple.",
+      "tamil": "நான் ஒரு ஆப்பிள் சாப்பிடுகிறேன்.",
       "breakdown": [
         {
-          "word": "Eat",
-          "meaning": "சாப்பிடு"
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "eat",
+          "meaning": "சாப்பிடுகிறேன்"
         },
         {
           "word": "an",
@@ -47,34 +51,46 @@ export const lesson30: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Eat an apple.",
-      "tamil": "ஒரு ஆப்பிள் சாப்பிடு.",
+      "english": "Eat your food slowly.",
+      "tamil": "உன் உணவை மெதுவாகச் சாப்பிடு.",
       "breakdown": [
         {
           "word": "Eat",
           "meaning": "சாப்பிடு"
         },
         {
-          "word": "an",
-          "meaning": "ஒரு"
+          "word": "your",
+          "meaning": "உன்னுடைய"
         },
         {
-          "word": "apple",
-          "meaning": "ஆப்பிள்"
+          "word": "food",
+          "meaning": "உணவு"
+        },
+        {
+          "word": "slowly",
+          "meaning": "மெதுவாக"
         }
       ]
     },
     {
-      "english": "Eat good food.",
-      "tamil": "நல்ல உணவு சாப்பிடு.",
+      "english": "We should eat healthy food.",
+      "tamil": "நாம் ஆரோக்கியமான உணவைச் சாப்பிட வேண்டும்.",
       "breakdown": [
         {
-          "word": "Eat",
-          "meaning": "சாப்பிடு"
+          "word": "We",
+          "meaning": "நாம்"
         },
         {
-          "word": "good",
-          "meaning": "—"
+          "word": "should",
+          "meaning": "வேண்டும்"
+        },
+        {
+          "word": "eat",
+          "meaning": "சாப்பிட"
+        },
+        {
+          "word": "healthy",
+          "meaning": "ஆரோக்கியமான"
         },
         {
           "word": "food",
@@ -83,42 +99,42 @@ export const lesson30: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Eat fresh fruits daily.",
-      "tamil": "தினமும் புதிய பழங்களைச் சாப்பிடு.",
+      "english": "Did you eat today?",
+      "tamil": "நீ இன்று சாப்பிட்டாயா?",
       "breakdown": [
         {
-          "word": "Eat",
-          "meaning": "சாப்பிடு"
+          "word": "Did",
+          "meaning": "செய்தாயா"
         },
         {
-          "word": "fresh",
-          "meaning": "—"
+          "word": "you",
+          "meaning": "நீ"
         },
         {
-          "word": "fruits",
-          "meaning": "பழங்கள்"
+          "word": "eat",
+          "meaning": "சாப்பிட"
         },
         {
-          "word": "daily",
-          "meaning": "தினமும்"
+          "word": "today",
+          "meaning": "இன்று"
         }
       ]
     },
     {
-      "english": "Eat fresh fruits daily.",
-      "tamil": "தினமும் புதிய பழங்களைச் சாப்பிடு.",
+      "english": "I eat fruit daily.",
+      "tamil": "நான் தினமும் பழம் சாப்பிடுகிறேன்.",
       "breakdown": [
         {
-          "word": "Eat",
-          "meaning": "சாப்பிடு"
+          "word": "I",
+          "meaning": "நான்"
         },
         {
-          "word": "fresh",
-          "meaning": "—"
+          "word": "eat",
+          "meaning": "சாப்பிடுகிறேன்"
         },
         {
-          "word": "fruits",
-          "meaning": "பழங்கள்"
+          "word": "fruit",
+          "meaning": "பழம்"
         },
         {
           "word": "daily",
@@ -128,38 +144,38 @@ export const lesson30: Omit<Lesson, 'level'> = {
     }
   ],
   "speakingPractice": [
-    "Eat an apple.",
-    "Eat good food.",
-    "Eat fresh fruits daily.",
-    "Do you eat daily?",
-    "Eat an apple daily."
+    "I eat an apple.",
+    "Eat your food slowly.",
+    "We should eat healthy food.",
+    "Did you eat today?",
+    "I eat fruit daily."
   ],
   "translationPractice": [
     {
-      "question": "ஒரு ஆப்பிள் சாப்பிடு.",
+      "question": "நான் ஒரு ஆப்பிள் சாப்பிடுகிறேன்.",
       "type": "tamil-to-english",
-      "answer": "Eat an apple"
+      "answer": "I eat an apple."
     },
     {
-      "question": "நல்ல உணவு சாப்பிடு.",
+      "question": "உன் உணவை மெதுவாகச் சாப்பிடு.",
       "type": "tamil-to-english",
-      "answer": "Eat good food"
+      "answer": "Eat your food slowly."
     },
     {
-      "question": "தினமும் புதிய பழங்களைச் சாப்பிடு.",
+      "question": "நாம் ஆரோக்கியமான உணவைச் சாப்பிட வேண்டும்.",
       "type": "tamil-to-english",
-      "answer": "Eat fresh fruits daily"
+      "answer": "We should eat healthy food."
     },
     {
-      "question": "நீ தினமும் சாப்பிடுகிறாயா?",
+      "question": "நீ இன்று சாப்பிட்டாயா?",
       "type": "tamil-to-english",
-      "answer": "Do you eat daily"
+      "answer": "Did you eat today"
     },
     {
-      "question": "தினமும் ஒரு ஆப்பிள் சாப்பிடு.",
+      "question": "நான் தினமும் பழம் சாப்பிடுகிறேன்.",
       "type": "tamil-to-english",
-      "answer": "Eat an apple daily"
+      "answer": "I eat fruit daily."
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Eat'."
+  "rule": "Rule: Use 'eat' for solid foods. Note that the third person singular in present tense is 'eats', and past tense is 'ate'."
 };

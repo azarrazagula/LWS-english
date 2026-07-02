@@ -4,41 +4,59 @@ export const lesson4: Omit<Lesson, 'level'> = {
   "id": 4,
   "englishWord": "Are",
   "tamilMeaning": "இருக்கிறாய் / இருக்கிறீர்கள்",
-  "englishExplanation": "பன்மை பெயர்களுடன் (You, We, They) நிகழ்காலத்தில் 'Are' பயன்படுத்த வேண்டும்.",
+  "englishExplanation": "'Are' என்பது நிகழ்காலத்தில் You, We, They போன்ற பன்மை சொற்களுடன் பயன்படுத்தப்படும்.",
   "vocabularies": [
     {
       "word": "are",
       "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
     },
     {
-      "word": "We",
+      "word": "we",
       "meaning": "நாங்கள் / நாம்"
     },
     {
-      "word": "friends",
-      "meaning": "நண்பர்கள்"
-    },
-    {
-      "word": "happy",
-      "meaning": "மகிழ்ச்சியாக"
+      "word": "busy",
+      "meaning": "வேலையாக"
     },
     {
       "word": "late",
       "meaning": "தாமதம்"
+    },
+    {
+      "word": "here",
+      "meaning": "இங்கே"
     }
   ],
   "sentences": [
     {
+      "english": "Are you ready?",
+      "tamil": "நீ தயாராக இருக்கிறாயா?",
+      "breakdown": [
+        {
+          "word": "Are",
+          "meaning": "இருக்கிறாயா"
+        },
+        {
+          "word": "you",
+          "meaning": "நீ"
+        },
+        {
+          "word": "ready",
+          "meaning": "தயாராக"
+        }
+      ]
+    },
+    {
       "english": "We are friends.",
-      "tamil": "நாங்கள் நண்பர்கள்.",
+      "tamil": "நாங்கள் நண்பர்களாக இருக்கிறோம்.",
       "breakdown": [
         {
           "word": "We",
-          "meaning": "நாங்கள் / நாம்"
+          "meaning": "நாங்கள்"
         },
         {
           "word": "are",
-          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+          "meaning": "இருக்கிறோம்"
         },
         {
           "word": "friends",
@@ -47,111 +65,93 @@ export const lesson4: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "We are friends.",
-      "tamil": "நாங்கள் நண்பர்கள்.",
-      "breakdown": [
-        {
-          "word": "We",
-          "meaning": "நாங்கள் / நாம்"
-        },
-        {
-          "word": "are",
-          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
-        },
-        {
-          "word": "friends",
-          "meaning": "நண்பர்கள்"
-        }
-      ]
-    },
-    {
-      "english": "We are friends.",
-      "tamil": "நாங்கள் நண்பர்கள்.",
-      "breakdown": [
-        {
-          "word": "We",
-          "meaning": "நாங்கள் / நாம்"
-        },
-        {
-          "word": "are",
-          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
-        },
-        {
-          "word": "friends",
-          "meaning": "நண்பர்கள்"
-        }
-      ]
-    },
-    {
-      "english": "They are happy.",
-      "tamil": "அவர்கள் மகிழ்ச்சியாக இருக்கிறார்கள்.",
+      "english": "They are busy.",
+      "tamil": "அவர்கள் வேலையாக இருக்கிறார்கள்.",
       "breakdown": [
         {
           "word": "They",
-          "meaning": "அவர்கள் / அவைகள்"
+          "meaning": "அவர்கள்"
         },
         {
           "word": "are",
-          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+          "meaning": "இருக்கிறார்கள்"
         },
         {
-          "word": "happy",
-          "meaning": "மகிழ்ச்சியாக"
+          "word": "busy",
+          "meaning": "வேலையாக"
         }
       ]
     },
     {
       "english": "You are late.",
-      "tamil": "நீங்கள் தாமதமாக வந்திருக்கிறீர்கள்.",
+      "tamil": "நீ தாமதமாக இருக்கிறாய்.",
       "breakdown": [
         {
           "word": "You",
-          "meaning": "நீ / நீங்கள்"
+          "meaning": "நீ"
         },
         {
           "word": "are",
-          "meaning": "இருக்கிறாய் / இருக்கிறீர்கள்"
+          "meaning": "இருக்கிறாய்"
         },
         {
           "word": "late",
-          "meaning": "தாமதம்"
+          "meaning": "தாமதமாக"
+        }
+      ]
+    },
+    {
+      "english": "They are here.",
+      "tamil": "அவர்கள் இங்கே இருக்கிறார்கள்.",
+      "breakdown": [
+        {
+          "word": "They",
+          "meaning": "அவர்கள்"
+        },
+        {
+          "word": "are",
+          "meaning": "இருக்கிறார்கள்"
+        },
+        {
+          "word": "here",
+          "meaning": "இங்கே"
         }
       ]
     }
   ],
   "speakingPractice": [
+    "Are you ready?",
     "We are friends.",
-    "They are happy.",
+    "They are busy.",
     "You are late.",
-    "Are we happy?",
-    "Are they friends?"
+    "They are here."
   ],
   "translationPractice": [
     {
-      "question": "நாங்கள் நண்பர்கள்.",
+      "question": "நீ தயாராக இருக்கிறாயா?",
       "type": "tamil-to-english",
-      "answer": "We are friends"
+      "answer": "Are you ready"
     },
     {
-      "question": "அவர்கள் மகிழ்ச்சியாக இருக்கிறார்கள்.",
+      "question": "நாங்கள் நண்பர்களாக இருக்கிறோம்.",
       "type": "tamil-to-english",
-      "answer": "They are happy"
+      "answer": "We are friends."
     },
     {
-      "question": "நீங்கள் தாமதமாக வந்திருக்கிறீர்கள்.",
+      "question": "அவர்கள் வேலையாக இருக்கிறார்கள்.",
       "type": "tamil-to-english",
-      "answer": "You are late"
+      "answer": "They are busy."
     },
     {
-      "question": "நாம் மகிழ்ச்சியாக இருக்கிறோமா?",
+      "question": "நீ தாமதமாக இருக்கிறாய்.",
       "type": "tamil-to-english",
-      "answer": "Are we happy"
+      "answer": "You are late."
     },
     {
-      "question": "அவர்கள் நண்பர்களா?",
+      "question": "அவர்கள் இங்கே இருக்கிறார்கள்.",
       "type": "tamil-to-english",
-      "answer": "Are they friends"
+      "answer": "They are here."
     }
   ],
-  "rule": "Rule: 'Are' is used with plural pronouns (You, We, They) in present tense."
+  "rule": "Rule: 'Are' is the present tense plural form of the verb 'to be' used with You, We, and They."
 };

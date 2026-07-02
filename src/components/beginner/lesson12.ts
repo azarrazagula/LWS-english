@@ -3,159 +3,159 @@ import { Lesson } from '../../types';
 export const lesson12: Omit<Lesson, 'level'> = {
   "id": 12,
   "englishWord": "Were",
-  "tamilMeaning": "இருந்தோம்",
-  "englishExplanation": "Beginner பாடம் 12: 'Were' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "இருந்தாய் / இருந்தோம் / இருந்தார்கள்",
+  "englishExplanation": "'Were' என்பது கடந்த காலத்தில் You, We, They போன்ற பன்மை சொற்களுடன் பயன்படுத்தப்படும்.",
   "vocabularies": [
     {
-      "word": "Were",
-      "meaning": "இருந்தோம்"
+      "word": "were",
+      "meaning": "இருந்தார்கள் / இருந்தோம்"
     },
     {
-      "word": "they",
-      "meaning": "அவர்கள்"
+      "word": "happy",
+      "meaning": "மகிழ்ச்சியாக"
     },
     {
-      "word": "busy",
-      "meaning": "பிஸியாக"
+      "word": "late",
+      "meaning": "தாமதம்"
     },
     {
-      "word": "friends",
-      "meaning": "நண்பர்கள்"
+      "word": "students",
+      "meaning": "மாணவர்கள்"
     },
     {
-      "word": "there",
-      "meaning": "அங்கே"
+      "word": "together",
+      "meaning": "ஒன்றாக"
     }
   ],
   "sentences": [
     {
-      "english": "They were busy.",
-      "tamil": "அவர்கள் பிஸியாக இருந்தார்கள்.",
-      "breakdown": [
-        {
-          "word": "They",
-          "meaning": "அவர்கள்"
-        },
-        {
-          "word": "were",
-          "meaning": "இருந்தோம்"
-        },
-        {
-          "word": "busy",
-          "meaning": "பிஸியாக"
-        }
-      ]
-    },
-    {
-      "english": "They were busy.",
-      "tamil": "அவர்கள் பிஸியாக இருந்தார்கள்.",
-      "breakdown": [
-        {
-          "word": "They",
-          "meaning": "அவர்கள்"
-        },
-        {
-          "word": "were",
-          "meaning": "இருந்தோம்"
-        },
-        {
-          "word": "busy",
-          "meaning": "பிஸியாக"
-        }
-      ]
-    },
-    {
-      "english": "They were busy.",
-      "tamil": "அவர்கள் பிஸியாக இருந்தார்கள்.",
-      "breakdown": [
-        {
-          "word": "They",
-          "meaning": "அவர்கள்"
-        },
-        {
-          "word": "were",
-          "meaning": "இருந்தோம்"
-        },
-        {
-          "word": "busy",
-          "meaning": "பிஸியாக"
-        }
-      ]
-    },
-    {
-      "english": "They were good friends.",
-      "tamil": "அவர்கள் நல்ல நண்பர்களாக இருந்தார்கள்.",
-      "breakdown": [
-        {
-          "word": "They",
-          "meaning": "அவர்கள்"
-        },
-        {
-          "word": "were",
-          "meaning": "இருந்தோம்"
-        },
-        {
-          "word": "good",
-          "meaning": "—"
-        },
-        {
-          "word": "friends",
-          "meaning": "நண்பர்கள்"
-        }
-      ]
-    },
-    {
-      "english": "Were they there?",
-      "tamil": "அவர்கள் அங்கே இருந்தார்களா?",
+      "english": "Were they late yesterday?",
+      "tamil": "நேற்று அவர்கள் தாமதமாக வந்தார்களா?",
       "breakdown": [
         {
           "word": "Were",
-          "meaning": "இருந்தோம்"
+          "meaning": "இருந்தார்களா"
         },
         {
           "word": "they",
           "meaning": "அவர்கள்"
         },
         {
-          "word": "there",
-          "meaning": "அங்கே"
+          "word": "late",
+          "meaning": "தாமதமாக"
+        },
+        {
+          "word": "yesterday",
+          "meaning": "நேற்று"
+        }
+      ]
+    },
+    {
+      "english": "We were happy.",
+      "tamil": "நாங்கள் மகிழ்ச்சியாக இருந்தோம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள்"
+        },
+        {
+          "word": "were",
+          "meaning": "இருந்தோம்"
+        },
+        {
+          "word": "happy",
+          "meaning": "மகிழ்ச்சியாக"
+        }
+      ]
+    },
+    {
+      "english": "You were late.",
+      "tamil": "நீ தாமதமாக வந்தாய்.",
+      "breakdown": [
+        {
+          "word": "You",
+          "meaning": "நீ"
+        },
+        {
+          "word": "were",
+          "meaning": "இருந்தாய்"
+        },
+        {
+          "word": "late",
+          "meaning": "தாமதமாக"
+        }
+      ]
+    },
+    {
+      "english": "They were students.",
+      "tamil": "அவர்கள் மாணவர்களாக இருந்தார்கள்.",
+      "breakdown": [
+        {
+          "word": "They",
+          "meaning": "அவர்கள்"
+        },
+        {
+          "word": "were",
+          "meaning": "இருந்தார்கள்"
+        },
+        {
+          "word": "students",
+          "meaning": "மாணவர்களாக"
+        }
+      ]
+    },
+    {
+      "english": "We were together.",
+      "tamil": "நாங்கள் ஒன்றாக இருந்தோம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள்"
+        },
+        {
+          "word": "were",
+          "meaning": "இருந்தோம்"
+        },
+        {
+          "word": "together",
+          "meaning": "ஒன்றாக"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "They were busy.",
-    "Were they there?",
-    "They were good friends.",
-    "Were you busy yesterday?",
-    "We were there too."
+    "Were they late yesterday?",
+    "We were happy.",
+    "You were late.",
+    "They were students.",
+    "We were together."
   ],
   "translationPractice": [
     {
-      "question": "அவர்கள் பிஸியாக இருந்தார்கள்.",
+      "question": "நேற்று அவர்கள் தாமதமாக வந்தார்களா?",
       "type": "tamil-to-english",
-      "answer": "They were busy"
+      "answer": "Were they late yesterday"
     },
     {
-      "question": "அவர்கள் அங்கே இருந்தார்களா?",
+      "question": "நாங்கள் மகிழ்ச்சியாக இருந்தோம்.",
       "type": "tamil-to-english",
-      "answer": "Were they there"
+      "answer": "We were happy."
     },
     {
-      "question": "அவர்கள் நல்ல நண்பர்களாக இருந்தார்கள்.",
+      "question": "நீ தாமதமாக வந்தாய்.",
       "type": "tamil-to-english",
-      "answer": "They were good friends"
+      "answer": "You were late."
     },
     {
-      "question": "நீங்கள் நேற்று பிஸியாக இருந்தீர்களா?",
+      "question": "அவர்கள் மாணவர்களாக இருந்தார்கள்.",
       "type": "tamil-to-english",
-      "answer": "Were you busy yesterday"
+      "answer": "They were students."
     },
     {
-      "question": "நாங்களும் அங்கே இருந்தோம்.",
+      "question": "நாங்கள் ஒன்றாக இருந்தோம்.",
       "type": "tamil-to-english",
-      "answer": "We were there too"
+      "answer": "We were together."
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Were'."
+  "rule": "Rule: 'Were' is the past tense plural form of 'to be' used with You, We, and They."
 };

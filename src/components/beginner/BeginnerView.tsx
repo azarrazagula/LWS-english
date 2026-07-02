@@ -181,7 +181,7 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
 
   // Slide deck metadata
   const totalSlides = 11;
-  const progressPercent = Math.round(((activeSlide + 1) / totalSlides) * 100);
+  const progressPercent = activeSlide === 0 ? 0 : Math.round((activeSlide / (totalSlides - 1)) * 100);
 
   return (
     <div className="relative z-10 max-w-4xl mx-auto px-4 py-8">
@@ -297,37 +297,39 @@ export const BeginnerView: React.FC<LessonViewProps> = ({
       </div>
 
       {/* Control Buttons Bar */}
-      <div className="mt-8 flex justify-between items-center">
-        <button
-          onClick={() => setActiveSlide(prev => Math.max(0, prev - 1))}
-          disabled={activeSlide === 0}
-          className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider border transition-all ${
-            activeSlide === 0
-              ? 'opacity-40 text-slate-600 border-white/5 cursor-not-allowed'
-              : 'glass-panel text-slate-300 border-white/5 hover:bg-white/5 active:scale-95'
-          }`}
-        >
-          <ChevronLeft className="w-4 h-4" />
-          Prev Slide
-        </button>
+      {activeSlide > 0 && (
+        <div className="mt-8 flex justify-between items-center">
+          <button
+            onClick={() => setActiveSlide(prev => Math.max(0, prev - 1))}
+            disabled={activeSlide === 0}
+            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider border transition-all ${
+              activeSlide === 0
+                ? 'opacity-40 text-slate-600 border-white/5 cursor-not-allowed'
+                : 'glass-panel text-slate-300 border-white/5 hover:bg-white/5 active:scale-95'
+            }`}
+          >
+            <ChevronLeft className="w-4 h-4" />
+            Prev Slide
+          </button>
 
-        <span className="text-xs font-extrabold text-slate-400 tracking-wider">
-          Slide {activeSlide + 1} / {totalSlides}
-        </span>
+          <span className="text-xs font-extrabold text-slate-400 tracking-wider">
+            Slide {activeSlide} / {totalSlides - 1}
+          </span>
 
-        <button
-          onClick={() => setActiveSlide(prev => Math.min(totalSlides - 1, prev + 1))}
-          disabled={activeSlide === totalSlides - 1}
-          className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all ${
-            activeSlide === totalSlides - 1
-              ? 'opacity-40 text-slate-600 border-white/5 cursor-not-allowed'
-              : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md active:scale-95'
-          }`}
-        >
-          Next Slide
-          <ChevronRight className="w-4 h-4" />
-        </button>
-      </div>
+          <button
+            onClick={() => setActiveSlide(prev => Math.min(totalSlides - 1, prev + 1))}
+            disabled={activeSlide === totalSlides - 1}
+            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all ${
+              activeSlide === totalSlides - 1
+                ? 'opacity-40 text-slate-600 border-white/5 cursor-not-allowed'
+                : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md active:scale-95'
+            }`}
+          >
+            Next Slide
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+      )}
     </div>
   );
 };

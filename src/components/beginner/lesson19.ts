@@ -3,24 +3,24 @@ import { Lesson } from '../../types';
 export const lesson19: Omit<Lesson, 'level'> = {
   "id": 19,
   "englishWord": "To",
-  "tamilMeaning": "நோக்கி",
-  "englishExplanation": "Beginner பாடம் 19: 'To' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "நோக்கி / -க்கு",
+  "englishExplanation": "'To' என்பது இலக்கு, திசை அல்லது ஒரு நபர்/பொருளை நோக்கிச் செல்லும் இயக்கத்தைக் குறிக்கும் முன்னிடைச்சொல் ஆகும்.",
   "vocabularies": [
     {
-      "word": "To",
-      "meaning": "நோக்கி"
-    },
-    {
-      "word": "go",
-      "meaning": "போ"
-    },
-    {
-      "word": "school",
-      "meaning": "பள்ளி"
+      "word": "to",
+      "meaning": "நோக்கி / -க்கு"
     },
     {
       "word": "market",
       "meaning": "சந்தை"
+    },
+    {
+      "word": "give",
+      "meaning": "கொடு"
+    },
+    {
+      "word": "learn",
+      "meaning": "கற்க"
     },
     {
       "word": "office",
@@ -29,74 +29,46 @@ export const lesson19: Omit<Lesson, 'level'> = {
   ],
   "sentences": [
     {
-      "english": "Go to school.",
-      "tamil": "பள்ளிக்கு போ.",
+      "english": "I go to school.",
+      "tamil": "நான் பள்ளிக்குச் செல்கிறேன்.",
       "breakdown": [
         {
-          "word": "Go",
-          "meaning": "போ"
-        },
-        {
-          "word": "to",
-          "meaning": "நோக்கி"
-        },
-        {
-          "word": "school",
-          "meaning": "பள்ளி"
-        }
-      ]
-    },
-    {
-      "english": "Go to school.",
-      "tamil": "பள்ளிக்கு போ.",
-      "breakdown": [
-        {
-          "word": "Go",
-          "meaning": "போ"
-        },
-        {
-          "word": "to",
-          "meaning": "நோக்கி"
-        },
-        {
-          "word": "school",
-          "meaning": "பள்ளி"
-        }
-      ]
-    },
-    {
-      "english": "Go to school.",
-      "tamil": "பள்ளிக்கு போ.",
-      "breakdown": [
-        {
-          "word": "Go",
-          "meaning": "போ"
-        },
-        {
-          "word": "to",
-          "meaning": "நோக்கி"
-        },
-        {
-          "word": "school",
-          "meaning": "பள்ளி"
-        }
-      ]
-    },
-    {
-      "english": "They go to market.",
-      "tamil": "அவர்கள் சந்தைக்குச் செல்கிறார்கள்.",
-      "breakdown": [
-        {
-          "word": "They",
-          "meaning": "அவர்கள் / அவைகள்"
+          "word": "I",
+          "meaning": "நான்"
         },
         {
           "word": "go",
-          "meaning": "போ"
+          "meaning": "செல்கிறேன்"
         },
         {
           "word": "to",
-          "meaning": "நோக்கி"
+          "meaning": "நோக்கி (-க்கு)"
+        },
+        {
+          "word": "school",
+          "meaning": "பள்ளி"
+        }
+      ]
+    },
+    {
+      "english": "We go to the market.",
+      "tamil": "நாங்கள் சந்தைக்குச் செல்கிறோம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள்"
+        },
+        {
+          "word": "go",
+          "meaning": "செல்கிறோம்"
+        },
+        {
+          "word": "to",
+          "meaning": "நோக்கி (-க்கு)"
+        },
+        {
+          "word": "the",
+          "meaning": "குறிப்பிட்ட"
         },
         {
           "word": "market",
@@ -105,16 +77,68 @@ export const lesson19: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Go to the office now.",
-      "tamil": "இப்போது அலுவலகத்திற்கு போ.",
+      "english": "Give it to me.",
+      "tamil": "அதை என்னிடம் கொடு.",
       "breakdown": [
         {
-          "word": "Go",
-          "meaning": "போ"
+          "word": "Give",
+          "meaning": "கொடு"
+        },
+        {
+          "word": "it",
+          "meaning": "அதை"
         },
         {
           "word": "to",
-          "meaning": "நோக்கி"
+          "meaning": "நோக்கி (-இடம்)"
+        },
+        {
+          "word": "me",
+          "meaning": "நான்"
+        }
+      ]
+    },
+    {
+      "english": "He wants to learn.",
+      "tamil": "அவன் கற்க விரும்புகிறான்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவன்"
+        },
+        {
+          "word": "wants",
+          "meaning": "விரும்புகிறான்"
+        },
+        {
+          "word": "to",
+          "meaning": "செய்ய"
+        },
+        {
+          "word": "learn",
+          "meaning": "கற்க"
+        }
+      ]
+    },
+    {
+      "english": "Will you go to the office?",
+      "tamil": "நீ அலுவலகத்திற்குச் செல்வாயா?",
+      "breakdown": [
+        {
+          "word": "Will",
+          "meaning": "செய்வாயா"
+        },
+        {
+          "word": "you",
+          "meaning": "நீ"
+        },
+        {
+          "word": "go",
+          "meaning": "செல்ல"
+        },
+        {
+          "word": "to",
+          "meaning": "நோக்கி (-க்கு)"
         },
         {
           "word": "the",
@@ -123,47 +147,43 @@ export const lesson19: Omit<Lesson, 'level'> = {
         {
           "word": "office",
           "meaning": "அலுவலகம்"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Go to school.",
-    "I walk to work.",
-    "They go to market.",
-    "Go to the office now.",
-    "She walks to school."
+    "I go to school.",
+    "We go to the market.",
+    "Give it to me.",
+    "He wants to learn.",
+    "Will you go to the office?"
   ],
   "translationPractice": [
     {
-      "question": "பள்ளிக்கு போ.",
+      "question": "நான் பள்ளிக்குச் செல்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "Go to school"
+      "answer": "I go to school."
     },
     {
-      "question": "நான் வேலைக்கு நடந்து செல்கிறேன்.",
+      "question": "நாங்கள் சந்தைக்குச் செல்கிறோம்.",
       "type": "tamil-to-english",
-      "answer": "I walk to work"
+      "answer": "We go to the market."
     },
     {
-      "question": "அவர்கள் சந்தைக்குச் செல்கிறார்கள்.",
+      "question": "அதை என்னிடம் கொடு.",
       "type": "tamil-to-english",
-      "answer": "They go to market"
+      "answer": "Give it to me."
     },
     {
-      "question": "இப்போது அலுவலகத்திற்கு போ.",
+      "question": "அவன் கற்க விரும்புகிறான்.",
       "type": "tamil-to-english",
-      "answer": "Go to the office now"
+      "answer": "He wants to learn."
     },
     {
-      "question": "அவள் பள்ளிக்கு நடந்து செல்கிறாள்.",
+      "question": "நீ அலுவலகத்திற்குச் செல்வாயா?",
       "type": "tamil-to-english",
-      "answer": "She walks to school"
+      "answer": "Will you go to the office"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'To'."
+  "rule": "Rule: Use 'to' to show direction, destination, or recipient (e.g. going to a place, giving something to someone)."
 };

@@ -3,106 +3,78 @@ import { Lesson } from '../../types';
 export const lesson24: Omit<Lesson, 'level'> = {
   "id": 24,
   "englishWord": "Get",
-  "tamilMeaning": "பெறு",
-  "englishExplanation": "Beginner பாடம் 24: 'Get' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "பெறு / அடை",
+  "englishExplanation": "'Get' என்பது ஒன்றைப் பெற்றுக்கொள்வது, அடைவது அல்லது ஒரு நிலைக்கு மாறுவதைக் குறிக்கும் வினைச்சொல்.",
   "vocabularies": [
     {
-      "word": "Get",
-      "meaning": "பெறு"
+      "word": "get",
+      "meaning": "பெறு / அடை"
     },
     {
       "word": "ready",
       "meaning": "தயார்"
     },
     {
-      "word": "up",
-      "meaning": "மேலே"
-    },
-    {
       "word": "early",
       "meaning": "சீக்கிரம்"
     },
     {
-      "word": "help",
-      "meaning": "உதவி"
+      "word": "job",
+      "meaning": "வேலை"
+    },
+    {
+      "word": "key",
+      "meaning": "சாவி"
     }
   ],
   "sentences": [
     {
-      "english": "Get ready now.",
-      "tamil": "இப்போது தயாராகு.",
+      "english": "I will get it today.",
+      "tamil": "நான் அதை இன்று பெறுவேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "will",
+          "meaning": "செய்வேன்"
+        },
+        {
+          "word": "get",
+          "meaning": "பெறுவேன்"
+        },
+        {
+          "word": "it",
+          "meaning": "அதை"
+        },
+        {
+          "word": "today",
+          "meaning": "இன்று"
+        }
+      ]
+    },
+    {
+      "english": "Get ready soon.",
+      "tamil": "சீக்கிரம் தயாராகு.",
       "breakdown": [
         {
           "word": "Get",
-          "meaning": "பெறு"
+          "meaning": "ஆகு"
         },
         {
           "word": "ready",
           "meaning": "தயார்"
         },
         {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "Get ready now.",
-      "tamil": "இப்போது தயாராகு.",
-      "breakdown": [
-        {
-          "word": "Get",
-          "meaning": "பெறு"
-        },
-        {
-          "word": "ready",
-          "meaning": "தயார்"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "Get up early.",
-      "tamil": "சீக்கிரம் எழுந்து இரு.",
-      "breakdown": [
-        {
-          "word": "Get",
-          "meaning": "பெறு"
-        },
-        {
-          "word": "up",
-          "meaning": "மேலே"
-        },
-        {
-          "word": "early",
+          "word": "soon",
           "meaning": "சீக்கிரம்"
         }
       ]
     },
     {
-      "english": "Get up early.",
-      "tamil": "சீக்கிரம் எழுந்து இரு.",
-      "breakdown": [
-        {
-          "word": "Get",
-          "meaning": "பெறு"
-        },
-        {
-          "word": "up",
-          "meaning": "மேலே"
-        },
-        {
-          "word": "early",
-          "meaning": "சீக்கிரம்"
-        }
-      ]
-    },
-    {
-      "english": "I get some help.",
-      "tamil": "எனக்கு சில உதவி கிடைக்கிறது.",
+      "english": "I get up early.",
+      "tamil": "நான் சீக்கிரம் எழுந்திருக்கிறேன்.",
       "breakdown": [
         {
           "word": "I",
@@ -110,52 +82,104 @@ export const lesson24: Omit<Lesson, 'level'> = {
         },
         {
           "word": "get",
-          "meaning": "பெறு"
+          "meaning": "அடைகிறேன்"
         },
         {
-          "word": "some",
-          "meaning": "—"
+          "word": "up",
+          "meaning": "மேலே"
         },
         {
-          "word": "help",
-          "meaning": "உதவி"
+          "word": "early",
+          "meaning": "சீக்கிரம்"
+        }
+      ]
+    },
+    {
+      "english": "Did you get the job?",
+      "tamil": "உனக்கு வேலை கிடைத்ததா?",
+      "breakdown": [
+        {
+          "word": "Did",
+          "meaning": "செய்தாயா"
+        },
+        {
+          "word": "you",
+          "meaning": "நீ"
+        },
+        {
+          "word": "get",
+          "meaning": "பெற"
+        },
+        {
+          "word": "the",
+          "meaning": "குறிப்பிட்ட"
+        },
+        {
+          "word": "job",
+          "meaning": "வேலை"
+        }
+      ]
+    },
+    {
+      "english": "Go and get the key.",
+      "tamil": "போய் சாவியை வாங்கி வா.",
+      "breakdown": [
+        {
+          "word": "Go",
+          "meaning": "போ"
+        },
+        {
+          "word": "and",
+          "meaning": "மற்றும்"
+        },
+        {
+          "word": "get",
+          "meaning": "வாங்கி வா"
+        },
+        {
+          "word": "the",
+          "meaning": "குறிப்பிட்ட"
+        },
+        {
+          "word": "key",
+          "meaning": "சாவி"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Get ready now.",
-    "Get up early.",
-    "I get some help.",
-    "Get ready for school.",
-    "Get up at six."
+    "I will get it today.",
+    "Get ready soon.",
+    "I get up early.",
+    "Did you get the job?",
+    "Go and get the key."
   ],
   "translationPractice": [
     {
-      "question": "இப்போது தயாராகு.",
+      "question": "நான் அதை இன்று பெறுவேன்.",
       "type": "tamil-to-english",
-      "answer": "Get ready now"
+      "answer": "I will get it today."
     },
     {
-      "question": "சீக்கிரம் எழுந்து இரு.",
+      "question": "சீக்கிரம் தயாராகு.",
       "type": "tamil-to-english",
-      "answer": "Get up early"
+      "answer": "Get ready soon."
     },
     {
-      "question": "எனக்கு சில உதவி கிடைக்கிறது.",
+      "question": "நான் சீக்கிரம் எழுந்திருக்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "I get some help"
+      "answer": "I get up early."
     },
     {
-      "question": "பள்ளிக்கு தயாராகு.",
+      "question": "உனக்கு வேலை கிடைத்ததா?",
       "type": "tamil-to-english",
-      "answer": "Get ready for school"
+      "answer": "Did you get the job"
     },
     {
-      "question": "ஆறு மணிக்கு எழுந்து இரு.",
+      "question": "போய் சாவியை வாங்கி வா.",
       "type": "tamil-to-english",
-      "answer": "Get up at six"
+      "answer": "Go and get the key."
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Get'."
+  "rule": "Rule: 'Get' has many meanings: to obtain (பெறு), to buy (வாங்கு), to arrive (அடை), or to wake up (get up)."
 };

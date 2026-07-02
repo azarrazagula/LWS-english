@@ -4,99 +4,93 @@ export const lesson27: Omit<Lesson, 'level'> = {
   "id": 27,
   "englishWord": "Say",
   "tamilMeaning": "சொல்",
-  "englishExplanation": "Beginner பாடம் 27: 'Say' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "englishExplanation": "'Say' என்பது வார்த்தைகளைப் பயன்படுத்தி கருத்துக்களைத் தெரிவிப்பது அல்லது பேசுவதைக் குறிக்கும் வினைச்சொல்.",
   "vocabularies": [
     {
-      "word": "Say",
+      "word": "say",
       "meaning": "சொல்"
     },
     {
-      "word": "hello",
-      "meaning": "வணக்கம்"
-    },
-    {
-      "word": "something",
-      "meaning": "ஏதாவது"
+      "word": "truth",
+      "meaning": "உண்மை"
     },
     {
       "word": "yes",
       "meaning": "ஆம்"
     },
     {
-      "word": "no",
-      "meaning": "இல்லை"
+      "word": "sorry",
+      "meaning": "மன்னிப்பு"
+    },
+    {
+      "word": "what",
+      "meaning": "என்ன"
     }
   ],
   "sentences": [
     {
-      "english": "Say hello now.",
-      "tamil": "இப்போது ஹலோ சொல்.",
-      "breakdown": [
-        {
-          "word": "Say",
-          "meaning": "சொல்"
-        },
-        {
-          "word": "hello",
-          "meaning": "வணக்கம்"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "Say hello now.",
-      "tamil": "இப்போது ஹலோ சொல்.",
-      "breakdown": [
-        {
-          "word": "Say",
-          "meaning": "சொல்"
-        },
-        {
-          "word": "hello",
-          "meaning": "வணக்கம்"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
       "english": "Please say something.",
-      "tamil": "தயவுசெய்து ஏதேனும் சொல்.",
+      "tamil": "தயவுசெய்து ஏதேனும் சொல்லுங்கள்.",
       "breakdown": [
         {
           "word": "Please",
-          "meaning": "—"
+          "meaning": "தயவுசெய்து"
+        },
+        {
+          "word": "say",
+          "meaning": "சொல்லுங்கள்"
+        },
+        {
+          "word": "something",
+          "meaning": "ஏதேனும்"
+        }
+      ]
+    },
+    {
+      "english": "I always say the truth.",
+      "tamil": "நான் எப்போதும் உண்மையையே சொல்கிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "always",
+          "meaning": "எப்போதும்"
+        },
+        {
+          "word": "say",
+          "meaning": "சொல்கிறேன்"
+        },
+        {
+          "word": "the",
+          "meaning": "குறிப்பிட்ட"
+        },
+        {
+          "word": "truth",
+          "meaning": "உண்மை"
+        }
+      ]
+    },
+    {
+      "english": "Just say yes or no.",
+      "tamil": "ஆம் அல்லது இல்லை என்று மட்டும் சொல்.",
+      "breakdown": [
+        {
+          "word": "Just",
+          "meaning": "மட்டும்"
         },
         {
           "word": "say",
           "meaning": "சொல்"
         },
         {
-          "word": "something",
-          "meaning": "ஏதாவது"
-        }
-      ]
-    },
-    {
-      "english": "Say yes or no.",
-      "tamil": "ஆம் அல்லது இல்லை என்று சொல்.",
-      "breakdown": [
-        {
-          "word": "Say",
-          "meaning": "சொல்"
-        },
-        {
           "word": "yes",
           "meaning": "ஆம்"
         },
         {
           "word": "or",
-          "meaning": "—"
+          "meaning": "அல்லது"
         },
         {
           "word": "no",
@@ -105,61 +99,83 @@ export const lesson27: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Say yes or no.",
-      "tamil": "ஆம் அல்லது இல்லை என்று சொல்.",
+      "english": "Did he say sorry?",
+      "tamil": "அவன் மன்னிப்பு கேட்டானா (sorry சொன்னானா)?",
       "breakdown": [
         {
-          "word": "Say",
-          "meaning": "சொல்"
+          "word": "Did",
+          "meaning": "செய்தானா"
         },
         {
-          "word": "yes",
-          "meaning": "ஆம்"
+          "word": "he",
+          "meaning": "அவன்"
         },
         {
-          "word": "or",
-          "meaning": "—"
+          "word": "say",
+          "meaning": "சொல்ல"
         },
         {
-          "word": "no",
-          "meaning": "இல்லை"
+          "word": "sorry",
+          "meaning": "மன்னிப்பு"
+        }
+      ]
+    },
+    {
+      "english": "What did she say?",
+      "tamil": "அவள் என்ன சொன்னாள்?",
+      "breakdown": [
+        {
+          "word": "What",
+          "meaning": "என்ன"
+        },
+        {
+          "word": "did",
+          "meaning": "செய்தாள்"
+        },
+        {
+          "word": "she",
+          "meaning": "அவள்"
+        },
+        {
+          "word": "say",
+          "meaning": "சொல்ல"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Say hello now.",
     "Please say something.",
-    "Say yes or no.",
-    "Do not say no.",
-    "What did you say?"
+    "I always say the truth.",
+    "Just say yes or no.",
+    "Did he say sorry?",
+    "What did she say?"
   ],
   "translationPractice": [
     {
-      "question": "இப்போது ஹலோ சொல்.",
+      "question": "தயவுசெய்து ஏதேனும் சொல்லுங்கள்.",
       "type": "tamil-to-english",
-      "answer": "Say hello now"
+      "answer": "Please say something."
     },
     {
-      "question": "தயவுசெய்து ஏதேனும் சொல்.",
+      "question": "நான் எப்போதும் உண்மையையே சொல்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "Please say something"
+      "answer": "I always say the truth."
     },
     {
-      "question": "ஆம் அல்லது இல்லை என்று சொல்.",
+      "question": "ஆம் அல்லது இல்லை என்று மட்டும் சொல்.",
       "type": "tamil-to-english",
-      "answer": "Say yes or no"
+      "answer": "Just say yes or no."
     },
     {
-      "question": "இல்லை என்று சொல்லாதே.",
+      "question": "அவன் மன்னிப்பு கேட்டானா (sorry சொன்னானா)?",
       "type": "tamil-to-english",
-      "answer": "Do not say no"
+      "answer": "Did he say sorry"
     },
     {
-      "question": "நீ என்ன சொன்னாய்?",
+      "question": "அவள் என்ன சொன்னாள்?",
       "type": "tamil-to-english",
-      "answer": "What did you say"
+      "answer": "What did she say"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Say'."
+  "rule": "Rule: Use 'say' to express statements in words. Note that 'say' is generally not followed directly by a personal object (use 'tell' instead)."
 };

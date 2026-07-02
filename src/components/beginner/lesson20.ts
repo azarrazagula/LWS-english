@@ -4,27 +4,27 @@ export const lesson20: Omit<Lesson, 'level'> = {
   "id": 20,
   "englishWord": "From",
   "tamilMeaning": "இருந்து",
-  "englishExplanation": "Beginner பாடம் 20: 'From' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "englishExplanation": "'From' என்பது ஒரு தொடக்கப்புள்ளி, தோற்றுவாய் அல்லது ஒரு இடத்திலிருந்து வருவதைக் குறிக்கும்.",
   "vocabularies": [
     {
-      "word": "From",
+      "word": "from",
       "meaning": "இருந்து"
     },
     {
-      "word": "chennai",
-      "meaning": "சென்னை"
+      "word": "school",
+      "meaning": "பள்ளி"
     },
     {
-      "word": "india",
-      "meaning": "இந்தியா"
+      "word": "friend",
+      "meaning": "நண்பன்"
     },
     {
-      "word": "office",
-      "meaning": "அலுவலகம்"
+      "word": "tomorrow",
+      "meaning": "நாளை"
     },
     {
-      "word": "home",
-      "meaning": "வீடு"
+      "word": "table",
+      "meaning": "மேசை"
     }
   ],
   "sentences": [
@@ -51,127 +51,147 @@ export const lesson20: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "I am from Chennai.",
-      "tamil": "நான் சென்னையிலிருந்து வருகிறேன்.",
+      "english": "He came from school.",
+      "tamil": "அவன் பள்ளியிலிருந்து வந்தான்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவன்"
+        },
+        {
+          "word": "came",
+          "meaning": "வந்தான்"
+        },
+        {
+          "word": "from",
+          "meaning": "இருந்து"
+        },
+        {
+          "word": "school",
+          "meaning": "பள்ளி"
+        }
+      ]
+    },
+    {
+      "english": "This gift is from my friend.",
+      "tamil": "இந்த பரிசு என் நண்பரிடமிருந்து வந்தது.",
+      "breakdown": [
+        {
+          "word": "This",
+          "meaning": "இந்த"
+        },
+        {
+          "word": "gift",
+          "meaning": "பரிசு"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
+        },
+        {
+          "word": "from",
+          "meaning": "இருந்து"
+        },
+        {
+          "word": "my",
+          "meaning": "எனது"
+        },
+        {
+          "word": "friend",
+          "meaning": "நண்பன்"
+        }
+      ]
+    },
+    {
+      "english": "I will work from tomorrow.",
+      "tamil": "நான் நாளையிலிருந்து வேலை செய்வேன்.",
       "breakdown": [
         {
           "word": "I",
           "meaning": "நான்"
         },
         {
-          "word": "am",
-          "meaning": "இருக்கிறேன்"
+          "word": "will",
+          "meaning": "செய்வேன்"
+        },
+        {
+          "word": "work",
+          "meaning": "வேலை"
         },
         {
           "word": "from",
           "meaning": "இருந்து"
         },
         {
-          "word": "Chennai",
-          "meaning": "சென்னை"
+          "word": "tomorrow",
+          "meaning": "நாளை"
         }
       ]
     },
     {
-      "english": "This is from India.",
-      "tamil": "இது இந்தியாவிலிருந்து வந்தது.",
+      "english": "Take the key from the table.",
+      "tamil": "மேசையிலிருந்து சாவியை எடு.",
       "breakdown": [
         {
-          "word": "This",
-          "meaning": "இது / இந்த"
+          "word": "Take",
+          "meaning": "எடு"
         },
         {
-          "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
+          "word": "the",
+          "meaning": "குறிப்பிட்ட"
+        },
+        {
+          "word": "key",
+          "meaning": "சாவி"
         },
         {
           "word": "from",
           "meaning": "இருந்து"
         },
         {
-          "word": "India",
-          "meaning": "இந்தியா"
-        }
-      ]
-    },
-    {
-      "english": "He came from office.",
-      "tamil": "அவன் அலுவலகத்திலிருந்து வந்தான்.",
-      "breakdown": [
-        {
-          "word": "He",
-          "meaning": "அவன் / இவர்"
+          "word": "the",
+          "meaning": "குறிப்பிட்ட"
         },
         {
-          "word": "came",
-          "meaning": "வந்தான் / வந்தாள்"
-        },
-        {
-          "word": "from",
-          "meaning": "இருந்து"
-        },
-        {
-          "word": "office",
-          "meaning": "அலுவலகம்"
-        }
-      ]
-    },
-    {
-      "english": "She came from home.",
-      "tamil": "அவள் வீட்டிலிருந்து வந்தாள்.",
-      "breakdown": [
-        {
-          "word": "She",
-          "meaning": "அவள் / இவர்"
-        },
-        {
-          "word": "came",
-          "meaning": "வந்தான் / வந்தாள்"
-        },
-        {
-          "word": "from",
-          "meaning": "இருந்து"
-        },
-        {
-          "word": "home",
-          "meaning": "வீடு"
+          "word": "table",
+          "meaning": "மேசை"
         }
       ]
     }
   ],
   "speakingPractice": [
     "I am from Chennai.",
-    "This is from India.",
-    "He came from office.",
-    "She came from home.",
-    "Are you from India?"
+    "He came from school.",
+    "This gift is from my friend.",
+    "I will work from tomorrow.",
+    "Take the key from the table."
   ],
   "translationPractice": [
     {
       "question": "நான் சென்னையிலிருந்து வருகிறேன்.",
       "type": "tamil-to-english",
-      "answer": "I am from Chennai"
+      "answer": "I am from Chennai."
     },
     {
-      "question": "இது இந்தியாவிலிருந்து வந்தது.",
+      "question": "அவன் பள்ளியிலிருந்து வந்தான்.",
       "type": "tamil-to-english",
-      "answer": "This is from India"
+      "answer": "He came from school."
     },
     {
-      "question": "அவன் அலுவலகத்திலிருந்து வந்தான்.",
+      "question": "இந்த பரிசு என் நண்பரிடமிருந்து வந்தது.",
       "type": "tamil-to-english",
-      "answer": "He came from office"
+      "answer": "This gift is from my friend."
     },
     {
-      "question": "அவள் வீட்டிலிருந்து வந்தாள்.",
+      "question": "நான் நாளையிலிருந்து வேலை செய்வேன்.",
       "type": "tamil-to-english",
-      "answer": "She came from home"
+      "answer": "I will work from tomorrow."
     },
     {
-      "question": "நீங்கள் இந்தியாவைச் சேர்ந்தவரா?",
+      "question": "மேசையிலிருந்து சாவியை எடு.",
       "type": "tamil-to-english",
-      "answer": "Are you from India"
+      "answer": "Take the key from the table."
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'From'."
+  "rule": "Rule: Use 'from' to show the starting point of motion, time, or source/origin of something."
 };

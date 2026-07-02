@@ -4,170 +4,170 @@ export const lesson6: Omit<Lesson, 'level'> = {
   "id": 6,
   "englishWord": "She",
   "tamilMeaning": "அவள் / இவர் (பெண்)",
-  "englishExplanation": "பெண்பாலைக் குறிக்க 'She' பயன்படும். இதன் பக்கத்தில் 'is' அல்லது 'was' வரும்.",
+  "englishExplanation": "'She' என்பது ஒரு பெண் அல்லது சிறுமியை குறிக்கப் பயன்படும். இதனுடன் ஒருமை வினைகள் வரும்.",
   "vocabularies": [
     {
-      "word": "She",
+      "word": "she",
       "meaning": "அவள் / இவர் (பெண்)"
     },
     {
-      "word": "is",
-      "meaning": "இருக்கிறாள் / இருக்கிறது"
+      "word": "nurse",
+      "meaning": "செவிலியர்"
     },
     {
-      "word": "teacher",
-      "meaning": "ஆசிரியர்"
+      "word": "smart",
+      "meaning": "புத்திசாலி"
     },
     {
-      "word": "sister",
-      "meaning": "சகோதரி"
+      "word": "happy",
+      "meaning": "மகிழ்ச்சி"
     },
     {
-      "word": "runs",
-      "meaning": "ஓடுகிறாள்"
+      "word": "kind",
+      "meaning": "அன்பானவள்"
     }
   ],
   "sentences": [
     {
-      "english": "She is a teacher.",
-      "tamil": "அவள் ஒரு ஆசிரியர்.",
+      "english": "She is a girl.",
+      "tamil": "அவள் ஒரு பெண்.",
       "breakdown": [
         {
           "word": "She",
-          "meaning": "அவள் / இவர் (பெண்)"
+          "meaning": "அவள்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறாள் / இருக்கிறது"
+          "meaning": "இருக்கிறாள்"
         },
         {
           "word": "a",
           "meaning": "ஒரு"
         },
         {
-          "word": "teacher",
-          "meaning": "ஆசிரியர்"
+          "word": "girl",
+          "meaning": "பெண்"
         }
       ]
     },
     {
-      "english": "She is a teacher.",
-      "tamil": "அவள் ஒரு ஆசிரியர்.",
+      "english": "She is a nurse.",
+      "tamil": "அவள் ஒரு செவிலியர்.",
       "breakdown": [
         {
           "word": "She",
-          "meaning": "அவள் / இவர் (பெண்)"
+          "meaning": "அவள்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறாள் / இருக்கிறது"
+          "meaning": "இருக்கிறாள்"
         },
         {
           "word": "a",
           "meaning": "ஒரு"
         },
         {
-          "word": "teacher",
-          "meaning": "ஆசிரியர்"
+          "word": "nurse",
+          "meaning": "செவிலியர்"
         }
       ]
     },
     {
-      "english": "She is a teacher.",
-      "tamil": "அவள் ஒரு ஆசிரியர்.",
+      "english": "She is smart.",
+      "tamil": "அவள் புத்திசாலியாக இருக்கிறாள்.",
       "breakdown": [
         {
           "word": "She",
-          "meaning": "அவள் / இவர் (பெண்)"
+          "meaning": "அவள்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறாள் / இருக்கிறது"
+          "meaning": "இருக்கிறாள்"
         },
         {
-          "word": "a",
-          "meaning": "ஒரு"
-        },
-        {
-          "word": "teacher",
-          "meaning": "ஆசிரியர்"
+          "word": "smart",
+          "meaning": "புத்திசாலியாக"
         }
       ]
     },
     {
-      "english": "She is my sister.",
-      "tamil": "அவள் என் சகோதரி.",
+      "english": "Is she happy today?",
+      "tamil": "அவள் இன்று மகிழ்ச்சியாக இருக்கிறாளா?",
+      "breakdown": [
+        {
+          "word": "Is",
+          "meaning": "இருக்கிறாளா"
+        },
+        {
+          "word": "she",
+          "meaning": "அவள்"
+        },
+        {
+          "word": "happy",
+          "meaning": "மகிழ்ச்சியாக"
+        },
+        {
+          "word": "today",
+          "meaning": "இன்று"
+        }
+      ]
+    },
+    {
+      "english": "She is very kind.",
+      "tamil": "அவள் மிகவும் அன்பானவள்.",
       "breakdown": [
         {
           "word": "She",
-          "meaning": "அவள் / இவர் (பெண்)"
+          "meaning": "அவள்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறாள் / இருக்கிறது"
+          "meaning": "இருக்கிறாள்"
         },
         {
-          "word": "my",
-          "meaning": "என்னுடைய"
+          "word": "very",
+          "meaning": "மிகவும்"
         },
         {
-          "word": "sister",
-          "meaning": "சகோதரி"
-        }
-      ]
-    },
-    {
-      "english": "She runs fast.",
-      "tamil": "அவள் வேகமாக ஓடுகிறாள்.",
-      "breakdown": [
-        {
-          "word": "She",
-          "meaning": "அவள் / இவர் (பெண்)"
-        },
-        {
-          "word": "runs",
-          "meaning": "ஓடுகிறாள்"
-        },
-        {
-          "word": "fast",
-          "meaning": "வேகமாக"
+          "word": "kind",
+          "meaning": "அன்பானவள்"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "She is a teacher.",
-    "She is my sister.",
-    "She runs fast.",
-    "Is she a teacher?",
-    "Is she my sister?"
+    "She is a girl.",
+    "She is a nurse.",
+    "She is smart.",
+    "Is she happy today?",
+    "She is very kind."
   ],
   "translationPractice": [
     {
-      "question": "அவள் ஒரு ஆசிரியர்.",
+      "question": "அவள் ஒரு பெண்.",
       "type": "tamil-to-english",
-      "answer": "She is a teacher"
+      "answer": "She is a girl."
     },
     {
-      "question": "அவள் என் சகோதரி.",
+      "question": "அவள் ஒரு செவிலியர்.",
       "type": "tamil-to-english",
-      "answer": "She is my sister"
+      "answer": "She is a nurse."
     },
     {
-      "question": "அவள் வேகமாக ஓடுகிறாள்.",
+      "question": "அவள் புத்திசாலியாக இருக்கிறாள்.",
       "type": "tamil-to-english",
-      "answer": "She runs fast"
+      "answer": "She is smart."
     },
     {
-      "question": "அவள் ஒரு ஆசிரியரா?",
+      "question": "அவள் இன்று மகிழ்ச்சியாக இருக்கிறாளா?",
       "type": "tamil-to-english",
-      "answer": "Is she a teacher"
+      "answer": "Is she happy today"
     },
     {
-      "question": "அவள் என் சகோதரியா?",
+      "question": "அவள் மிகவும் அன்பானவள்.",
       "type": "tamil-to-english",
-      "answer": "Is she my sister"
+      "answer": "She is very kind."
     }
   ],
-  "rule": "Rule: 'She' refers to a female person. Takes singular verbs."
+  "rule": "Rule: Use 'She' for a single female person. Pair with singular verbs like 'is/was' in sentences."
 };

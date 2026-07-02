@@ -4,33 +4,33 @@ export const lesson14: Omit<Lesson, 'level'> = {
   "id": 14,
   "englishWord": "A",
   "tamilMeaning": "ஒரு",
-  "englishExplanation": "Beginner பாடம் 14: 'A' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "englishExplanation": "'A' என்பது மெய்யெழுத்து (Consonant) ஒலியில் தொடங்கும் ஒருமைப் பெயர்ச்சொற்களுக்கு முன் வரும்.",
   "vocabularies": [
     {
-      "word": "A",
+      "word": "a",
       "meaning": "ஒரு"
     },
     {
-      "word": "dog",
-      "meaning": "நாய்"
+      "word": "car",
+      "meaning": "கார்"
     },
     {
-      "word": "cat",
-      "meaning": "பூனை"
+      "word": "friend",
+      "meaning": "நண்பன்"
     },
     {
-      "word": "pet",
-      "meaning": "செல்லப்பிராணி"
+      "word": "new",
+      "meaning": "புதிய"
     },
     {
-      "word": "home",
-      "meaning": "வீடு"
+      "word": "doctor",
+      "meaning": "மருத்துவர்"
     }
   ],
   "sentences": [
     {
-      "english": "I have a dog.",
-      "tamil": "என்னிடம் ஒரு நாய் இருக்கிறது.",
+      "english": "I have a book.",
+      "tamil": "என்னிடம் ஒரு புத்தகம் இருக்கிறது.",
       "breakdown": [
         {
           "word": "I",
@@ -38,148 +38,152 @@ export const lesson14: Omit<Lesson, 'level'> = {
         },
         {
           "word": "have",
-          "meaning": "வைத்திருக்கிறேன் / இருக்கிறது"
+          "meaning": "பெற்றிருக்கிறேன்"
         },
         {
           "word": "a",
           "meaning": "ஒரு"
         },
         {
-          "word": "dog",
-          "meaning": "நாய்"
+          "word": "book",
+          "meaning": "புத்தகம்"
         }
       ]
     },
     {
-      "english": "I have a dog.",
-      "tamil": "என்னிடம் ஒரு நாய் இருக்கிறது.",
+      "english": "He has a car.",
+      "tamil": "அவனிடம் ஒரு கார் இருக்கிறது.",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
+          "word": "He",
+          "meaning": "அவன்"
         },
         {
-          "word": "have",
-          "meaning": "வைத்திருக்கிறேன் / இருக்கிறது"
+          "word": "has",
+          "meaning": "பெற்றிருக்கிறான்"
         },
         {
           "word": "a",
           "meaning": "ஒரு"
         },
         {
-          "word": "dog",
-          "meaning": "நாய்"
+          "word": "car",
+          "meaning": "கார்"
         }
       ]
     },
     {
-      "english": "It is a cat.",
-      "tamil": "அது ஒரு பூனை.",
+      "english": "She has a new friend.",
+      "tamil": "அவளுக்கு ஒரு புதிய நண்பர் இருக்கிறார்.",
       "breakdown": [
         {
-          "word": "It",
+          "word": "She",
+          "meaning": "அவள்"
+        },
+        {
+          "word": "has",
+          "meaning": "பெற்றிருக்கிறாள்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "new",
+          "meaning": "புதிய"
+        },
+        {
+          "word": "friend",
+          "meaning": "நண்பர்"
+        }
+      ]
+    },
+    {
+      "english": "Is it a new car?",
+      "tamil": "அது ஒரு புதிய காரா?",
+      "breakdown": [
+        {
+          "word": "Is",
+          "meaning": "இருக்கிறதா"
+        },
+        {
+          "word": "it",
           "meaning": "அது"
         },
         {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "new",
+          "meaning": "புதிய"
+        },
+        {
+          "word": "car",
+          "meaning": "கார்"
+        }
+      ]
+    },
+    {
+      "english": "He is a good doctor.",
+      "tamil": "அவர் ஒரு நல்ல மருத்துவர்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவர்"
+        },
+        {
           "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
+          "meaning": "இருக்கிறார்"
         },
         {
           "word": "a",
           "meaning": "ஒரு"
         },
         {
-          "word": "cat",
-          "meaning": "பூனை"
-        }
-      ]
-    },
-    {
-      "english": "A pet is at home.",
-      "tamil": "ஒரு செல்லப்பிராணி வீட்டில் இருக்கிறது.",
-      "breakdown": [
-        {
-          "word": "A",
-          "meaning": "ஒரு"
+          "word": "good",
+          "meaning": "நல்ல"
         },
         {
-          "word": "pet",
-          "meaning": "செல்லப்பிராணி"
-        },
-        {
-          "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
-        },
-        {
-          "word": "at",
-          "meaning": "இடத்தில்"
-        },
-        {
-          "word": "home",
-          "meaning": "வீடு"
-        }
-      ]
-    },
-    {
-      "english": "A pet is at home.",
-      "tamil": "ஒரு செல்லப்பிராணி வீட்டில் இருக்கிறது.",
-      "breakdown": [
-        {
-          "word": "A",
-          "meaning": "ஒரு"
-        },
-        {
-          "word": "pet",
-          "meaning": "செல்லப்பிராணி"
-        },
-        {
-          "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
-        },
-        {
-          "word": "at",
-          "meaning": "இடத்தில்"
-        },
-        {
-          "word": "home",
-          "meaning": "வீடு"
+          "word": "doctor",
+          "meaning": "மருத்துவர்"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "I have a dog.",
-    "It is a cat.",
-    "A pet is at home.",
-    "He has a pet dog.",
-    "Is it a cat?"
+    "I have a book.",
+    "He has a car.",
+    "She has a new friend.",
+    "Is it a new car?",
+    "He is a good doctor."
   ],
   "translationPractice": [
     {
-      "question": "என்னிடம் ஒரு நாய் இருக்கிறது.",
+      "question": "என்னிடம் ஒரு புத்தகம் இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "I have a dog"
+      "answer": "I have a book."
     },
     {
-      "question": "அது ஒரு பூனை.",
+      "question": "அவனிடம் ஒரு கார் இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "It is a cat"
+      "answer": "He has a car."
     },
     {
-      "question": "ஒரு செல்லப்பிராணி வீட்டில் இருக்கிறது.",
+      "question": "அவளுக்கு ஒரு புதிய நண்பர் இருக்கிறார்.",
       "type": "tamil-to-english",
-      "answer": "A pet is at home"
+      "answer": "She has a new friend."
     },
     {
-      "question": "அவனிடம் ஒரு செல்ல நாய் இருக்கிறது.",
+      "question": "அது ஒரு புதிய காரா?",
       "type": "tamil-to-english",
-      "answer": "He has a pet dog"
+      "answer": "Is it a new car"
     },
     {
-      "question": "அது ஒரு பூனையா?",
+      "question": "அவர் ஒரு நல்ல மருத்துவர்.",
       "type": "tamil-to-english",
-      "answer": "Is it a cat"
+      "answer": "He is a good doctor."
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'A'."
+  "rule": "Rule: Use 'a' before singular countable nouns that begin with consonant sounds. Use 'an' before vowel sounds."
 };

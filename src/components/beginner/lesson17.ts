@@ -3,46 +3,50 @@ import { Lesson } from '../../types';
 export const lesson17: Omit<Lesson, 'level'> = {
   "id": 17,
   "englishWord": "On",
-  "tamilMeaning": "மேலே",
-  "englishExplanation": "Beginner பாடம் 17: 'On' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "மேலே / மீது",
+  "englishExplanation": "'On' என்பது ஒரு பொருளின் மேற்பரப்பில் தொட்டுக் கொண்டு இருக்கும் நிலையைக் குறிக்கும் முன்னிடைச்சொல் ஆகும்.",
   "vocabularies": [
     {
-      "word": "On",
-      "meaning": "மேலே"
+      "word": "on",
+      "meaning": "மேலே / மீது"
     },
     {
-      "word": "the",
-      "meaning": "குறிப்பிட்ட"
-    },
-    {
-      "word": "table",
-      "meaning": "மேசை"
+      "word": "wall",
+      "meaning": "சுவர்"
     },
     {
       "word": "floor",
       "meaning": "தரை"
     },
     {
-      "word": "desk",
+      "word": "roof",
+      "meaning": "கூரை"
+    },
+    {
+      "word": "table",
       "meaning": "மேசை"
     }
   ],
   "sentences": [
     {
-      "english": "Put it on the table.",
-      "tamil": "அதை மேசையின் மீது வை.",
+      "english": "The book is on the table.",
+      "tamil": "புத்தகம் மேசையின் மேல் இருக்கிறது.",
       "breakdown": [
         {
-          "word": "Put",
-          "meaning": "வை"
+          "word": "The",
+          "meaning": "அந்த"
         },
         {
-          "word": "it",
-          "meaning": "அது"
+          "word": "book",
+          "meaning": "புத்தகம்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
         },
         {
           "word": "on",
-          "meaning": "மேலே"
+          "meaning": "மேல்"
         },
         {
           "word": "the",
@@ -55,68 +59,50 @@ export const lesson17: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Put it on the table.",
-      "tamil": "அதை மேசையின் மீது வை.",
+      "english": "The clock is on the wall.",
+      "tamil": "கடிகாரம் சுவரில் இருக்கிறது.",
       "breakdown": [
         {
-          "word": "Put",
-          "meaning": "வை"
+          "word": "The",
+          "meaning": "அந்த"
         },
         {
-          "word": "it",
-          "meaning": "அது"
+          "word": "clock",
+          "meaning": "கடிகாரம்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
         },
         {
           "word": "on",
-          "meaning": "மேலே"
+          "meaning": "சுவரின் மீது"
         },
         {
           "word": "the",
           "meaning": "குறிப்பிட்ட"
         },
         {
-          "word": "table",
-          "meaning": "மேசை"
+          "word": "wall",
+          "meaning": "சுவர்"
         }
       ]
     },
     {
-      "english": "Put it on the table.",
-      "tamil": "அதை மேசையின் மீது வை.",
+      "english": "He sits on the floor.",
+      "tamil": "அவன் தரையில் அமர்ந்திருக்கிறான்.",
       "breakdown": [
         {
-          "word": "Put",
-          "meaning": "வை"
+          "word": "He",
+          "meaning": "அவன்"
         },
         {
-          "word": "it",
-          "meaning": "அது"
+          "word": "sits",
+          "meaning": "அமர்கிறான்"
         },
         {
           "word": "on",
-          "meaning": "மேலே"
-        },
-        {
-          "word": "the",
-          "meaning": "குறிப்பிட்ட"
-        },
-        {
-          "word": "table",
-          "meaning": "மேசை"
-        }
-      ]
-    },
-    {
-      "english": "Stand on the floor.",
-      "tamil": "தரையில் நில்.",
-      "breakdown": [
-        {
-          "word": "Stand",
-          "meaning": "நில்"
-        },
-        {
-          "word": "on",
-          "meaning": "மேலே"
+          "meaning": "மேல்"
         },
         {
           "word": "the",
@@ -129,65 +115,99 @@ export const lesson17: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "It is on the desk.",
-      "tamil": "அது மேசை மீது இருக்கிறது.",
+      "english": "The cat is on the roof.",
+      "tamil": "பூனை கூரையின் மேல் இருக்கிறது.",
       "breakdown": [
         {
-          "word": "It",
-          "meaning": "அது"
+          "word": "The",
+          "meaning": "அந்த"
+        },
+        {
+          "word": "cat",
+          "meaning": "பூனை"
         },
         {
           "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
+          "meaning": "இருக்கிறது"
         },
         {
           "word": "on",
-          "meaning": "மேலே"
+          "meaning": "மேல்"
         },
         {
           "word": "the",
           "meaning": "குறிப்பிட்ட"
         },
         {
-          "word": "desk",
+          "word": "roof",
+          "meaning": "கூரை"
+        }
+      ]
+    },
+    {
+      "english": "Is the key on the table?",
+      "tamil": "சாவி மேசையின் மேல் இருக்கிறதா?",
+      "breakdown": [
+        {
+          "word": "Is",
+          "meaning": "இருக்கிறதா"
+        },
+        {
+          "word": "the",
+          "meaning": "அந்த"
+        },
+        {
+          "word": "key",
+          "meaning": "சாவி"
+        },
+        {
+          "word": "on",
+          "meaning": "மேல்"
+        },
+        {
+          "word": "the",
+          "meaning": "குறிப்பிட்ட"
+        },
+        {
+          "word": "table",
           "meaning": "மேசை"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Put it on the table.",
-    "Stand on the floor.",
-    "It is on the desk.",
-    "Is it on the table?",
-    "Do not sit on the floor."
+    "The book is on the table.",
+    "The clock is on the wall.",
+    "He sits on the floor.",
+    "The cat is on the roof.",
+    "Is the key on the table?"
   ],
   "translationPractice": [
     {
-      "question": "அதை மேசையின் மீது வை.",
+      "question": "புத்தகம் மேசையின் மேல் இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "Put it on the table"
+      "answer": "The book is on the table."
     },
     {
-      "question": "தரையில் நில்.",
+      "question": "கடிகாரம் சுவரில் இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "Stand on the floor"
+      "answer": "The clock is on the wall."
     },
     {
-      "question": "அது மேசை மீது இருக்கிறது.",
+      "question": "அவன் தரையில் அமர்ந்திருக்கிறான்.",
       "type": "tamil-to-english",
-      "answer": "It is on the desk"
+      "answer": "He sits on the floor."
     },
     {
-      "question": "அது மேசையின் மீது இருக்கிறதா?",
+      "question": "பூனை கூரையின் மேல் இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "Is it on the table"
+      "answer": "The cat is on the roof."
     },
     {
-      "question": "தரையில் உட்காராதே.",
+      "question": "சாவி மேசையின் மேல் இருக்கிறதா?",
       "type": "tamil-to-english",
-      "answer": "Do not sit on the floor"
+      "answer": "Is the key on the table"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'On'."
+  "rule": "Rule: Use 'on' to show position on a horizontal or vertical surface where objects are in physical contact."
 };

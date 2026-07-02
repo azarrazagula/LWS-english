@@ -3,85 +3,31 @@ import { Lesson } from '../../types';
 export const lesson26: Omit<Lesson, 'level'> = {
   "id": 26,
   "englishWord": "See",
-  "tamilMeaning": "பார்",
-  "englishExplanation": "Beginner பாடம் 26: 'See' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "பார் / சந்தி",
+  "englishExplanation": "'See' என்பது கண்களால் பார்ப்பது, கவனிப்பது அல்லது ஒருவரைச் சந்திப்பதைக் குறிக்கும் வினைச்சொல்.",
   "vocabularies": [
     {
-      "word": "See",
-      "meaning": "பார்"
+      "word": "see",
+      "meaning": "பார் / சந்தி"
     },
     {
-      "word": "you",
-      "meaning": "உன்னை"
+      "word": "movie",
+      "meaning": "திரைப்படம்"
     },
     {
-      "word": "later",
-      "meaning": "பின்னர்"
+      "word": "tomorrow",
+      "meaning": "நாளை"
     },
     {
-      "word": "bird",
-      "meaning": "பறவை"
+      "word": "me",
+      "meaning": "என்னை"
     },
     {
-      "word": "picture",
-      "meaning": "படம்"
+      "word": "daily",
+      "meaning": "தினமும்"
     }
   ],
   "sentences": [
-    {
-      "english": "See you later.",
-      "tamil": "பிறகு பார்ப்போம்.",
-      "breakdown": [
-        {
-          "word": "See",
-          "meaning": "பார்"
-        },
-        {
-          "word": "you",
-          "meaning": "உன்னை"
-        },
-        {
-          "word": "later",
-          "meaning": "பின்னர்"
-        }
-      ]
-    },
-    {
-      "english": "See you later.",
-      "tamil": "பிறகு பார்ப்போம்.",
-      "breakdown": [
-        {
-          "word": "See",
-          "meaning": "பார்"
-        },
-        {
-          "word": "you",
-          "meaning": "உன்னை"
-        },
-        {
-          "word": "later",
-          "meaning": "பின்னர்"
-        }
-      ]
-    },
-    {
-      "english": "See you later.",
-      "tamil": "பிறகு பார்ப்போம்.",
-      "breakdown": [
-        {
-          "word": "See",
-          "meaning": "பார்"
-        },
-        {
-          "word": "you",
-          "meaning": "உன்னை"
-        },
-        {
-          "word": "later",
-          "meaning": "பின்னர்"
-        }
-      ]
-    },
     {
       "english": "I see a bird.",
       "tamil": "நான் ஒரு பறவையைப் பார்க்கிறேன்.",
@@ -92,7 +38,7 @@ export const lesson26: Omit<Lesson, 'level'> = {
         },
         {
           "word": "see",
-          "meaning": "பார்"
+          "meaning": "பார்க்கிறேன்"
         },
         {
           "word": "a",
@@ -105,61 +51,135 @@ export const lesson26: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "See this nice picture.",
-      "tamil": "இந்த அழகான படத்தைப் பார்.",
+      "english": "Did you see the movie?",
+      "tamil": "நீ அந்தப் படத்தைப் பார்த்தாயா?",
       "breakdown": [
         {
-          "word": "See",
-          "meaning": "பார்"
+          "word": "Did",
+          "meaning": "செய்தாயா"
         },
         {
-          "word": "this",
-          "meaning": "இது / இந்த"
+          "word": "you",
+          "meaning": "நீ"
         },
         {
-          "word": "nice",
-          "meaning": "நல்லது"
+          "word": "see",
+          "meaning": "பார்க்க"
         },
         {
-          "word": "picture",
+          "word": "the",
+          "meaning": "குறிப்பிட்ட"
+        },
+        {
+          "word": "movie",
           "meaning": "படம்"
+        }
+      ]
+    },
+    {
+      "english": "I will see you tomorrow.",
+      "tamil": "நான் நாளை உன்னைச் சந்திப்பேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "will",
+          "meaning": "செய்வேன்"
+        },
+        {
+          "word": "see",
+          "meaning": "சந்திப்பேன்"
+        },
+        {
+          "word": "you",
+          "meaning": "உன்னை"
+        },
+        {
+          "word": "tomorrow",
+          "meaning": "நாளை"
+        }
+      ]
+    },
+    {
+      "english": "Can you see me?",
+      "tamil": "உன்னால் என்னைப் பார்க்க முடிகிறதா?",
+      "breakdown": [
+        {
+          "word": "Can",
+          "meaning": "முடிகிறதா"
+        },
+        {
+          "word": "you",
+          "meaning": "உன்னால்"
+        },
+        {
+          "word": "see",
+          "meaning": "பார்க்க"
+        },
+        {
+          "word": "me",
+          "meaning": "என்னை"
+        }
+      ]
+    },
+    {
+      "english": "We see them daily.",
+      "tamil": "நாங்கள் அவர்களைத் தினமும் பார்க்கிறோம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள்"
+        },
+        {
+          "word": "see",
+          "meaning": "பார்க்கிறோம்"
+        },
+        {
+          "word": "them",
+          "meaning": "அவர்களை"
+        },
+        {
+          "word": "daily",
+          "meaning": "தினமும்"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "See you later.",
     "I see a bird.",
-    "See this nice picture.",
-    "Do you see the bird?",
-    "See you tomorrow."
+    "Did you see the movie?",
+    "I will see you tomorrow.",
+    "Can you see me?",
+    "We see them daily."
   ],
   "translationPractice": [
     {
-      "question": "பிறகு பார்ப்போம்.",
-      "type": "tamil-to-english",
-      "answer": "See you later"
-    },
-    {
       "question": "நான் ஒரு பறவையைப் பார்க்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "I see a bird"
+      "answer": "I see a bird."
     },
     {
-      "question": "இந்த அழகான படத்தைப் பார்.",
+      "question": "நீ அந்தப் படத்தைப் பார்த்தாயா?",
       "type": "tamil-to-english",
-      "answer": "See this nice picture"
+      "answer": "Did you see the movie"
     },
     {
-      "question": "நீ அந்த பறவையைப் பார்க்கிறாயா?",
+      "question": "நான் நாளை உன்னைச் சந்திப்பேன்.",
       "type": "tamil-to-english",
-      "answer": "Do you see the bird"
+      "answer": "I will see you tomorrow."
     },
     {
-      "question": "நாளை பார்ப்போம்.",
+      "question": "உன்னால் என்னைப் பார்க்க முடிகிறதா?",
       "type": "tamil-to-english",
-      "answer": "See you tomorrow"
+      "answer": "Can you see me"
+    },
+    {
+      "question": "நாங்கள் அவர்களைத் தினமும் பார்க்கிறோம்.",
+      "type": "tamil-to-english",
+      "answer": "We see them daily."
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'See'."
+  "rule": "Rule: 'See' refers to using eyes automatically, but can also mean to meet someone (I will see you) or to understand."
 };

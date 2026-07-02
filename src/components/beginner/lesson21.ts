@@ -3,96 +3,108 @@ import { Lesson } from '../../types';
 export const lesson21: Omit<Lesson, 'level'> = {
   "id": 21,
   "englishWord": "Go",
-  "tamilMeaning": "போ",
-  "englishExplanation": "Beginner பாடம் 21: 'Go' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "போ / செல்",
+  "englishExplanation": "'Go' என்பது ஒரு இடத்திலிருந்து மற்றொரு இடத்திற்குச் செல்வதைக் குறிக்கும் வினைச்சொல் (Verb) ஆகும்.",
   "vocabularies": [
     {
-      "word": "Go",
-      "meaning": "போ"
+      "word": "go",
+      "meaning": "போ / செல்"
     },
     {
       "word": "there",
       "meaning": "அங்கே"
     },
     {
-      "word": "now",
-      "meaning": "இப்போது"
+      "word": "out",
+      "meaning": "வெளியே"
     },
     {
       "word": "home",
       "meaning": "வீடு"
     },
     {
-      "word": "school",
-      "meaning": "பள்ளி"
+      "word": "today",
+      "meaning": "இன்று"
     }
   ],
   "sentences": [
     {
-      "english": "Go there now.",
-      "tamil": "இப்போது அங்கே போ.",
-      "breakdown": [
-        {
-          "word": "Go",
-          "meaning": "போ"
-        },
-        {
-          "word": "there",
-          "meaning": "அங்கே"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "Go there now.",
-      "tamil": "இப்போது அங்கே போ.",
-      "breakdown": [
-        {
-          "word": "Go",
-          "meaning": "போ"
-        },
-        {
-          "word": "there",
-          "meaning": "அங்கே"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "Go there now.",
-      "tamil": "இப்போது அங்கே போ.",
-      "breakdown": [
-        {
-          "word": "Go",
-          "meaning": "போ"
-        },
-        {
-          "word": "there",
-          "meaning": "அங்கே"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "Please go home.",
-      "tamil": "தயவுசெய்து வீட்டுக்கு போ.",
+      "english": "Please go now.",
+      "tamil": "தயவுசெய்து இப்போது போ.",
       "breakdown": [
         {
           "word": "Please",
-          "meaning": "—"
+          "meaning": "தயவுசெய்து"
         },
         {
           "word": "go",
           "meaning": "போ"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
+    },
+    {
+      "english": "I go there daily.",
+      "tamil": "நான் தினமும் அங்கே போகிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "go",
+          "meaning": "போகிறேன்"
+        },
+        {
+          "word": "there",
+          "meaning": "அங்கே"
+        },
+        {
+          "word": "daily",
+          "meaning": "தினமும்"
+        }
+      ]
+    },
+    {
+      "english": "We can go out.",
+      "tamil": "நாம் வெளியே போகலாம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாம்"
+        },
+        {
+          "word": "can",
+          "meaning": "முடியும்"
+        },
+        {
+          "word": "go",
+          "meaning": "செல்ல"
+        },
+        {
+          "word": "out",
+          "meaning": "வெளியே"
+        }
+      ]
+    },
+    {
+      "english": "Let us go home.",
+      "tamil": "நாம் வீட்டிற்குப் போவோம்.",
+      "breakdown": [
+        {
+          "word": "Let",
+          "meaning": "அனுமதி"
+        },
+        {
+          "word": "us",
+          "meaning": "நாம்"
+        },
+        {
+          "word": "go",
+          "meaning": "செல்ல"
         },
         {
           "word": "home",
@@ -101,61 +113,65 @@ export const lesson21: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "We go to school.",
-      "tamil": "நாங்கள் பள்ளிக்குச் செல்கிறோம்.",
+      "english": "Will you go there today?",
+      "tamil": "நீ இன்று அங்கே போவாயா?",
       "breakdown": [
         {
-          "word": "We",
-          "meaning": "நாங்கள் / நாம்"
+          "word": "Will",
+          "meaning": "செய்வாயா"
+        },
+        {
+          "word": "you",
+          "meaning": "நீ"
         },
         {
           "word": "go",
-          "meaning": "போ"
+          "meaning": "போக"
         },
         {
-          "word": "to",
-          "meaning": "நோக்கி"
+          "word": "there",
+          "meaning": "அங்கே"
         },
         {
-          "word": "school",
-          "meaning": "பள்ளி"
+          "word": "today",
+          "meaning": "இன்று"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Go there now.",
-    "Please go home.",
-    "We go to school.",
-    "Do you go there?",
-    "Go home now."
+    "Please go now.",
+    "I go there daily.",
+    "We can go out.",
+    "Let us go home.",
+    "Will you go there today?"
   ],
   "translationPractice": [
     {
-      "question": "இப்போது அங்கே போ.",
+      "question": "தயவுசெய்து இப்போது போ.",
       "type": "tamil-to-english",
-      "answer": "Go there now"
+      "answer": "Please go now."
     },
     {
-      "question": "தயவுசெய்து வீட்டுக்கு போ.",
+      "question": "நான் தினமும் அங்கே போகிறேன்.",
       "type": "tamil-to-english",
-      "answer": "Please go home"
+      "answer": "I go there daily."
     },
     {
-      "question": "நாங்கள் பள்ளிக்குச் செல்கிறோம்.",
+      "question": "நாம் வெளியே போகலாம்.",
       "type": "tamil-to-english",
-      "answer": "We go to school"
+      "answer": "We can go out."
     },
     {
-      "question": "நீ அங்கே போகிறாயா?",
+      "question": "நாம் வீட்டிற்குப் போவோம்.",
       "type": "tamil-to-english",
-      "answer": "Do you go there"
+      "answer": "Let us go home."
     },
     {
-      "question": "இப்போது வீட்டுக்கு போ.",
+      "question": "நீ இன்று அங்கே போவாயா?",
       "type": "tamil-to-english",
-      "answer": "Go home now"
+      "answer": "Will you go there today"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Go'."
+  "rule": "Rule: Use 'go' for movement away from the speaker's current location. Third person singular uses 'goes'."
 };

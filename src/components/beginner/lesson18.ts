@@ -3,28 +3,28 @@ import { Lesson } from '../../types';
 export const lesson18: Omit<Lesson, 'level'> = {
   "id": 18,
   "englishWord": "At",
-  "tamilMeaning": "இடத்தில்",
-  "englishExplanation": "Beginner பாடம் 18: 'At' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "இடத்தில் / அருகே",
+  "englishExplanation": "'At' என்பது ஒரு குறிப்பிட்ட புள்ளி, இடம் அல்லது குறிப்பிட்ட நேரத்தைக் குறிக்கப் பயன்படும்.",
   "vocabularies": [
     {
-      "word": "At",
-      "meaning": "இடத்தில்"
-    },
-    {
-      "word": "home",
-      "meaning": "வீடு"
-    },
-    {
-      "word": "work",
-      "meaning": "வேலை"
+      "word": "at",
+      "meaning": "குறிப்பிட்ட இடத்தில்"
     },
     {
       "word": "school",
       "meaning": "பள்ளி"
     },
     {
+      "word": "night",
+      "meaning": "இரவு"
+    },
+    {
       "word": "station",
       "meaning": "நிலையம்"
+    },
+    {
+      "word": "home",
+      "meaning": "வீடு"
     }
   ],
   "sentences": [
@@ -51,68 +51,46 @@ export const lesson18: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "I am at home.",
-      "tamil": "நான் வீட்டில் இருக்கிறேன்.",
-      "breakdown": [
-        {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "am",
-          "meaning": "இருக்கிறேன்"
-        },
-        {
-          "word": "at",
-          "meaning": "இடத்தில்"
-        },
-        {
-          "word": "home",
-          "meaning": "வீடு"
-        }
-      ]
-    },
-    {
-      "english": "He is at work.",
-      "tamil": "அவன் வேலையில் இருக்கிறான்.",
+      "english": "He is at school.",
+      "tamil": "அவன் பள்ளியில் இருக்கிறான்.",
       "breakdown": [
         {
           "word": "He",
-          "meaning": "அவன் / இவர்"
+          "meaning": "அவன்"
         },
         {
           "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
+          "meaning": "இருக்கிறான்"
         },
         {
           "word": "at",
-          "meaning": "இடத்தில்"
-        },
-        {
-          "word": "work",
-          "meaning": "வேலை"
-        }
-      ]
-    },
-    {
-      "english": "She is at school.",
-      "tamil": "அவள் பள்ளியில் இருக்கிறாள்.",
-      "breakdown": [
-        {
-          "word": "She",
-          "meaning": "அவள் / இவர்"
-        },
-        {
-          "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
-        },
-        {
-          "word": "at",
-          "meaning": "இடத்தில்"
+          "meaning": "இடத்தில் (-இல்)"
         },
         {
           "word": "school",
           "meaning": "பள்ளி"
+        }
+      ]
+    },
+    {
+      "english": "She works at night.",
+      "tamil": "அவள் இரவில் வேலை செய்கிறாள்.",
+      "breakdown": [
+        {
+          "word": "She",
+          "meaning": "அவள்"
+        },
+        {
+          "word": "works",
+          "meaning": "வேலை செய்கிறாள்"
+        },
+        {
+          "word": "at",
+          "meaning": "குறிப்பிட்ட காலத்தில்"
+        },
+        {
+          "word": "night",
+          "meaning": "இரவு"
         }
       ]
     },
@@ -122,11 +100,11 @@ export const lesson18: Omit<Lesson, 'level'> = {
       "breakdown": [
         {
           "word": "We",
-          "meaning": "நாங்கள் / நாம்"
+          "meaning": "நாங்கள்"
         },
         {
           "word": "met",
-          "meaning": "—"
+          "meaning": "சந்தித்தோம்"
         },
         {
           "word": "at",
@@ -141,12 +119,38 @@ export const lesson18: Omit<Lesson, 'level'> = {
           "meaning": "நிலையம்"
         }
       ]
+    },
+    {
+      "english": "Are you at home now?",
+      "tamil": "நீ இப்போது வீட்டில் இருக்கிறாயா?",
+      "breakdown": [
+        {
+          "word": "Are",
+          "meaning": "இருக்கிறாயா"
+        },
+        {
+          "word": "you",
+          "meaning": "நீ"
+        },
+        {
+          "word": "at",
+          "meaning": "இடத்தில்"
+        },
+        {
+          "word": "home",
+          "meaning": "வீடு"
+        },
+        {
+          "word": "now",
+          "meaning": "இப்போது"
+        }
+      ]
     }
   ],
   "speakingPractice": [
     "I am at home.",
-    "He is at work.",
-    "She is at school.",
+    "He is at school.",
+    "She works at night.",
     "We met at the station.",
     "Are you at home now?"
   ],
@@ -154,22 +158,22 @@ export const lesson18: Omit<Lesson, 'level'> = {
     {
       "question": "நான் வீட்டில் இருக்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "I am at home"
+      "answer": "I am at home."
     },
     {
-      "question": "அவன் வேலையில் இருக்கிறான்.",
+      "question": "அவன் பள்ளியில் இருக்கிறான்.",
       "type": "tamil-to-english",
-      "answer": "He is at work"
+      "answer": "He is at school."
     },
     {
-      "question": "அவள் பள்ளியில் இருக்கிறாள்.",
+      "question": "அவள் இரவில் வேலை செய்கிறாள்.",
       "type": "tamil-to-english",
-      "answer": "She is at school"
+      "answer": "She works at night."
     },
     {
       "question": "நாங்கள் நிலையத்தில் சந்தித்தோம்.",
       "type": "tamil-to-english",
-      "answer": "We met at the station"
+      "answer": "We met at the station."
     },
     {
       "question": "நீ இப்போது வீட்டில் இருக்கிறாயா?",
@@ -177,5 +181,5 @@ export const lesson18: Omit<Lesson, 'level'> = {
       "answer": "Are you at home now"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'At'."
+  "rule": "Rule: Use 'at' for specific points in space (at home, at the bus stop) and specific times of day (at night, at 5 PM)."
 };

@@ -3,100 +3,112 @@ import { Lesson } from '../../types';
 export const lesson25: Omit<Lesson, 'level'> = {
   "id": 25,
   "englishWord": "Make",
-  "tamilMeaning": "உருவாக்கு",
-  "englishExplanation": "Beginner பாடம் 25: 'Make' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "உருவாக்கு / தயாரி",
+  "englishExplanation": "'Make' என்பது ஒரு புதிய பொருளை உருவாக்குவது, தயாரிப்பது அல்லது ஒரு செயலைச் செய்வதைக் குறிக்கும் வினைச்சொல்.",
   "vocabularies": [
     {
-      "word": "Make",
-      "meaning": "உருவாக்கு"
+      "word": "make",
+      "meaning": "உருவாக்கு / தயாரி"
     },
     {
       "word": "tea",
       "meaning": "தேநீர்"
     },
     {
-      "word": "coffee",
-      "meaning": "காபி"
-    },
-    {
-      "word": "plans",
-      "meaning": "திட்டங்கள்"
+      "word": "mistakes",
+      "meaning": "தவறுகள்"
     },
     {
       "word": "happy",
-      "meaning": "மகிழ்ச்சியாக"
+      "meaning": "மகிழ்ச்சி"
+    },
+    {
+      "word": "noise",
+      "meaning": "சத்தம்"
     }
   ],
   "sentences": [
     {
-      "english": "Make some tea.",
-      "tamil": "கொஞ்சம் தேநீர் தயாரி.",
+      "english": "We will make a plan.",
+      "tamil": "நாங்கள் ஒரு திட்டம் தயாரிப்போம்.",
       "breakdown": [
         {
-          "word": "Make",
-          "meaning": "உருவாக்கு"
+          "word": "We",
+          "meaning": "நாங்கள்"
         },
         {
-          "word": "some",
-          "meaning": "—"
+          "word": "will",
+          "meaning": "செய்வோம்"
         },
         {
-          "word": "tea",
-          "meaning": "தேநீர்"
+          "word": "make",
+          "meaning": "தயாரிக்க"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "plan",
+          "meaning": "திட்டம்"
         }
       ]
     },
     {
-      "english": "Make some tea.",
-      "tamil": "கொஞ்சம் தேநீர் தயாரி.",
-      "breakdown": [
-        {
-          "word": "Make",
-          "meaning": "உருவாக்கு"
-        },
-        {
-          "word": "some",
-          "meaning": "—"
-        },
-        {
-          "word": "tea",
-          "meaning": "தேநீர்"
-        }
-      ]
-    },
-    {
-      "english": "I make coffee.",
-      "tamil": "நான் காபி தயாரிக்கிறேன்.",
+      "english": "I can make tea.",
+      "tamil": "என்னால் தேநீர் தயாரிக்க முடியும்.",
       "breakdown": [
         {
           "word": "I",
-          "meaning": "நான்"
+          "meaning": "என்னால்"
+        },
+        {
+          "word": "can",
+          "meaning": "முடியும்"
         },
         {
           "word": "make",
-          "meaning": "உருவாக்கு"
+          "meaning": "தயாரிக்க"
         },
         {
-          "word": "coffee",
-          "meaning": "காபி"
+          "word": "tea",
+          "meaning": "தேநீர்"
         }
       ]
     },
     {
-      "english": "Plans make us happy.",
-      "tamil": "திட்டங்கள் நம்மை மகிழ்ச்சியாக்குகின்றன.",
+      "english": "Don't make mistakes.",
+      "tamil": "தவறுகள் செய்யாதே.",
       "breakdown": [
         {
-          "word": "Plans",
-          "meaning": "திட்டங்கள்"
+          "word": "Don't",
+          "meaning": "செய்யாதே"
         },
         {
           "word": "make",
-          "meaning": "உருவாக்கு"
+          "meaning": "உருவாக்க"
         },
         {
-          "word": "us",
-          "meaning": "எங்களுக்கு"
+          "word": "mistakes",
+          "meaning": "தவறுகள்"
+        }
+      ]
+    },
+    {
+      "english": "You make me happy.",
+      "tamil": "நீ என்னை மகிழ்ச்சியடையச் செய்கிறாய்.",
+      "breakdown": [
+        {
+          "word": "You",
+          "meaning": "நீ"
+        },
+        {
+          "word": "make",
+          "meaning": "செய்கிறாய்"
+        },
+        {
+          "word": "me",
+          "meaning": "என்னை"
         },
         {
           "word": "happy",
@@ -105,61 +117,57 @@ export const lesson25: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Plans make us happy.",
-      "tamil": "திட்டங்கள் நம்மை மகிழ்ச்சியாக்குகின்றன.",
+      "english": "Don't make noise.",
+      "tamil": "சத்தம் போடாதே.",
       "breakdown": [
         {
-          "word": "Plans",
-          "meaning": "திட்டங்கள்"
+          "word": "Don't",
+          "meaning": "செய்யாதே"
         },
         {
           "word": "make",
-          "meaning": "உருவாக்கு"
+          "meaning": "உண்டாக்க"
         },
         {
-          "word": "us",
-          "meaning": "எங்களுக்கு"
-        },
-        {
-          "word": "happy",
-          "meaning": "மகிழ்ச்சியாக"
+          "word": "noise",
+          "meaning": "சத்தம்"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Make some tea.",
-    "I make coffee.",
-    "Plans make us happy.",
-    "Make a good plan.",
-    "Does it make you happy?"
+    "We will make a plan.",
+    "I can make tea.",
+    "Don't make mistakes.",
+    "You make me happy.",
+    "Don't make noise."
   ],
   "translationPractice": [
     {
-      "question": "கொஞ்சம் தேநீர் தயாரி.",
+      "question": "நாங்கள் ஒரு திட்டம் தயாரிப்போம்.",
       "type": "tamil-to-english",
-      "answer": "Make some tea"
+      "answer": "We will make a plan."
     },
     {
-      "question": "நான் காபி தயாரிக்கிறேன்.",
+      "question": "என்னால் தேநீர் தயாரிக்க முடியும்.",
       "type": "tamil-to-english",
-      "answer": "I make coffee"
+      "answer": "I can make tea."
     },
     {
-      "question": "திட்டங்கள் நம்மை மகிழ்ச்சியாக்குகின்றன.",
+      "question": "தவறுகள் செய்யாதே.",
       "type": "tamil-to-english",
-      "answer": "Plans make us happy"
+      "answer": "Don't make mistakes."
     },
     {
-      "question": "ஒரு நல்ல திட்டத்தை உருவாக்கு.",
+      "question": "நீ என்னை மகிழ்ச்சியடையச் செய்கிறாய்.",
       "type": "tamil-to-english",
-      "answer": "Make a good plan"
+      "answer": "You make me happy."
     },
     {
-      "question": "அது உன்னை மகிழ்ச்சியாக்குகிறதா?",
+      "question": "சத்தம் போடாதே.",
       "type": "tamil-to-english",
-      "answer": "Does it make you happy"
+      "answer": "Don't make noise."
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Make'."
+  "rule": "Rule: Use 'make' when creating, producing, or building something physical or abstract (make tea, make plans, make mistakes)."
 };

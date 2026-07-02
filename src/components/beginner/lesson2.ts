@@ -47,20 +47,24 @@ export const lesson2: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "I am happy.",
-      "tamil": "நான் மகிழ்ச்சியாக இருக்கிறேன்.",
+      "english": "Am I happy here?",
+      "tamil": "நான் இங்கே மகிழ்ச்சியாக இருக்கிறேனா?",
       "breakdown": [
+        {
+          "word": "Am",
+          "meaning": "இருக்கிறேனா"
+        },
         {
           "word": "I",
           "meaning": "நான்"
         },
         {
-          "word": "am",
-          "meaning": "இருக்கிறேன்"
-        },
-        {
           "word": "happy",
           "meaning": "மகிழ்ச்சியாக"
+        },
+        {
+          "word": "here",
+          "meaning": "இங்கே"
         }
       ]
     },

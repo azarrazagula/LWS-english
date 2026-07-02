@@ -3,24 +3,24 @@ import { Lesson } from '../../types';
 export const lesson28: Omit<Lesson, 'level'> = {
   "id": 28,
   "englishWord": "Take",
-  "tamilMeaning": "எடு",
-  "englishExplanation": "Beginner பாடம் 28: 'Take' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "எடு / கொண்டு செல்",
+  "englishExplanation": "'Take' என்பது ஒரு பொருளைக் கையில் எடுப்பது, பெற்றுக்கொள்வது அல்லது ஒரு இடத்திற்கு எடுத்துச் செல்வதைக் குறிக்கும் வினைச்சொல்.",
   "vocabularies": [
     {
-      "word": "Take",
-      "meaning": "எடு"
+      "word": "take",
+      "meaning": "எடு / கொண்டு செல்"
     },
     {
-      "word": "it",
-      "meaning": "அது"
+      "word": "time",
+      "meaning": "நேரம்"
     },
     {
-      "word": "easy",
-      "meaning": "எளிதாக"
+      "word": "umbrella",
+      "meaning": "குடை"
     },
     {
-      "word": "break",
-      "meaning": "இடைவேளை"
+      "word": "medicine",
+      "meaning": "மருந்து"
     },
     {
       "word": "care",
@@ -29,88 +29,112 @@ export const lesson28: Omit<Lesson, 'level'> = {
   ],
   "sentences": [
     {
-      "english": "Take it easy.",
-      "tamil": "அதை எளிதாக எடுத்துக்கொள்.",
+      "english": "I will take this book.",
+      "tamil": "நான் இந்தப் புத்தகத்தை எடுப்பேன்.",
       "breakdown": [
         {
-          "word": "Take",
-          "meaning": "எடு"
+          "word": "I",
+          "meaning": "நான்"
         },
         {
-          "word": "it",
-          "meaning": "அது"
+          "word": "will",
+          "meaning": "செய்வேன்"
         },
         {
-          "word": "easy",
-          "meaning": "எளிதாக"
+          "word": "take",
+          "meaning": "எடுப்பேன்"
+        },
+        {
+          "word": "this",
+          "meaning": "இந்த"
+        },
+        {
+          "word": "book",
+          "meaning": "புத்தகம்"
         }
       ]
     },
     {
-      "english": "Take it easy.",
-      "tamil": "அதை எளிதாக எடுத்துக்கொள்.",
+      "english": "Please take your time.",
+      "tamil": "தயவுசெய்து உங்கள் நேரத்தை எடுத்துக் கொள்ளுங்கள்.",
       "breakdown": [
         {
-          "word": "Take",
-          "meaning": "எடு"
+          "word": "Please",
+          "meaning": "தயவுசெய்து"
         },
         {
-          "word": "it",
-          "meaning": "அது"
+          "word": "take",
+          "meaning": "எடுத்துக் கொள்ளுங்கள்"
         },
         {
-          "word": "easy",
-          "meaning": "எளிதாக"
+          "word": "your",
+          "meaning": "உங்களுடைய"
+        },
+        {
+          "word": "time",
+          "meaning": "நேரம்"
         }
       ]
     },
     {
-      "english": "Take it easy.",
-      "tamil": "அதை எளிதாக எடுத்துக்கொள்.",
+      "english": "Take this umbrella with you.",
+      "tamil": "இந்தக் குடையை உங்களுடன் எடுத்துச் செல்லுங்கள்.",
       "breakdown": [
         {
           "word": "Take",
-          "meaning": "எடு"
+          "meaning": "எடுத்துச் செல்லுங்கள்"
         },
         {
-          "word": "it",
-          "meaning": "அது"
+          "word": "this",
+          "meaning": "இந்த"
         },
         {
-          "word": "easy",
-          "meaning": "எளிதாக"
+          "word": "umbrella",
+          "meaning": "குடை"
+        },
+        {
+          "word": "with",
+          "meaning": "உடன்"
+        },
+        {
+          "word": "you",
+          "meaning": "உங்களுடன்"
         }
       ]
     },
     {
-      "english": "Take a short break.",
-      "tamil": "ஒரு சிறிய இடைவேளை எடு.",
+      "english": "Did you take medicine?",
+      "tamil": "நீ மருந்து சாப்பிட்டாயா (எடுத்தாயா)?",
       "breakdown": [
         {
-          "word": "Take",
-          "meaning": "எடு"
+          "word": "Did",
+          "meaning": "செய்தாயா"
         },
         {
-          "word": "a",
-          "meaning": "ஒரு"
+          "word": "you",
+          "meaning": "நீ"
         },
         {
-          "word": "short",
-          "meaning": "—"
+          "word": "take",
+          "meaning": "எடுத்தாயா"
         },
         {
-          "word": "break",
-          "meaning": "இடைவேளை"
+          "word": "medicine",
+          "meaning": "மருந்து"
         }
       ]
     },
     {
-      "english": "Take care of yourself.",
-      "tamil": "உடம்பை பார்த்துக்கொள்.",
+      "english": "Please take care of yourself.",
+      "tamil": "தயவுசெய்து உங்களைக் கவனித்துக் கொள்ளுங்கள்.",
       "breakdown": [
         {
-          "word": "Take",
-          "meaning": "எடு"
+          "word": "Please",
+          "meaning": "தயவுசெய்து"
+        },
+        {
+          "word": "take",
+          "meaning": "எடுத்துக் கொள்"
         },
         {
           "word": "care",
@@ -118,48 +142,48 @@ export const lesson28: Omit<Lesson, 'level'> = {
         },
         {
           "word": "of",
-          "meaning": "—"
+          "meaning": "உன் மீது"
         },
         {
           "word": "yourself",
-          "meaning": "—"
+          "meaning": "உன்னை நீயே"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Take it easy.",
-    "Take a short break.",
-    "Take care of yourself.",
-    "Take this book.",
-    "Take care now."
+    "I will take this book.",
+    "Please take your time.",
+    "Take this umbrella with you.",
+    "Did you take medicine?",
+    "Please take care of yourself."
   ],
   "translationPractice": [
     {
-      "question": "அதை எளிதாக எடுத்துக்கொள்.",
+      "question": "நான் இந்தப் புத்தகத்தை எடுப்பேன்.",
       "type": "tamil-to-english",
-      "answer": "Take it easy"
+      "answer": "I will take this book."
     },
     {
-      "question": "ஒரு சிறிய இடைவேளை எடு.",
+      "question": "தயவுசெய்து உங்கள் நேரத்தை எடுத்துக் கொள்ளுங்கள்.",
       "type": "tamil-to-english",
-      "answer": "Take a short break"
+      "answer": "Please take your time."
     },
     {
-      "question": "உடம்பை பார்த்துக்கொள்.",
+      "question": "இந்தக் குடையை உங்களுடன் எடுத்துச் செல்லுங்கள்.",
       "type": "tamil-to-english",
-      "answer": "Take care of yourself"
+      "answer": "Take this umbrella with you."
     },
     {
-      "question": "இந்த புத்தகத்தை எடுத்துக்கொள்.",
+      "question": "நீ மருந்து சாப்பிட்டாயா (எடுத்தாயா)?",
       "type": "tamil-to-english",
-      "answer": "Take this book"
+      "answer": "Did you take medicine"
     },
     {
-      "question": "இப்போது கவனமாக இரு.",
+      "question": "தயவுசெய்து உங்களைக் கவனித்துக் கொள்ளுங்கள்.",
       "type": "tamil-to-english",
-      "answer": "Take care now"
+      "answer": "Please take care of yourself."
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Take'."
+  "rule": "Rule: 'Take' has many uses including taking objects (எடு), taking medicine (சாப்பிடு), and taking care (கவனம் செலுத்து)."
 };

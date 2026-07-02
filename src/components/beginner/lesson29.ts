@@ -4,107 +4,75 @@ export const lesson29: Omit<Lesson, 'level'> = {
   "id": 29,
   "englishWord": "Give",
   "tamilMeaning": "கொடு",
-  "englishExplanation": "Beginner பாடம் 29: 'Give' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "englishExplanation": "'Give' என்பது ஒருவருக்கு ஒரு பொருளை அல்லது உதவியை வழங்குவதைக் குறிக்கும் வினைச்சொல்.",
   "vocabularies": [
     {
-      "word": "Give",
+      "word": "give",
       "meaning": "கொடு"
-    },
-    {
-      "word": "me",
-      "meaning": "எனக்கு"
-    },
-    {
-      "word": "book",
-      "meaning": "புத்தகம்"
     },
     {
       "word": "pen",
       "meaning": "பேனா"
     },
     {
-      "word": "money",
-      "meaning": "பணம்"
+      "word": "hand",
+      "meaning": "கை"
+    },
+    {
+      "word": "respect",
+      "meaning": "மரியாதை"
+    },
+    {
+      "word": "chance",
+      "meaning": "வாய்ப்பு"
     }
   ],
   "sentences": [
     {
-      "english": "Give me the book.",
-      "tamil": "எனக்கு அந்தப் புத்தகத்தைக் கொடு.",
+      "english": "I will give you a gift.",
+      "tamil": "நான் உனக்கு ஒரு பரிசு கொடுப்பேன்.",
       "breakdown": [
         {
-          "word": "Give",
-          "meaning": "கொடு"
+          "word": "I",
+          "meaning": "நான்"
         },
         {
-          "word": "me",
-          "meaning": "எனக்கு"
+          "word": "will",
+          "meaning": "செய்வேன்"
         },
         {
-          "word": "the",
-          "meaning": "குறிப்பிட்ட"
+          "word": "give",
+          "meaning": "கொடுப்பேன்"
         },
         {
-          "word": "book",
-          "meaning": "புத்தகம்"
+          "word": "you",
+          "meaning": "உனக்கு"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "gift",
+          "meaning": "பரிசு"
         }
       ]
     },
     {
-      "english": "Give me the book.",
-      "tamil": "எனக்கு அந்தப் புத்தகத்தைக் கொடு.",
+      "english": "Please give me a pen.",
+      "tamil": "தயவுசெய்து எனக்கு ஒரு பேனா கொடுங்கள்.",
       "breakdown": [
         {
-          "word": "Give",
-          "meaning": "கொடு"
+          "word": "Please",
+          "meaning": "தயவுசெய்து"
+        },
+        {
+          "word": "give",
+          "meaning": "கொடுங்கள்"
         },
         {
           "word": "me",
           "meaning": "எனக்கு"
-        },
-        {
-          "word": "the",
-          "meaning": "குறிப்பிட்ட"
-        },
-        {
-          "word": "book",
-          "meaning": "புத்தகம்"
-        }
-      ]
-    },
-    {
-      "english": "Give me the book.",
-      "tamil": "எனக்கு அந்தப் புத்தகத்தைக் கொடு.",
-      "breakdown": [
-        {
-          "word": "Give",
-          "meaning": "கொடு"
-        },
-        {
-          "word": "me",
-          "meaning": "எனக்கு"
-        },
-        {
-          "word": "the",
-          "meaning": "குறிப்பிட்ட"
-        },
-        {
-          "word": "book",
-          "meaning": "புத்தகம்"
-        }
-      ]
-    },
-    {
-      "english": "Give him a pen.",
-      "tamil": "அவனுக்கு ஒரு பேனா கொடு.",
-      "breakdown": [
-        {
-          "word": "Give",
-          "meaning": "கொடு"
-        },
-        {
-          "word": "him",
-          "meaning": "—"
         },
         {
           "word": "a",
@@ -117,61 +85,117 @@ export const lesson29: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Please give some money.",
-      "tamil": "தயவுசெய்து கொஞ்சம் பணம் கொடு.",
+      "english": "Give me your hand.",
+      "tamil": "உன் கையை என்னிடம் கொடு.",
       "breakdown": [
         {
-          "word": "Please",
-          "meaning": "—"
-        },
-        {
-          "word": "give",
+          "word": "Give",
           "meaning": "கொடு"
         },
         {
-          "word": "some",
-          "meaning": "—"
+          "word": "me",
+          "meaning": "என்னிடம்"
         },
         {
-          "word": "money",
-          "meaning": "பணம்"
+          "word": "your",
+          "meaning": "உன்னுடைய"
+        },
+        {
+          "word": "hand",
+          "meaning": "கை"
+        }
+      ]
+    },
+    {
+      "english": "Always give respect to others.",
+      "tamil": "எப்போதும் மற்றவர்களுக்கு மரியாதை கொடுங்கள்.",
+      "breakdown": [
+        {
+          "word": "Always",
+          "meaning": "எப்போதும்"
+        },
+        {
+          "word": "give",
+          "meaning": "கொடுங்கள்"
+        },
+        {
+          "word": "respect",
+          "meaning": "மரியாதை"
+        },
+        {
+          "word": "to",
+          "meaning": "நோக்கி"
+        },
+        {
+          "word": "others",
+          "meaning": "மற்றவர்கள்"
+        }
+      ]
+    },
+    {
+      "english": "Will you give me a chance?",
+      "tamil": "எனக்கு ஒரு வாய்ப்பு தருவீர்களா?",
+      "breakdown": [
+        {
+          "word": "Will",
+          "meaning": "செய்வீர்களா"
+        },
+        {
+          "word": "you",
+          "meaning": "நீங்கள்"
+        },
+        {
+          "word": "give",
+          "meaning": "கொடுக்க"
+        },
+        {
+          "word": "me",
+          "meaning": "எனக்கு"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "chance",
+          "meaning": "வாய்ப்பு"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Give me the book.",
-    "Give him a pen.",
-    "Please give some money.",
-    "Give me a break.",
-    "Give her the pen."
+    "I will give you a gift.",
+    "Please give me a pen.",
+    "Give me your hand.",
+    "Always give respect to others.",
+    "Will you give me a chance?"
   ],
   "translationPractice": [
     {
-      "question": "எனக்கு அந்தப் புத்தகத்தைக் கொடு.",
+      "question": "நான் உனக்கு ஒரு பரிசு கொடுப்பேன்.",
       "type": "tamil-to-english",
-      "answer": "Give me the book"
+      "answer": "I will give you a gift."
     },
     {
-      "question": "அவனுக்கு ஒரு பேனா கொடு.",
+      "question": "தயவுசெய்து எனக்கு ஒரு பேனா கொடுங்கள்.",
       "type": "tamil-to-english",
-      "answer": "Give him a pen"
+      "answer": "Please give me a pen."
     },
     {
-      "question": "தயவுசெய்து கொஞ்சம் பணம் கொடு.",
+      "question": "உன் கையை என்னிடம் கொடு.",
       "type": "tamil-to-english",
-      "answer": "Please give some money"
+      "answer": "Give me your hand."
     },
     {
-      "question": "எனக்கு ஒரு இடைவேளை கொடு.",
+      "question": "எப்போதும் மற்றவர்களுக்கு மரியாதை கொடுங்கள்.",
       "type": "tamil-to-english",
-      "answer": "Give me a break"
+      "answer": "Always give respect to others."
     },
     {
-      "question": "அவளிடம் பேனாவைக் கொடு.",
+      "question": "எனக்கு ஒரு வாய்ப்பு தருவீர்களா?",
       "type": "tamil-to-english",
-      "answer": "Give her the pen"
+      "answer": "Will you give me a chance"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Give'."
+  "rule": "Rule: 'Give' typically requires two objects: the direct object (what is given) and indirect object (to whom it is given)."
 };

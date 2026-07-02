@@ -4,99 +4,41 @@ export const lesson23: Omit<Lesson, 'level'> = {
   "id": 23,
   "englishWord": "Do",
   "tamilMeaning": "செய்",
-  "englishExplanation": "Beginner பாடம் 23: 'Do' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "englishExplanation": "'Do' என்பது ஒரு செயலைச் செய்வதைக் குறிக்கும் வினைச்சொல் மற்றும் கேள்வி கேட்கப் பயன்படும் துணை வினைச்சொல் ஆகும்.",
   "vocabularies": [
     {
-      "word": "Do",
+      "word": "do",
       "meaning": "செய்"
     },
     {
-      "word": "it",
-      "meaning": "அது"
+      "word": "best",
+      "meaning": "சிறந்த முயற்சி"
     },
     {
-      "word": "now",
-      "meaning": "இப்போது"
+      "word": "this",
+      "meaning": "இது"
     },
     {
-      "word": "work",
-      "meaning": "வேலை"
+      "word": "homework",
+      "meaning": "வீட்டுப்பாடம்"
     },
     {
-      "word": "help",
-      "meaning": "உதவி"
+      "word": "tomorrow",
+      "meaning": "நாளை"
     }
   ],
   "sentences": [
     {
-      "english": "Do it now.",
-      "tamil": "அதை இப்போது செய்.",
+      "english": "Do your work.",
+      "tamil": "உன் வேலையைச் செய்.",
       "breakdown": [
         {
           "word": "Do",
           "meaning": "செய்"
         },
         {
-          "word": "it",
-          "meaning": "அது"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "Do it now.",
-      "tamil": "அதை இப்போது செய்.",
-      "breakdown": [
-        {
-          "word": "Do",
-          "meaning": "செய்"
-        },
-        {
-          "word": "it",
-          "meaning": "அது"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "Do it now.",
-      "tamil": "அதை இப்போது செய்.",
-      "breakdown": [
-        {
-          "word": "Do",
-          "meaning": "செய்"
-        },
-        {
-          "word": "it",
-          "meaning": "அது"
-        },
-        {
-          "word": "now",
-          "meaning": "இப்போது"
-        }
-      ]
-    },
-    {
-      "english": "I do my work.",
-      "tamil": "நான் என் வேலையைச் செய்கிறேன்.",
-      "breakdown": [
-        {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "do",
-          "meaning": "செய்"
-        },
-        {
-          "word": "my",
-          "meaning": "என்னுடைய"
+          "word": "your",
+          "meaning": "உன்னுடைய"
         },
         {
           "word": "work",
@@ -105,61 +47,135 @@ export const lesson23: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Please do help me.",
-      "tamil": "தயவுசெய்து எனக்கு உதவி செய்.",
+      "english": "I do my best.",
+      "tamil": "நான் என் சிறந்த முயற்சியைச் செய்கிறேன்.",
       "breakdown": [
         {
-          "word": "Please",
-          "meaning": "—"
+          "word": "I",
+          "meaning": "நான்"
         },
         {
           "word": "do",
-          "meaning": "செய்"
+          "meaning": "செய்கிறேன்"
         },
         {
-          "word": "help",
-          "meaning": "உதவி"
+          "word": "my",
+          "meaning": "எனது"
         },
         {
-          "word": "me",
-          "meaning": "எனக்கு"
+          "word": "best",
+          "meaning": "சிறந்த முயற்சி"
+        }
+      ]
+    },
+    {
+      "english": "We do this daily.",
+      "tamil": "நாங்கள் இதை தினமும் செய்கிறோம்.",
+      "breakdown": [
+        {
+          "word": "We",
+          "meaning": "நாங்கள்"
+        },
+        {
+          "word": "do",
+          "meaning": "செய்கிறோம்"
+        },
+        {
+          "word": "this",
+          "meaning": "இதை"
+        },
+        {
+          "word": "daily",
+          "meaning": "தினமும்"
+        }
+      ]
+    },
+    {
+      "english": "Did you do your homework?",
+      "tamil": "நீ உன் வீட்டுப்பாடத்தை செய்தாயா?",
+      "breakdown": [
+        {
+          "word": "Did",
+          "meaning": "செய்தாயா"
+        },
+        {
+          "word": "you",
+          "meaning": "நீ"
+        },
+        {
+          "word": "do",
+          "meaning": "செய்ய"
+        },
+        {
+          "word": "your",
+          "meaning": "உன்னுடைய"
+        },
+        {
+          "word": "homework",
+          "meaning": "வீட்டுப்பாடம்"
+        }
+      ]
+    },
+    {
+      "english": "What will you do tomorrow?",
+      "tamil": "நாளை நீ என்ன செய்வாய்?",
+      "breakdown": [
+        {
+          "word": "What",
+          "meaning": "என்ன"
+        },
+        {
+          "word": "will",
+          "meaning": "செய்வாய்"
+        },
+        {
+          "word": "you",
+          "meaning": "நீ"
+        },
+        {
+          "word": "do",
+          "meaning": "செய்ய"
+        },
+        {
+          "word": "tomorrow",
+          "meaning": "நாளை"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "Do it now.",
-    "I do my work.",
-    "Please do help me.",
-    "Do you do this work?",
-    "Do it daily."
+    "Do your work.",
+    "I do my best.",
+    "We do this daily.",
+    "Did you do your homework?",
+    "What will you do tomorrow?"
   ],
   "translationPractice": [
     {
-      "question": "அதை இப்போது செய்.",
+      "question": "உன் வேலையைச் செய்.",
       "type": "tamil-to-english",
-      "answer": "Do it now"
+      "answer": "Do your work."
     },
     {
-      "question": "நான் என் வேலையைச் செய்கிறேன்.",
+      "question": "நான் என் சிறந்த முயற்சியைச் செய்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "I do my work"
+      "answer": "I do my best."
     },
     {
-      "question": "தயவுசெய்து எனக்கு உதவி செய்.",
+      "question": "நாங்கள் இதை தினமும் செய்கிறோம்.",
       "type": "tamil-to-english",
-      "answer": "Please do help me"
+      "answer": "We do this daily."
     },
     {
-      "question": "நீ இந்த வேலையைச் செய்கிறாயா?",
+      "question": "நீ உன் வீட்டுப்பாடத்தை செய்தாயா?",
       "type": "tamil-to-english",
-      "answer": "Do you do this work"
+      "answer": "Did you do your homework"
     },
     {
-      "question": "அதை தினமும் செய்.",
+      "question": "நாளை நீ என்ன செய்வாய்?",
       "type": "tamil-to-english",
-      "answer": "Do it daily"
+      "answer": "What will you do tomorrow"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Do'."
+  "rule": "Rule: Use 'do' as a main verb for action, or as an auxiliary verb to construct questions (e.g. Do you...?). Singular third person is 'does'."
 };

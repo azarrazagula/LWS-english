@@ -4,41 +4,125 @@ export const lesson5: Omit<Lesson, 'level'> = {
   "id": 5,
   "englishWord": "He",
   "tamilMeaning": "அவன் / இவர்",
-  "englishExplanation": "ஆண்பாலைக் குறிக்க 'He' பயன்படும். இதன் பக்கத்தில் 'is' அல்லது 'was' வரும்.",
+  "englishExplanation": "'He' என்பது ஒரு ஆணை அல்லது சிறுவனை குறிக்கப் பயன்படும். இதனுடன் ஒருமை வினைகள் வரும்.",
   "vocabularies": [
     {
-      "word": "He",
+      "word": "he",
       "meaning": "அவன் / இவர்"
     },
     {
-      "word": "is",
-      "meaning": "இருக்கிறான் / இருக்கிறது"
+      "word": "teacher",
+      "meaning": "ஆசிரியர்"
+    },
+    {
+      "word": "tall",
+      "meaning": "உயரமான"
+    },
+    {
+      "word": "kind",
+      "meaning": "அன்பான"
     },
     {
       "word": "doctor",
       "meaning": "மருத்துவர்"
-    },
-    {
-      "word": "brother",
-      "meaning": "சகோதரன்"
-    },
-    {
-      "word": "works",
-      "meaning": "வேலை செய்கிறான்"
     }
   ],
   "sentences": [
     {
-      "english": "He is a doctor.",
-      "tamil": "அவன் ஒரு மருத்துவர்.",
+      "english": "He is a boy.",
+      "tamil": "அவன் ஒரு பையன்.",
       "breakdown": [
         {
           "word": "He",
-          "meaning": "அவன் / இவர்"
+          "meaning": "அவன்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறான் / இருக்கிறது"
+          "meaning": "இருக்கிறான்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "boy",
+          "meaning": "பையன்"
+        }
+      ]
+    },
+    {
+      "english": "He is a teacher.",
+      "tamil": "அவர் ஒரு ஆசிரியர்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவர்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறார்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "teacher",
+          "meaning": "ஆசிரியர்"
+        }
+      ]
+    },
+    {
+      "english": "He is tall.",
+      "tamil": "அவன் உயரமாக இருக்கிறான்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவன்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறான்"
+        },
+        {
+          "word": "tall",
+          "meaning": "உயரமாக"
+        }
+      ]
+    },
+    {
+      "english": "He is very kind.",
+      "tamil": "அவர் மிகவும் அன்பானவர்.",
+      "breakdown": [
+        {
+          "word": "He",
+          "meaning": "அவர்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறார்"
+        },
+        {
+          "word": "very",
+          "meaning": "மிகவும்"
+        },
+        {
+          "word": "kind",
+          "meaning": "அன்பானவர்"
+        }
+      ]
+    },
+    {
+      "english": "Is he a doctor?",
+      "tamil": "அவர் ஒரு மருத்துவரா?",
+      "breakdown": [
+        {
+          "word": "Is",
+          "meaning": "இருக்கிறாரா"
+        },
+        {
+          "word": "he",
+          "meaning": "அவர்"
         },
         {
           "word": "a",
@@ -47,127 +131,43 @@ export const lesson5: Omit<Lesson, 'level'> = {
         {
           "word": "doctor",
           "meaning": "மருத்துவர்"
-        }
-      ]
-    },
-    {
-      "english": "He is a doctor.",
-      "tamil": "அவன் ஒரு மருத்துவர்.",
-      "breakdown": [
-        {
-          "word": "He",
-          "meaning": "அவன் / இவர்"
-        },
-        {
-          "word": "is",
-          "meaning": "இருக்கிறான் / இருக்கிறது"
-        },
-        {
-          "word": "a",
-          "meaning": "ஒரு"
-        },
-        {
-          "word": "doctor",
-          "meaning": "மருத்துவர்"
-        }
-      ]
-    },
-    {
-      "english": "He is a doctor.",
-      "tamil": "அவன் ஒரு மருத்துவர்.",
-      "breakdown": [
-        {
-          "word": "He",
-          "meaning": "அவன் / இவர்"
-        },
-        {
-          "word": "is",
-          "meaning": "இருக்கிறான் / இருக்கிறது"
-        },
-        {
-          "word": "a",
-          "meaning": "ஒரு"
-        },
-        {
-          "word": "doctor",
-          "meaning": "மருத்துவர்"
-        }
-      ]
-    },
-    {
-      "english": "He is my brother.",
-      "tamil": "அவன் என் சகோதரன்.",
-      "breakdown": [
-        {
-          "word": "He",
-          "meaning": "அவன் / இவர்"
-        },
-        {
-          "word": "is",
-          "meaning": "இருக்கிறான் / இருக்கிறது"
-        },
-        {
-          "word": "my",
-          "meaning": "என்னுடைய"
-        },
-        {
-          "word": "brother",
-          "meaning": "சகோதரன்"
-        }
-      ]
-    },
-    {
-      "english": "He works here.",
-      "tamil": "அவன் இங்கே வேலை செய்கிறான்.",
-      "breakdown": [
-        {
-          "word": "He",
-          "meaning": "அவன் / இவர்"
-        },
-        {
-          "word": "works",
-          "meaning": "வேலை செய்கிறான்"
-        },
-        {
-          "word": "here",
-          "meaning": "இங்கே"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "He is a doctor.",
-    "He is my brother.",
-    "He works here.",
-    "Is he a doctor?",
-    "Is he my brother?"
+    "He is a boy.",
+    "He is a teacher.",
+    "He is tall.",
+    "He is very kind.",
+    "Is he a doctor?"
   ],
   "translationPractice": [
     {
-      "question": "அவன் ஒரு மருத்துவர்.",
+      "question": "அவன் ஒரு பையன்.",
       "type": "tamil-to-english",
-      "answer": "He is a doctor"
+      "answer": "He is a boy."
     },
     {
-      "question": "அவன் என் சகோதரன்.",
+      "question": "அவர் ஒரு ஆசிரியர்.",
       "type": "tamil-to-english",
-      "answer": "He is my brother"
+      "answer": "He is a teacher."
     },
     {
-      "question": "அவன் இங்கே வேலை செய்கிறான்.",
+      "question": "அவன் உயரமாக இருக்கிறான்.",
       "type": "tamil-to-english",
-      "answer": "He works here"
+      "answer": "He is tall."
     },
     {
-      "question": "அவன் ஒரு மருத்துவரா?",
+      "question": "அவர் மிகவும் அன்பானவர்.",
+      "type": "tamil-to-english",
+      "answer": "He is very kind."
+    },
+    {
+      "question": "அவர் ஒரு மருத்துவரா?",
       "type": "tamil-to-english",
       "answer": "Is he a doctor"
-    },
-    {
-      "question": "அவன் என் சகோதரனா?",
-      "type": "tamil-to-english",
-      "answer": "Is he my brother"
     }
   ],
-  "rule": "Rule: 'He' refers to a male person. Takes singular verbs like 'is', 'was'."
+  "rule": "Rule: Use 'He' for a single male person. Pair with singular verbs like 'is/was' in sentences."
 };

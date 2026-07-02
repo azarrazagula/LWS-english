@@ -53,7 +53,7 @@ export const HomeworkSlide: React.FC<HomeworkSlideProps> = ({
 
         <button
           onClick={onComplete}
-          className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-black text-sm uppercase tracking-wider bg-gradient-to-r from-amber-400 via-orange-400 to-pink-500 text-white shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(245,158,11,0.3)] flex items-center justify-center gap-1.5"
+          className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-black text-sm uppercase tracking-wider bg-gradient-to-r from-amber-400 via-orange-400 to-pink-500 text-white transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(245,158,11,0.3)] flex items-center justify-center gap-1.5"
         >
           <Smile className="w-4.5 h-4.5" />
           Complete & Show Stars!

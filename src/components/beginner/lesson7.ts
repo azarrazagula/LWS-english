@@ -4,33 +4,33 @@ export const lesson7: Omit<Lesson, 'level'> = {
   "id": 7,
   "englishWord": "It",
   "tamilMeaning": "அது",
-  "englishExplanation": "மிருகங்கள், பொருட்கள் அல்லது உயிரற்றவற்றுக்கு 'It' பயன்படும்.",
+  "englishExplanation": "'It' என்பது மனிதர்கள் அல்லாத விலங்குகள், பொருட்கள் அல்லது உயிரற்றவைகளை குறிக்க பயன்படும்.",
   "vocabularies": [
     {
-      "word": "It",
+      "word": "it",
       "meaning": "அது"
     },
     {
-      "word": "is",
-      "meaning": "இருக்கிறது"
+      "word": "pen",
+      "meaning": "பேனா"
     },
     {
-      "word": "book",
-      "meaning": "புத்தகம்"
+      "word": "blue",
+      "meaning": "நீலம்"
     },
     {
-      "word": "raining",
-      "meaning": "மழை பெய்கிறது"
+      "word": "hot",
+      "meaning": "சூடான"
     },
     {
-      "word": "big",
-      "meaning": "பெரியது"
+      "word": "cold",
+      "meaning": "குளிரான"
     }
   ],
   "sentences": [
     {
-      "english": "It is a book.",
-      "tamil": "அது ஒரு புத்தகம்.",
+      "english": "It is a cat.",
+      "tamil": "அது ஒரு பூனை.",
       "breakdown": [
         {
           "word": "It",
@@ -45,14 +45,14 @@ export const lesson7: Omit<Lesson, 'level'> = {
           "meaning": "ஒரு"
         },
         {
-          "word": "book",
-          "meaning": "புத்தகம்"
+          "word": "cat",
+          "meaning": "பூனை"
         }
       ]
     },
     {
-      "english": "It is a book.",
-      "tamil": "அது ஒரு புத்தகம்.",
+      "english": "It is a pen.",
+      "tamil": "அது ஒரு பேனா.",
       "breakdown": [
         {
           "word": "It",
@@ -67,14 +67,14 @@ export const lesson7: Omit<Lesson, 'level'> = {
           "meaning": "ஒரு"
         },
         {
-          "word": "book",
-          "meaning": "புத்தகம்"
+          "word": "pen",
+          "meaning": "பேனா"
         }
       ]
     },
     {
-      "english": "It is a book.",
-      "tamil": "அது ஒரு புத்தகம்.",
+      "english": "It is blue.",
+      "tamil": "அது நீல நிறமாக இருக்கிறது.",
       "breakdown": [
         {
           "word": "It",
@@ -85,36 +85,14 @@ export const lesson7: Omit<Lesson, 'level'> = {
           "meaning": "இருக்கிறது"
         },
         {
-          "word": "a",
-          "meaning": "ஒரு"
-        },
-        {
-          "word": "book",
-          "meaning": "புத்தகம்"
+          "word": "blue",
+          "meaning": "நீல நிறமாக"
         }
       ]
     },
     {
-      "english": "It is raining.",
-      "tamil": "மழை பெய்து கொண்டிருக்கிறது.",
-      "breakdown": [
-        {
-          "word": "It",
-          "meaning": "அது"
-        },
-        {
-          "word": "is",
-          "meaning": "இருக்கிறது"
-        },
-        {
-          "word": "raining",
-          "meaning": "மழை பெய்கிறது"
-        }
-      ]
-    },
-    {
-      "english": "It is very big.",
-      "tamil": "அது மிகவும் பெரியது.",
+      "english": "It is very hot.",
+      "tamil": "அது மிகவும் சூடாக இருக்கிறது.",
       "breakdown": [
         {
           "word": "It",
@@ -126,48 +104,70 @@ export const lesson7: Omit<Lesson, 'level'> = {
         },
         {
           "word": "very",
-          "meaning": "—"
+          "meaning": "மிகவும்"
         },
         {
-          "word": "big",
-          "meaning": "பெரியது"
+          "word": "hot",
+          "meaning": "சூடாக"
+        }
+      ]
+    },
+    {
+      "english": "Is it cold today?",
+      "tamil": "இன்று குளிராக இருக்கிறதா?",
+      "breakdown": [
+        {
+          "word": "Is",
+          "meaning": "இருக்கிறதா"
+        },
+        {
+          "word": "it",
+          "meaning": "அது"
+        },
+        {
+          "word": "cold",
+          "meaning": "குளிராக"
+        },
+        {
+          "word": "today",
+          "meaning": "இன்று"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "It is a book.",
-    "It is raining.",
-    "It is very big.",
-    "Is it a book?",
-    "Is it raining today?"
+    "It is a cat.",
+    "It is a pen.",
+    "It is blue.",
+    "It is very hot.",
+    "Is it cold today?"
   ],
   "translationPractice": [
     {
-      "question": "அது ஒரு புத்தகம்.",
+      "question": "அது ஒரு பூனை.",
       "type": "tamil-to-english",
-      "answer": "It is a book"
+      "answer": "It is a cat."
     },
     {
-      "question": "மழை பெய்து கொண்டிருக்கிறது.",
+      "question": "அது ஒரு பேனா.",
       "type": "tamil-to-english",
-      "answer": "It is raining"
+      "answer": "It is a pen."
     },
     {
-      "question": "அது மிகவும் பெரியது.",
+      "question": "அது நீல நிறமாக இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "It is very big"
+      "answer": "It is blue."
     },
     {
-      "question": "அது ஒரு புத்தகமா?",
+      "question": "அது மிகவும் சூடாக இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "Is it a book"
+      "answer": "It is very hot."
     },
     {
-      "question": "இன்று மழை பெய்கிறதா?",
+      "question": "இன்று குளிராக இருக்கிறதா?",
       "type": "tamil-to-english",
-      "answer": "Is it raining today"
+      "answer": "Is it cold today"
     }
   ],
-  "rule": "Rule: 'It' is used for animals, things, or non-living objects."
+  "rule": "Rule: 'It' is a neuter pronoun used for non-human entities and things. Always takes singular verbs."
 };

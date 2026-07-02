@@ -4,27 +4,27 @@ export const lesson15: Omit<Lesson, 'level'> = {
   "id": 15,
   "englishWord": "The",
   "tamilMeaning": "குறிப்பிட்ட",
-  "englishExplanation": "Beginner பாடம் 15: 'The' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "englishExplanation": "'The' என்பது ஒரு குறிப்பிட்ட அல்லது ஏற்கனவே குறிப்பிடப்பட்ட நபர் அல்லது பொருளை சுட்டிக்காட்டப் பயன்படும்.",
   "vocabularies": [
     {
-      "word": "The",
-      "meaning": "குறிப்பிட்ட"
-    },
-    {
-      "word": "sun",
-      "meaning": "சூரியன்"
+      "word": "the",
+      "meaning": "குறிப்பிட்ட (அந்த)"
     },
     {
       "word": "sky",
       "meaning": "வானம்"
     },
     {
-      "word": "moon",
-      "meaning": "நிலா"
+      "word": "book",
+      "meaning": "புத்தகம்"
     },
     {
-      "word": "star",
-      "meaning": "நட்சத்திரம்"
+      "word": "red",
+      "meaning": "சிவப்பு"
+    },
+    {
+      "word": "key",
+      "meaning": "சாவி"
     }
   ],
   "sentences": [
@@ -42,7 +42,7 @@ export const lesson15: Omit<Lesson, 'level'> = {
         },
         {
           "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
+          "meaning": "இருக்கிறது"
         },
         {
           "word": "hot",
@@ -51,127 +51,127 @@ export const lesson15: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "The sun is hot.",
-      "tamil": "சூரியன் சூடாக இருக்கிறது.",
+      "english": "The sky is blue.",
+      "tamil": "வானம் நீல நிறமாக இருக்கிறது.",
       "breakdown": [
         {
           "word": "The",
-          "meaning": "குறிப்பிட்ட"
-        },
-        {
-          "word": "sun",
-          "meaning": "சூரியன்"
-        },
-        {
-          "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
-        },
-        {
-          "word": "hot",
-          "meaning": "சூடாக"
-        }
-      ]
-    },
-    {
-      "english": "Look at the sky.",
-      "tamil": "வானத்தைப் பார்.",
-      "breakdown": [
-        {
-          "word": "Look",
-          "meaning": "—"
-        },
-        {
-          "word": "at",
-          "meaning": "இடத்தில்"
-        },
-        {
-          "word": "the",
           "meaning": "குறிப்பிட்ட"
         },
         {
           "word": "sky",
           "meaning": "வானம்"
-        }
-      ]
-    },
-    {
-      "english": "The moon is bright.",
-      "tamil": "நிலா பிரகாசமாக இருக்கிறது.",
-      "breakdown": [
-        {
-          "word": "The",
-          "meaning": "குறிப்பிட்ட"
-        },
-        {
-          "word": "moon",
-          "meaning": "நிலா"
         },
         {
           "word": "is",
-          "meaning": "ஆகும் / இருக்கிறது"
+          "meaning": "இருக்கிறது"
         },
         {
-          "word": "bright",
-          "meaning": "பிரகாசமாக"
+          "word": "blue",
+          "meaning": "நீல நிறமாக"
         }
       ]
     },
     {
-      "english": "I see a star.",
-      "tamil": "நான் ஒரு நட்சத்திரத்தைப் பார்க்கிறேன்.",
+      "english": "I read the book.",
+      "tamil": "நான் அந்தப் புத்தகத்தைப் படிக்கிறேன்.",
       "breakdown": [
         {
           "word": "I",
           "meaning": "நான்"
         },
         {
-          "word": "see",
-          "meaning": "பார் / பார்க்கிறேன்"
+          "word": "read",
+          "meaning": "படிக்கிறேன்"
         },
         {
-          "word": "a",
-          "meaning": "ஒரு"
+          "word": "the",
+          "meaning": "அந்த குறிப்பிட்ட"
         },
         {
-          "word": "star",
-          "meaning": "நட்சத்திரம்"
+          "word": "book",
+          "meaning": "புத்தகம்"
+        }
+      ]
+    },
+    {
+      "english": "The car is red.",
+      "tamil": "அந்தக் கார் சிவப்பு நிறத்தில் உள்ளது.",
+      "breakdown": [
+        {
+          "word": "The",
+          "meaning": "அந்த"
+        },
+        {
+          "word": "car",
+          "meaning": "கார்"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
+        },
+        {
+          "word": "red",
+          "meaning": "சிவப்பு நிறத்தில்"
+        }
+      ]
+    },
+    {
+      "english": "Where is the key?",
+      "tamil": "சாவி எங்கே இருக்கிறது?",
+      "breakdown": [
+        {
+          "word": "Where",
+          "meaning": "எங்கே"
+        },
+        {
+          "word": "is",
+          "meaning": "இருக்கிறது"
+        },
+        {
+          "word": "the",
+          "meaning": "அந்த குறிப்பிட்ட"
+        },
+        {
+          "word": "key",
+          "meaning": "சாவி"
         }
       ]
     }
   ],
   "speakingPractice": [
     "The sun is hot.",
-    "Look at the sky.",
-    "The moon is bright.",
-    "I see a star.",
-    "The sky is blue."
+    "The sky is blue.",
+    "I read the book.",
+    "The car is red.",
+    "Where is the key?"
   ],
   "translationPractice": [
     {
       "question": "சூரியன் சூடாக இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "The sun is hot"
+      "answer": "The sun is hot."
     },
     {
-      "question": "வானத்தைப் பார்.",
+      "question": "வானம் நீல நிறமாக இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "Look at the sky"
+      "answer": "The sky is blue."
     },
     {
-      "question": "நிலா பிரகாசமாக இருக்கிறது.",
+      "question": "நான் அந்தப் புத்தகத்தைப் படிக்கிறேன்.",
       "type": "tamil-to-english",
-      "answer": "The moon is bright"
+      "answer": "I read the book."
     },
     {
-      "question": "நான் ஒரு நட்சத்திரத்தைப் பார்க்கிறேன்.",
+      "question": "அந்தக் கார் சிவப்பு நிறத்தில் உள்ளது.",
       "type": "tamil-to-english",
-      "answer": "I see a star"
+      "answer": "The car is red."
     },
     {
-      "question": "வானம் நீல நிறத்தில் இருக்கிறது.",
+      "question": "சாவி எங்கே இருக்கிறது?",
       "type": "tamil-to-english",
-      "answer": "The sky is blue"
+      "answer": "Where is the key"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'The'."
+  "rule": "Rule: 'The' is the definite article. It is used when the speaker and listener both know which specific thing is being discussed."
 };

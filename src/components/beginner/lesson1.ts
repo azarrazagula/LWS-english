@@ -11,20 +11,20 @@ export const lesson1: Omit<Lesson, 'level'> = {
       "meaning": "நான்"
     },
     {
-      "word": "am",
-      "meaning": "இருக்கிறேன்"
-    },
-    {
-      "word": "a",
-      "meaning": "ஒரு"
-    },
-    {
       "word": "student",
       "meaning": "மாணவன்"
     },
     {
       "word": "learn",
-      "meaning": "கற்றுக்கொள்"
+      "meaning": "கற்கிறேன்"
+    },
+    {
+      "word": "good",
+      "meaning": "நல்ல"
+    },
+    {
+      "word": "daily",
+      "meaning": "தினமும்"
     }
   ],
   "sentences": [
@@ -51,60 +51,16 @@ export const lesson1: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "I am a student.",
-      "tamil": "நான் ஒரு மாணவன்.",
+      "english": "Am I a student?",
+      "tamil": "நான் ஒரு மாணவனா?",
       "breakdown": [
+        {
+          "word": "Am",
+          "meaning": "இருக்கிறேனா"
+        },
         {
           "word": "I",
           "meaning": "நான்"
-        },
-        {
-          "word": "am",
-          "meaning": "இருக்கிறேன்"
-        },
-        {
-          "word": "a",
-          "meaning": "ஒரு"
-        },
-        {
-          "word": "student",
-          "meaning": "மாணவன்"
-        }
-      ]
-    },
-    {
-      "english": "I am a student.",
-      "tamil": "நான் ஒரு மாணவன்.",
-      "breakdown": [
-        {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "am",
-          "meaning": "இருக்கிறேன்"
-        },
-        {
-          "word": "a",
-          "meaning": "ஒரு"
-        },
-        {
-          "word": "student",
-          "meaning": "மாணவன்"
-        }
-      ]
-    },
-    {
-      "english": "I am a student.",
-      "tamil": "நான் ஒரு மாணவன்.",
-      "breakdown": [
-        {
-          "word": "I",
-          "meaning": "நான்"
-        },
-        {
-          "word": "am",
-          "meaning": "இருக்கிறேன்"
         },
         {
           "word": "a",
@@ -126,11 +82,55 @@ export const lesson1: Omit<Lesson, 'level'> = {
         },
         {
           "word": "learn",
-          "meaning": "கற்றுக்கொள்"
+          "meaning": "கற்கிறேன்"
         },
         {
           "word": "English",
-          "meaning": "—"
+          "meaning": "ஆங்கிலம்"
+        }
+      ]
+    },
+    {
+      "english": "I am a good student.",
+      "tamil": "நான் ஒரு நல்ல மாணவன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "am",
+          "meaning": "இருக்கிறேன்"
+        },
+        {
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "good",
+          "meaning": "நல்ல"
+        },
+        {
+          "word": "student",
+          "meaning": "மாணவன்"
+        }
+      ]
+    },
+    {
+      "english": "I learn daily.",
+      "tamil": "நான் தினமும் கற்கிறேன்.",
+      "breakdown": [
+        {
+          "word": "I",
+          "meaning": "நான்"
+        },
+        {
+          "word": "learn",
+          "meaning": "கற்கிறேன்"
+        },
+        {
+          "word": "daily",
+          "meaning": "தினமும்"
         }
       ]
     }

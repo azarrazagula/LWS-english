@@ -4,87 +4,91 @@ export const lesson8: Omit<Lesson, 'level'> = {
   "id": 8,
   "englishWord": "Is",
   "tamilMeaning": "இருக்கிறான் / இருக்கிறாள் / இருக்கிறது",
-  "englishExplanation": "ஒருமை பெயர்களுடன் (He, She, It) நிகழ்காலத்தில் 'Is' பயன்படுத்த வேண்டும்.",
+  "englishExplanation": "'Is' என்பது நிகழ்காலத்தில் He, She, It போன்ற ஒருமை சொற்களுடன் பயன்படுத்தப்படும்.",
   "vocabularies": [
     {
       "word": "is",
-      "meaning": "இருக்கிறது / இருக்கிறான்"
+      "meaning": "இருக்கிறான் / இருக்கிறது"
     },
     {
-      "word": "happy",
-      "meaning": "மகிழ்ச்சியாக"
+      "word": "doctor",
+      "meaning": "மருத்துவர்"
     },
     {
-      "word": "late",
-      "meaning": "தாமதமாக"
+      "word": "hungry",
+      "meaning": "பசி"
     },
     {
       "word": "cold",
-      "meaning": "குளிர்ச்சியாக"
+      "meaning": "குளிர்"
     },
     {
-      "word": "nice",
-      "meaning": "நல்லது"
+      "word": "ready",
+      "meaning": "தயார்"
     }
   ],
   "sentences": [
     {
-      "english": "He is happy.",
-      "tamil": "அவன் மகிழ்ச்சியாக இருக்கிறான்.",
+      "english": "Is it small?",
+      "tamil": "அது சிறியதாக இருக்கிறதா?",
       "breakdown": [
         {
-          "word": "He",
-          "meaning": "அவன் / இவர்"
+          "word": "Is",
+          "meaning": "இருக்கிறதா"
         },
         {
-          "word": "is",
-          "meaning": "இருக்கிறது / இருக்கிறான்"
+          "word": "it",
+          "meaning": "அது"
         },
         {
-          "word": "happy",
-          "meaning": "மகிழ்ச்சியாக"
+          "word": "small",
+          "meaning": "சிறியதாக"
         }
       ]
     },
     {
-      "english": "He is happy.",
-      "tamil": "அவன் மகிழ்ச்சியாக இருக்கிறான்.",
+      "english": "He is a doctor.",
+      "tamil": "அவர் ஒரு மருத்துவர்.",
       "breakdown": [
         {
           "word": "He",
-          "meaning": "அவன் / இவர்"
+          "meaning": "அவர்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறது / இருக்கிறான்"
+          "meaning": "இருக்கிறார்"
         },
         {
-          "word": "happy",
-          "meaning": "மகிழ்ச்சியாக"
+          "word": "a",
+          "meaning": "ஒரு"
+        },
+        {
+          "word": "doctor",
+          "meaning": "மருத்துவர்"
         }
       ]
     },
     {
-      "english": "She is late.",
-      "tamil": "அவள் தாமதமாக வந்திருக்கிறாள்.",
+      "english": "She is hungry.",
+      "tamil": "அவள் பசியாக இருக்கிறாள்.",
       "breakdown": [
         {
           "word": "She",
-          "meaning": "அவள் / இவர்"
+          "meaning": "அவள்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறது / இருக்கிறான்"
+          "meaning": "இருக்கிறாள்"
         },
         {
-          "word": "late",
-          "meaning": "தாமதமாக"
+          "word": "hungry",
+          "meaning": "பசியாக"
         }
       ]
     },
     {
       "english": "It is cold.",
-      "tamil": "அது குளிர்ச்சியாக இருக்கிறது.",
+      "tamil": "அது குளிராக இருக்கிறது.",
       "breakdown": [
         {
           "word": "It",
@@ -92,66 +96,66 @@ export const lesson8: Omit<Lesson, 'level'> = {
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறது / இருக்கிறான்"
+          "meaning": "இருக்கிறது"
         },
         {
           "word": "cold",
-          "meaning": "குளிர்ச்சியாக"
+          "meaning": "குளிராக"
         }
       ]
     },
     {
-      "english": "It is nice.",
-      "tamil": "அது நன்றாக இருக்கிறது.",
+      "english": "He is ready.",
+      "tamil": "அவன் தயாராக இருக்கிறான்.",
       "breakdown": [
         {
-          "word": "It",
-          "meaning": "அது"
+          "word": "He",
+          "meaning": "அவன்"
         },
         {
           "word": "is",
-          "meaning": "இருக்கிறது / இருக்கிறான்"
+          "meaning": "இருக்கிறான்"
         },
         {
-          "word": "nice",
-          "meaning": "நல்லது"
+          "word": "ready",
+          "meaning": "தயாராக"
         }
       ]
     }
   ],
   "speakingPractice": [
-    "He is happy.",
-    "She is late.",
+    "Is it small?",
+    "He is a doctor.",
+    "She is hungry.",
     "It is cold.",
-    "It is nice.",
-    "Is it cold today?"
+    "He is ready."
   ],
   "translationPractice": [
     {
-      "question": "அவன் மகிழ்ச்சியாக இருக்கிறான்.",
+      "question": "அது சிறியதாக இருக்கிறதா?",
       "type": "tamil-to-english",
-      "answer": "He is happy"
+      "answer": "Is it small"
     },
     {
-      "question": "அவள் தாமதமாக வந்திருக்கிறாள்.",
+      "question": "அவர் ஒரு மருத்துவர்.",
       "type": "tamil-to-english",
-      "answer": "She is late"
+      "answer": "He is a doctor."
     },
     {
-      "question": "அது குளிர்ச்சியாக இருக்கிறது.",
+      "question": "அவள் பசியாக இருக்கிறாள்.",
       "type": "tamil-to-english",
-      "answer": "It is cold"
+      "answer": "She is hungry."
     },
     {
-      "question": "அது நன்றாக இருக்கிறது.",
+      "question": "அது குளிராக இருக்கிறது.",
       "type": "tamil-to-english",
-      "answer": "It is nice"
+      "answer": "It is cold."
     },
     {
-      "question": "இன்று குளிர்ச்சியாக இருக்கிறதா?",
+      "question": "அவன் தயாராக இருக்கிறான்.",
       "type": "tamil-to-english",
-      "answer": "Is it cold today"
+      "answer": "He is ready."
     }
   ],
-  "rule": "Rule: 'Is' is used with singular pronouns (He, She, It) in present tense."
+  "rule": "Rule: 'Is' is the singular form of 'to be' used in present tense for third person singular (He, She, It)."
 };

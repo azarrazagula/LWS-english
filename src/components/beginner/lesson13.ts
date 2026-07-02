@@ -3,42 +3,42 @@ import { Lesson } from '../../types';
 export const lesson13: Omit<Lesson, 'level'> = {
   "id": 13,
   "englishWord": "Will",
-  "tamilMeaning": "இருப்பேன்",
-  "englishExplanation": "Beginner பாடம் 13: 'Will' என்ற வார்த்தையை வாக்கியத்தில் பயன்படுத்தும் முறையை கற்போம்.",
+  "tamilMeaning": "இருப்பேன் / செய்வேன் (எதிர்காலம்)",
+  "englishExplanation": "'Will' என்பது எதிர்காலத்தில் நடக்கவிருக்கும் ஒரு செயலை அல்லது நிலையை குறிக்கப் பயன்படும்.",
   "vocabularies": [
     {
-      "word": "Will",
-      "meaning": "இருப்பேன்"
+      "word": "will",
+      "meaning": "எதிர்காலக் குறிப்பு (செய்வேன்)"
     },
     {
-      "word": "you",
-      "meaning": "நீங்கள்"
+      "word": "come",
+      "meaning": "வா"
     },
     {
-      "word": "go",
-      "meaning": "போ"
+      "word": "help",
+      "meaning": "உதவி"
     },
     {
       "word": "tomorrow",
       "meaning": "நாளை"
     },
     {
-      "word": "come",
-      "meaning": "வா"
+      "word": "go",
+      "meaning": "போ / செல்"
     }
   ],
   "sentences": [
     {
-      "english": "Will you go?",
-      "tamil": "நீ போவாயா?",
+      "english": "I will go.",
+      "tamil": "நான் போவேன்.",
       "breakdown": [
         {
-          "word": "Will",
-          "meaning": "இருப்பேன்"
+          "word": "I",
+          "meaning": "நான்"
         },
         {
-          "word": "you",
-          "meaning": "நீங்கள்"
+          "word": "will",
+          "meaning": "செய்வேன்"
         },
         {
           "word": "go",
@@ -47,38 +47,42 @@ export const lesson13: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "Will you go?",
-      "tamil": "நீ போவாயா?",
+      "english": "He will come.",
+      "tamil": "அவன் வருவான்.",
       "breakdown": [
         {
-          "word": "Will",
-          "meaning": "இருப்பேன்"
+          "word": "He",
+          "meaning": "அவன்"
         },
         {
-          "word": "you",
-          "meaning": "நீங்கள்"
+          "word": "will",
+          "meaning": "செய்வான்"
         },
         {
-          "word": "go",
-          "meaning": "போ"
+          "word": "come",
+          "meaning": "வா"
         }
       ]
     },
     {
-      "english": "Will you go?",
-      "tamil": "நீ போவாயா?",
+      "english": "We will help you.",
+      "tamil": "நாங்கள் உனக்கு உதவி செய்வோம்.",
       "breakdown": [
         {
-          "word": "Will",
-          "meaning": "இருப்பேன்"
+          "word": "We",
+          "meaning": "நாங்கள்"
+        },
+        {
+          "word": "will",
+          "meaning": "செய்வோம்"
+        },
+        {
+          "word": "help",
+          "meaning": "உதவி"
         },
         {
           "word": "you",
-          "meaning": "நீங்கள்"
-        },
-        {
-          "word": "go",
-          "meaning": "போ"
+          "meaning": "உனக்கு"
         }
       ]
     },
@@ -92,7 +96,7 @@ export const lesson13: Omit<Lesson, 'level'> = {
         },
         {
           "word": "will",
-          "meaning": "இருப்பேன்"
+          "meaning": "செய்வேன்"
         },
         {
           "word": "come",
@@ -105,20 +109,20 @@ export const lesson13: Omit<Lesson, 'level'> = {
       ]
     },
     {
-      "english": "I will come tomorrow.",
-      "tamil": "நான் நாளை வருவேன்.",
+      "english": "Will you go tomorrow?",
+      "tamil": "நீ நாளை போவாயா?",
       "breakdown": [
         {
-          "word": "I",
-          "meaning": "நான்"
+          "word": "Will",
+          "meaning": "செய்வாயா"
         },
         {
-          "word": "will",
-          "meaning": "இருப்பேன்"
+          "word": "you",
+          "meaning": "நீ"
         },
         {
-          "word": "come",
-          "meaning": "வா"
+          "word": "go",
+          "meaning": "போ"
         },
         {
           "word": "tomorrow",
@@ -128,38 +132,38 @@ export const lesson13: Omit<Lesson, 'level'> = {
     }
   ],
   "speakingPractice": [
-    "Will you go?",
+    "I will go.",
+    "He will come.",
+    "We will help you.",
     "I will come tomorrow.",
-    "Will they help us?",
-    "I will go tomorrow.",
-    "Will you come here?"
+    "Will you go tomorrow?"
   ],
   "translationPractice": [
     {
-      "question": "நீ போவாயா?",
+      "question": "நான் போவேன்.",
       "type": "tamil-to-english",
-      "answer": "Will you go"
+      "answer": "I will go."
+    },
+    {
+      "question": "அவன் வருவான்.",
+      "type": "tamil-to-english",
+      "answer": "He will come."
+    },
+    {
+      "question": "நாங்கள் உனக்கு உதவி செய்வோம்.",
+      "type": "tamil-to-english",
+      "answer": "We will help you."
     },
     {
       "question": "நான் நாளை வருவேன்.",
       "type": "tamil-to-english",
-      "answer": "I will come tomorrow"
+      "answer": "I will come tomorrow."
     },
     {
-      "question": "அவர்கள் நமக்கு உதவுவார்களா?",
+      "question": "நீ நாளை போவாயா?",
       "type": "tamil-to-english",
-      "answer": "Will they help us"
-    },
-    {
-      "question": "நான் நாளை போவேன்.",
-      "type": "tamil-to-english",
-      "answer": "I will go tomorrow"
-    },
-    {
-      "question": "நீ இங்கே வருவாயா?",
-      "type": "tamil-to-english",
-      "answer": "Will you come here"
+      "answer": "Will you go tomorrow"
     }
   ],
-  "rule": "Rule: Standard grammar focus for beginner word 'Will'."
+  "rule": "Rule: 'Will' is a modal auxiliary verb used to express future tense for all pronouns (I, You, He, She, It, We, They)."
 };
